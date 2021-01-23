@@ -1,0 +1,187 @@
+
+adb reboot recovery
+
+adb sideload "C:\Users\rnda\Desktop\WikoSunny2Plus\X-NEW\0. Install\A\no-verity-opt-encrypt-6.0.zip"
+
+
+
+
+
+=========================================
+cd /d C:\Users\rnda\Desktop\WikoSunny2Plus\Sunny2Plus_V24\ROM-INSTLLD\extr_ROM
+
+fastboot flash recovery "C:\Users\rnda\Desktop\WikoSunny2Plus\B\TWRP-SUNN2PLU\WikoSunny2plusResource\recovery.img"
+
+
+
+fastboot flash recovery "C:\Users\Kmna\Desktop\Sunny2Plus\WikoSunny2plusResource_2\WikoSunny2plusResource\recovery.img"
+
+
+fastboot -w flashall
+set ANDROID_PRODUCT_OUT=C:\Users\rnda\Desktop\WikoSunny2Plus\Sunny2Plus_V24\ROM-INSTLLD\extr_ROM
+
+=========================================
+fastboot erase system
+fastboot erase cache
+fastboot erase userdata
+______________________________________
+
+
+
+fastboot flash lk lk.bin --disable-verity --disable-verification
+fastboot flash boot boot.img --disable-verity --disable-verification
+fastboot flash logo logo.bin --disable-verity --disable-verification
+
+
+fastboot flash system system.img --disable-verity --disable-verification 
+fastboot flash userdata userdata.img --disable-verity --disable-verification
+fastboot flash cache cache.img --disable-verity --disable-verification
+fastboot flash secro secro.img --force --disable-verity --disable-verification 
+
+fastboot flash recovery recovery.img --disable-verity --disable-verification
+
+fastboot oem reboot-recovery
+
+Ok!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+fastboot erase preloader
+fastboot erase lk
+fastboot erase boot
+fastboot erase recovery
+fastboot erase logo
+
+
+
+fastboot erase apedata 
+fastboot erase secro secro.img
+
+
+fastboot flash preloader preloader_v2600cn.bin
+fastboot flash lk lk.bin
+fastboot flash boot boot.img
+
+fastboot flash logo logo.bin
+
+
+
+
+
+fastboot flash preloader preloader_v2600cn.bin
+
+fastboot oem reboot-recovery
+fastboot flash recovery recovery.img
+ok!
+
+
+fastboot flash apedata apedata.img
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************* MANUAL &&&&&&&
+
+
+fastboot --help
+usage: fastboot [OPTION...] COMMAND...
+
+flashing:
+ update ZIP                 Flash all partitions from an update.zip package.
+ flashall                   Flash all partitions from $ANDROID_PRODUCT_OUT.
+                            On A/B devices, flashed slot is set as active.
+                            Secondary images may be flashed to inactive slot.
+ flash PARTITION [FILENAME] Flash given partition, using the image from
+                            $ANDROID_PRODUCT_OUT if no filename is given.
+
+basics:
+ devices [-l]               List devices in bootloader (-l: with device paths).
+ getvar NAME                Display given bootloader variable.
+ reboot [bootloader]        Reboot device.
+
+locking/unlocking:
+ flashing lock|unlock       Lock/unlock partitions for flashing
+ flashing lock_critical|unlock_critical
+                            Lock/unlock 'critical' bootloader partitions.
+ flashing get_unlock_ability
+                            Check whether unlocking is allowed (1) or not(0).
+
+advanced:
+ erase PARTITION            Erase a flash partition.
+ format[:FS_TYPE[:SIZE]] PARTITION
+                            Format a flash partition.
+ set_active SLOT            Set the active slot.
+ oem [COMMAND...]           Execute OEM-specific command.
+ gsi wipe|disable           Wipe or disable a GSI installation (fastbootd only).
+ wipe-super [SUPER_EMPTY]   Wipe the super partition. This will reset it to
+                            contain an empty set of default dynamic partitions.
+
+boot image:
+ boot KERNEL [RAMDISK [SECOND]]
+                            Download and boot kernel from RAM.
+ flash:raw PARTITION KERNEL [RAMDISK [SECOND]]
+                            Create boot image and flash it.
+ --dtb DTB                  Specify path to DTB for boot image header version 2.
+ --cmdline CMDLINE          Override kernel command line.
+ --base ADDRESS             Set kernel base address (default: 0x10000000).
+ --kernel-offset            Set kernel offset (default: 0x00008000).
+ --ramdisk-offset           Set ramdisk offset (default: 0x01000000).
+ --tags-offset              Set tags offset (default: 0x00000100).
+ --dtb-offset               Set dtb offset (default: 0x01100000).
+ --page-size BYTES          Set flash page size (default: 2048).
+ --header-version VERSION   Set boot image header version.
+ --os-version MAJOR[.MINOR[.PATCH]]
+                            Set boot image OS version (default: 0.0.0).
+ --os-patch-level YYYY-MM-DD
+                            Set boot image OS security patch level.
+
+Android Things:
+ stage IN_FILE              Sends given file to stage for the next command.
+ get_staged OUT_FILE        Writes data staged by the last command to a file.
+
+options:
+ -w                         Wipe userdata.
+ -s SERIAL                  Specify a USB device.
+ -s tcp|udp:HOST[:PORT]     Specify a network device.
+ -S SIZE[K|M|G]             Break into sparse files no larger than SIZE.
+ --force                    Force a flash operation that may be unsafe.
+ --slot SLOT                Use SLOT; 'all' for both slots, 'other' for
+                            non-current slot (default: current active slot).
+ --set-active[=SLOT]        Sets the active slot before rebooting.
+ --skip-secondary           Don't flash secondary slots in flashall/update.
+ --skip-reboot              Don't reboot device after flashing.
+ --disable-verity           Sets disable-verity when flashing vbmeta.
+ --disable-verification     Sets disable-verification when flashing vbmeta.
+ --unbuffered               Don't buffer input or output.
+ --verbose, -v              Verbose output.
+ --version                  Display version.
+ --help, -h                 Show this message.

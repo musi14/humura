@@ -1,0 +1,107 @@
+
+orange 6ca7
+MY32YN2L 4DR
+
+galinek
+kanaeg [full name | user name]
+
++32476457229
+
+%userprofile%\AppData\Local\Android\Sdk\platform-tools
+QUICK SCREEN-SHOT
+
+Fn + Win + PrintScreen
+=======================
+Kaspersky password
+		Tech Ashraf
+
+
+KIS language change =>    shift  +  12 
+Change back                     shift  +   5   
+netsh wlan show profile
+netsh wlan show profile name=xxcdxx key=clear
+
+------------------
+netsh wlan show profile
+netsh wlan export profile folder="C:\Users\Kmna\Desktop\C\Wifi Psswd" key=clear
+
+=============
+net stop wuauserv
+net start wuauserv
+
+sc config wuauserv start=auto
+sc config bits start=auto
+sc config cryptsvc start=auto
+sc config trustedinstaller start=auto
+shutdown /r /g /t 00 /c "mfite umutwe muto"
+
+
+Netsh winhttp import proxy source=ie
+Netsh winhttp set proxy 192.168.43.1:44355
+Netsh winhttp reset proxy
+
+Netsh winhttp set proxy myproxy
+Netsh winhttp set proxy myproxy:80 "<local>;bar"
+Netsh winhttp set proxy proxy-server="http=myproxy;https=sproxy:88" bypass-list="*.
+contoso.com"
+
+
+
+
+
+
+WPA2 
+54vrH917
+54vrH9t7
+=====================
+crackia pss: Kadina_mimi@90.com
+netsh wlan show networks MODE=BSSID
+-----------
+
+netsh wlan show interfaces
+
+
+
+&&&&&&&&&&&&&&&&&&&&&
+
+
+ipconfig /release
+ipconfig /flushdns
+ipconfig /renew
+netsh winsock reset
+netsh interface ipv4 reset
+netsh interface ipv6 reset
+netsh winsock reset catalog
+netsh int ipv4 reset reset.log
+netsh int ipv6 reset reset.log
+
+
+
+Set up NordVPN L2TP/IPsec on Windows
+&&&&&&&&&&&&&&&&&&&&&&
+
+=====================
+netsh wlan show profile
+
+netsh wlan export profile folder=c:\ key=clear
+
+====================
+dispatching@fedasil.be
++33774672266
+wmkkykhs3556j
+
+
+
+
+Windows 10 Insider Preview 20175.1000
+
+
+RESCUE PRO DELUXE
+www.lc-tec.com/RESCUEPRO
+
+https://www.lc-tech.com/rescuepro2year/
+RPDLX-0600-28889-30833-19198
+
+
+slmgr -rearm
+services.msc		[ windows License manager service 	=> disable , 	start ]

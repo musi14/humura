@@ -1,0 +1,26 @@
+
+Part One:	Boot & Partitioning
+Part Two:	Apply Windows image
+Part Three:	Done!
+
+===========================================================
+
+ Part One 
+ Boot & Partitioning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+https://www.tenforums.com/tutorials/84331-apply-windows-image-using-dism-instead-clean-install.html

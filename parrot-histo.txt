@@ -1,0 +1,26 @@
+    1  clear
+    2  nmap -sS -sV -vv -n -Pn -T5 192.168.1.11/26 -p80 -oG -
+    3  nmap -sS -sV -vv -n -Pn -T5  192.168.1.11/26 -p80 -oG -
+    4  nmap -sS -sV -vv -n -Pn -T5 192.168.1.1/22 -p80 -oG - | grep 'open' | grep -v 'tcpwrapped'
+    5  history > '/home/user/Desktop/parrot-histo.txt' chmod 777 '/home/user/Desktop/parrot-histo.txt'
+    6  chmod 0777 '/home/user/Desktop/parrot-histo.txt'
+    7  history > '/home/user/Desktop/parrot-histo.txt' 
+    
+    ===================================================
+    
+        1  clear
+    2  wifite
+    3  clear
+    4  airmon-ng start wlan0
+    5  clear
+    6  nmap -sS -sV -vv -n -Pn -T5 192.168.1.1/24
+    7  history > '/home/user/Desktop/parrot-histo2.txt' && chmod 0777 '/home/user/Desktop/parrot-histo2.txt' 
+    
+    =================================================
+    
+        1  clear
+    2  nmap -sS -sV -vv -n -Pn -T5  192.168.64.1-255 -p443 -oG -
+    3  tcpdump -ni eno1
+    4  tcpdump -ni eth0
+    5  history > '/home/user/Desktop/parrot-histo3.txt' && chmod 0777 '/home/user/Desktop/parrot-histo3.txt'
+    

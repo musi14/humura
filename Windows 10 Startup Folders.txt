@@ -1,0 +1,13 @@
+how to play 3d HSBS Bluray movies
+
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+
+%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+
+To quickly access the All Users Startup Folder in Windows 10, open the Run dialog box (Windows Key + R), type 
+shell:common startup
+shell:startup
+
+
+, and click OK. A new File Explorer Window will open displaying the All Users Startup Folder.

@@ -1,0 +1,98 @@
+MY PROJECT
+
+	V11 & CMW-Recovery COMPARE   [done ]
+=============================================
+
+	V24    		TWRP-Recovery		[ v24-TWRP-Recovery ]
+      		 	CMW-Recovery		[ v24-CMW-Recovery ]
+
+	V11
+				TWRP-Recovery		[ v11-TWRP-Recovery ]
+
+	CMW-RECOVERY
+				TWRP-Recovery		[ CMW-TWRP-Recovery ]
+_________________
+
+adb devices
+adb reboot bootloader
+
+fastboot flash recovery ...img
+
+
+
+How to get and port twrp recovery for any android device
+=========================================================
+RESOURCES
+		https://www.youtube.com/watch?v=VSe4LbXHAY8
+
+
+
+1) TWRP-RECOVERY
+
+	.ramdisk-files  [etc\fstab to replace;	]	see NB*
+	.split-files	[ DELETE THEM ]
+	
+2) STOCK RECOVERY
+
+	.ramdisk-files [etc\fstab to copy from;	see NB* ] [ DELETE THEM AFTER ]
+	.split-files 
+
+
+RESULTS
+
+TWRP ramdisk-files + STOCT split-files
+
+ 
+======================================NB: in the "ramdisk-files" ========== identical as shown by winmerge
+default.prop
+
+fstab.mt6580 
+meta_init.modem.rc 
+meta_init.project.rc 
+meta_init.rc 
+ueventd.rc
+
+Also folders
+
+data  
+
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\o-recovery-unsign\ramdisk\data 
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\recovery-cmw\ramdisk\data
+
+
+dev
+
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\o-recovery-unsign\ramdisk\dev 
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\recovery-cmw\ramdisk\dev
+
+
+proc
+
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\o-recovery-unsign\ramdisk\proc 
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\recovery-cmw\ramdisk\proc
+
+
+sys
+
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\o-recovery-unsign\ramdisk\sys 
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\recovery-cmw\ramdisk\sys
+
+
+system
+
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\o-recovery-unsign\ramdisk\system 
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\recovery-cmw\ramdisk\system
+
+
+tmp
+
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\o-recovery-unsign\ramdisk\tmp 
+	C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\recovery-cmw\ramdisk\tmp
+
+
+=========================== ROBOCOPY ======================================
+Try using the /xf switch with /mir to prevent the purge of your destination file.   
+
+For example
+
+robocopy d:\source d:\destination /mir /xf d:\destination\testfile.txt

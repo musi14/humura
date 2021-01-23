@@ -1,0 +1,7 @@
+Computer\HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Torch.DNNWFY4T4D3CA2PIS4KR24GXOM\Capabilities\URLAssociations
+
+delete "magnet" => /Name
+
+
+====================
+https://forum.utorrent.com/topic/102860-windows10-chrome-magnet-torch-default-issue/

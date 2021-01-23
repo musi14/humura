@@ -1,0 +1,134 @@
+    1  passwd root
+    2  clear
+    3  logout
+    4  sudo add-apt-repository ppa:nilarimogard/webupd8
+    5  sudo apt update
+    6  sudo apt install woeusb
+    7  exit
+    8  ls
+    9  cd /home/pc1x/
+   10  ls
+   11  pwd
+   12  cd /
+   13  ls
+   14  cd /home
+   15  ls
+   16  passwd adminpc1x/
+   17  passwd adminpc1x
+   18  clear
+   19  ipconfig
+   20  iwconfig
+   21  iconfig
+   22  ifconfig
+   23  clear
+   24  sudo apt-get install samba
+   25  sudo smbpasswd -a zgba
+   26  sudo apt install caja-share
+   27  sudo apt-get install libsmbclient libwbclient0 python-dnspython python-samba python3-smbc samba samba-common samba-common-bin samba-dsdb-modules samba-libs samba-vfs-modules smbclient
+   28  clear
+   29  ls
+   30  chmod 777 /home/pc1x/Documents
+   31  useradd zgba-14
+   32  smbpasswd -a zgba-14
+   33  nano /etc/samba/smb.conf
+   34  testparm
+   35  clear
+   36  testparm
+   37  systemctl restart smbd
+   38  ip a
+   39  clear
+   40  apt-get update
+   41  clear
+   42  sudo add-apt-repository ppa:tortoisehg-ppa/releases
+   43  sudo apt-get update
+   44  sudo apt-get install tortoisehg
+   45  sudo apt-get install mercurial
+   46  clear
+   47  ls
+   48  cd Documents/
+   49  mkdir clones
+   50  cd clones/
+   51  ls
+   52  clear
+   53  hg --version
+   54  clear
+   55  hg showconfig
+   56  clear
+   57  hg tstatus
+   58  hg status
+   59  clear
+   60  hg tclone http://hg.openjdk.java.net/jdk8/jdk8 myjdk8 
+   61  hg clone http://hg.openjdk.java.net/jdk8/jdk8 myjdk8 
+   62  ls
+   63  cd myjdk8/
+   64  sh get_source.sh
+   65  du -s
+   66  cd ..
+   67  ls
+   68  hg clone http://hg.openjdk.java.net/jdk10/jdk10/
+   69  cd jdk10/
+   70  sh get_source.sh
+   71  ls
+   72  history > '/home/pc1x/Desktop/smb-history.txt' 
+   73  chmod 777 '/home/pc1x/Desktop/smb-history.txt' 
+   74  history 
+   75  history >> '/home/pc1x/Desktop/smb-history.txt' 
+   76  clear
+   77  ls
+   78  cd Documents/
+   79  ls
+   80  cd clones/
+   81  ls
+   82  hg clone http://hg.openjdk.java.net/code-tools/trees
+   83  cat << EOT >> ~/.hgrc
+[extensions]
+trees=~/hg-ext/trees/trees.py
+EOT
+
+   84  cat << EOT >> ~/.hgrc
+[extensions]
+trees=~/pc1x/Documents/clones/trees/trees.py
+EOT
+
+   85  hg tconf --set --walk --depth
+   86  clear
+   87  hg tconf --set --walk --depth
+   88  ls
+   89  cd ..
+   90  ls
+   91  texteditor smb-history.txt 
+   92  clear
+   93  gedit /etc/samba/smb.conf
+   94  apt install gedit
+   95  clear
+   96  gedit /etc/samba/smb.conf
+   97  clear
+   98  sudo systemctl enable smbd.service
+   99  ​sudo systemctl enable nmbd.service
+  100  ​sudo systemctl restart smbd.service
+  101  ​sudo systemctl restart nmbd.service
+  102  systemctl restart nmbd.service
+  103  clear
+  104  systemctl enable smbd.service
+  105  ​systemctl enable nmbd.service
+  106  ​systemctl restart smbd.service
+  107  ​systemctl restart nmbd.service
+  108  clear
+  109  usermod -a -G pc1x
+  110  usermod -a -G pc1x USER
+  111  clear
+  112  sudo usermod -a -G WORKGROUP pc1x
+  113  sudo groupadd -g 5000 SAMBA
+  114  sudo usermod -G -a SAMBA pc1x
+  115  sudo usermod -G SAMBA pc1x
+  116  gedit /etc/samba/smb.conf
+  117  sudo groupadd -g 5000 WORKGROUP
+  118  sudo usermod -G WORKGROUP pc1x
+  119  sudo usermod -G -a WORKGROUP pc1x
+  120  sudo groupadd -g 7000 WORKGROUP
+  121  sudo usermod -G WORKGROUP pc1x
+  122  sudo usermod -G -a WORKGROUP zgba-14
+  123  sudo usermod -G WORKGROUP zgba-14
+  124  sudo usermod -G SAMBA zgba-14
+  125  clear
+  126  history >> newupdate-smba.txt 

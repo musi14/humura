@@ -1,0 +1,516 @@
+    1  mkdir /run/media/diskUSB
+    2  blkid
+    3  nano /etc/fstab
+    4  exit
+    5  clear
+    6  chmod 777 -R -v /run/media/adminpc10/home/adminpc10/Downloads
+    7  clear
+    8  chmod 777 '/run/media/adminpc10/home/OS/install and configure RHEL 7.5 - Mix - hist-termnl' 
+    9  chmod 777 /run/media/adminpc10/home/OS/livehackingdvd.1.3a.tdc.iso 
+   10  chmod 777 /run/media/adminpc10/home/OS/Parrot-security-3.10.1_i386.iso 
+   11  exit
+   12  clear
+   13  yum repolist
+   14  clear
+   15  yum --enablerepo=rpmfusion-free-updates install gstreamer{,1}-plugins-ugly
+   16  yum --enablerepo=rpmfusion-free-updates reinstall gstreamer{,1}-plugins-ugly
+   17  yum info gstreamer-plugins-ugly
+   18  rpm -qa| grep gstreamer1-plugins-ugly
+   19  yum -y reinstall gstreamer1-plugins-ugly-free-1.10.4-3.el7.x86_64
+   20  yum -y reinstall--enablerepo=rpmfusion-free-updates gstreamer1-plugins-ugly-free-1.10.4-3.el7.x86_64
+   21  yum -y reinstall --enablerepo=rpmfusion-free-updates gstreamer1-plugins-ugly-free-1.10.4-3.el7.x86_64
+   22  clear
+   23  yum -y remove gstreamer1-plugins-ugly-free-1.10.4-3.el7.x86_64
+   24  clear
+   25  yum -y --enablerepo=atrpms install ffmpeg ffmpeg-devel 
+   26  yum-config-manager --disable atrpms
+   27  yum -y --enablerepo=atrpms install ffmpeg ffmpeg-devel 
+   28  yum-config-manager --disable atrpms
+   29  clear
+   30  yum install mplayer mplayer-fonts mplayer-gui -y
+   31  yum install xine xine-lib xine-skins xine-lib-extras-nonfree -y
+   32  yum install vlc
+   33  yum install google-chrome-unstable -y
+   34  yum install google-chrome-unstable -y --skip-broken
+   35  nano /etc/yum/pluginconf.d/search-disabled-repos.conf
+   36  yum install google-chrome-unstable -y --skip-broken
+   37  yum -y --nogpgcheck install cntlm-0.92.1-1.x86_64.rpm
+   38  rpm -qa | grep atrpms
+   39  exit
+   40  clear
+   41  subscription-manager register --consumerid=bcde22a3-93ee-45dc-86e3-399d4bf39a9c
+   42  yum update
+   43  rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
+   44  yum localinstall --nogpgcheck http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
+   45  yum install -y http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-1.el7.nux.noarch.rpm
+   46  yum update -y
+   47  yum install https://$(rpm -E '%{?centos:centos}%{!?centos:rhel}%{rhel}').iuscommunity.org/ius-release.rpm -y
+   48  yum localinstall http://rpm.agresearch.co.nz/agr-free/7/x86_64/Packages/acml-blas-lapack-6.1.0.31-1.el7.centos.x86_64.rpm -y
+   49  rpm --import http://wiki.psychotic.ninja/RPM-GPG-KEY-psychotic
+   50  rpm -ivh http://packages.psychotic.ninja/6/base/i386/RPMS/psychotic-release-1.0.0-1.el6.psychotic.noarch.rpm
+   51  yum install http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm -y
+   52  rpm -ivh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+   53  rpm -ivh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+   54  yum localinstall --nogpgcheck http://rpms.famillecollet.com/enterprise/remi-release-7.rpm -y
+   55  yum localinstall --nogpgcheck http://repo.webtatic.com/yum/el7/webtatic-release.rpm -y
+   56  rpm -ivh https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
+   57  rpm -ivh https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
+   58  update -y
+   59  clear
+   60  yum repolist enabled
+   61  cd /opt
+   62  wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/58.0.2/linux-x86_64/en-US/firefox-58.0.2.tar.bz2
+   63  tar xfjv firefox-58.0.2.tar.bz2
+   64  ln -s /opt/firefox/firefox /usr/bin/firefox
+   65  cd /usr/share/applications/
+   66  cp firefox.desktop firefox-quantum.desktop
+   67  gedit firefox-quantum.desktop
+   68  ln -s /opt/firefox/firefox /usr/bin/firefox
+   69  mv /usr/bin/firefox /usr/bin/firefox-old
+   70  ln -s /opt/firefox/firefox /usr/bin/firefox
+   71  nano /etc/yum.repos.d/nux-dextop.repo
+   72  yum install nodejs -y
+   73  mv /usr/bin/firefox /usr/bin/firefox-old
+   74  /opt/firefox/firefox
+   75  cp firefox.desktop firefox-quantum.desktop
+   76  gedit firefox-quantum.desktop
+   77  clear
+   78  yum --enablerepo=nux-dextop install -y gstreamer{,1}-plugins-ugly
+   79  yum --enablerepo=rpmfusion-free-updates gstreamer{,1}-plugins-ugly
+   80  yum --enablerepo=rpmfusion-free-updates install gstreamer{,1}-plugins-ugly
+   81  cd /etc/yum.repos.d/
+   82  wget https://bintray.com/pony-language/ponyc-rpm/rpm -O bintray-pony-language-ponyc-rpm.repo
+   83  yum clean all && yum install ponyc -y
+   84  yum update -y
+   85  wget http://people.centos.org/hughesjr/chromium/6/chromium-el6.repo
+   86  yum install chromium -y
+   87  clear
+   88  rpm -ivh https://www.mirrorservice.org/sites/dl.atrpms.net/el7-x86_64/atrpms/stable/atrpms-repo-7-7.el7.x86_64.rpm
+   89  rpm -ivh https://mirror.its.sfu.ca/mirror/CentOS-Third-Party/atrpms/el7-x86_64/stable/atrpms-repo-7-7.el7.x86_64.rpm
+   90  rpm -ivh http://ftp-stud.fht-esslingen.de/Mirrors/atrpms/dl.atrpms.net/el7-x86_64/atrpms/stable/atrpms-repo-7-7.el7.x86_64.rpm
+   91  ls
+   92  clear
+   93  gedit /etc/yum.repos.d/atrpms.repo
+   94  yum install redhat-lsb -y
+   95  yum install -y  yum-plugin-priorities
+   96  wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+   97  yum install ./google-chrome-stable_current_*.rpm
+   98  google-chrome &
+   99  yum update google-chrome-stable
+  100  nano /etc/yum/pluginconf.d/priorities.conf 
+  101  yum list | egrep 'chrome|chromium|mp3|mpeg|mpg|vlc|lyx|skype|mplayer|libdvdcss|ntfs'
+  102  yum install audacious audacious-plugin\* ffmpeg ffmpegthumbnailer gstreamer-ffmpeg mp3gain mpeg2dec mpg123 mpg123-plugins\* skype vlc mplayer-gui libdvdcss ntfs-3g ntfsprogs
+  103  wget http://people.centos.org/hughesjr/chromium/6/chromium-el6.repo
+  104  yum install chromium -y
+  105  yum install google-chrome-beta -y
+  106  yum install yum-plugin-fastestmirror
+  107  yum -d 10 update
+  108  which qmake
+  109  yum --enablerepo=rhel-7-server-beta-rpms install -y --skip-broken qt-devel
+  110  gedit /etc/yum.repos.d/atrpms.repo
+  111  yum update -y
+  112  yum clean all
+  113  rm -rf /var/cache/yum/*
+  114  yum -y --enablerepo=atrpms install ffmpeg
+  115  yum-config-manager --save --setopt=atrpms.skip_if_unavailable=true
+  116  yum -y --enablerepo=atrpms install ffmpeg
+  117  exit
+  118  clear
+  119  gnome-shell --version
+  120  yum update gnome-tweak-tool -y
+  121  clear
+  122  cd /opt
+  123  git clone https://github.com/mpv-player/mpv-build.git
+  124  cd mpv-build
+  125  echo --enable-openssl >> ffmpeg_options
+  126  echo --enable-nonfree >> ffmpeg_options
+  127  ./rebuild -j4
+  128  ./install
+  129  waf configure
+  130  ./configure --with-tls
+  131  ./install
+  132  ./waf configure
+  133  ./rebuild -j4
+  134  rpm -Uvh http://mirror.centos.org/centos/7/os/x86_64/Packages/openssl-devel-1.0.2k-8.el7.x86_64.rpm
+  135  yum info openssl
+  136  ./rebuild -j4
+  137  yum info openssl
+  138  yum --enablerepo=anaconda install -y openssl
+  139  yum --enablerepo=nux-dextop reinstall -y openssl
+  140  yum --enablerepo=nux-dextop install -y openssl
+  141  yum -y reinstall openssl-1.0.2k-8.el7.x86_64
+  142  yum -y update
+  143  ./rebuild -j4
+  144  yum install openssl-devel.x86_64 -y
+  145  rpm -Va --nofiles --nodigest
+  146  yum info openssl-devel.x86_64
+  147  yum --enablerepo=nux-dextop install -y openssl
+  148  yum info openssl-devel.x86_64
+  149  yum --enablerepo=rhel-7-server-e4s-rpms install -y openssl-devel
+  150  yum --enablerepo=rhel-7-server-e4s-rpms install -y openssl-devel --skip-broken
+  151  ./configure --with-tls
+  152  make install
+  153  exit
+  154  clear
+  155  cd '/home/adminpc10/Desktop/Graphic - Drivers/opencl_runtime_16.1.2_x64_rh_6.4.0.37' 
+  156  ls
+  157  ./install.sh
+  158  cd
+  159  clear
+  160  yum install libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld libde265 x265 nasm yasm opus autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel fontconfig-devel harfbuzz-devel yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel cmake mercurial nasm openssl-devel libX11-devel python-docutils luajit-devel libbluray-devel libdvdread-devel libcdio-paranoia-devel lcms2-devel pulseaudio-libs-devel jack-audio-connection-kit-devel alsa-lib-devel libdrm-devel libxkbcommon-devel libXScrnSaver-devel libXext-devel libXv-devel PyQt4-devel libvdpau-devel libva-devel gstreamer1-vaapi-devel libcaca-devel -y --skip-broken
+  161  yum --enablerepo=nux-dextop install libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld libde265 x265 nasm yasm opus autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel fontconfig-devel harfbuzz-devel yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel cmake mercurial nasm openssl-devel libX11-devel python-docutils luajit-devel libbluray-devel libdvdread-devel libcdio-paranoia-devel lcms2-devel pulseaudio-libs-devel jack-audio-connection-kit-devel alsa-lib-devel libdrm-devel libxkbcommon-devel libXScrnSaver-devel libXext-devel libXv-devel PyQt4-devel libvdpau-devel libva-devel gstreamer1-vaapi-devel libcaca-devel -y --skip-broken
+  162  history | grep enablerepo
+  163  yum -y --enablerepo=atrpms install libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld libde265 x265 nasm yasm opus autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel fontconfig-devel harfbuzz-devel yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel cmake mercurial nasm openssl-devel libX11-devel python-docutils luajit-devel libbluray-devel libdvdread-devel libcdio-paranoia-devel lcms2-devel pulseaudio-libs-devel jack-audio-connection-kit-devel alsa-lib-devel libdrm-devel libxkbcommon-devel libXScrnSaver-devel libXext-devel libXv-devel PyQt4-devel libvdpau-devel libva-devel gstreamer1-vaapi-devel libcaca-devel --skip-broken 
+  164  clear
+  165  yum-config-manager --disable rhel-atomic-7-cdk-3*
+  166  clear
+  167  history | grep enablerepo
+  168  yum --enablerepo=rpmfusion-free-updates install libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld libde265 x265 nasm yasm opus autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel fontconfig-devel harfbuzz-devel yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel cmake mercurial nasm openssl-devel libX11-devel python-docutils luajit-devel libbluray-devel libdvdread-devel libcdio-paranoia-devel lcms2-devel pulseaudio-libs-devel jack-audio-connection-kit-devel alsa-lib-devel libdrm-devel libxkbcommon-devel libXScrnSaver-devel libXext-devel libXv-devel PyQt4-devel libvdpau-devel libva-devel gstreamer1-vaapi-devel libcaca-devel --skip-broken
+  169  history | grep enablerepo
+  170  yum -y --enablerepo=atrpms install libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld libde265 x265 nasm yasm opus autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel fontconfig-devel harfbuzz-devel yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel cmake mercurial nasm openssl-devel libX11-devel python-docutils luajit-devel libbluray-devel libdvdread-devel libcdio-paranoia-devel lcms2-devel pulseaudio-libs-devel jack-audio-connection-kit-devel alsa-lib-devel libdrm-devel libxkbcommon-devel libXScrnSaver-devel libXext-devel libXv-devel PyQt4-devel libvdpau-devel libva-devel gstreamer1-vaapi-devel libcaca-devel --skip-broken 
+  171  clear
+  172  yum update -y
+  173  clear
+  174  rpm -Uvh https://www.rpmfind.net/linux/centos/7.4.1708/os/x86_64/Packages/openssl-devel-1.0.2k-8.el7.x86_64.rpm
+  175  yum -y install  krb5-devel
+  176  yum -y install  krb5-devel --skip-broken
+  177  rpm -qa --changelog hitch
+  178  rpm -qa |grep openssl
+  179  exit
+  180  clear
+  181  cd /opt
+  182  git clone https://github.com/mpv-player/mpv-build.git
+  183  cd mpv-build
+  184  echo --enable-openssl >> ffmpeg_options
+  185  echo --enable-nonfree >> ffmpeg_options
+  186  ./rebuild -j4
+  187  yum info git
+  188  yum reinstall git -y --skip-broken
+  189  yum install libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld libde265 x265 -y --skip-broken
+  190   yum install autoconf automake cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel -y
+  191  yum install -y yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel 
+  192  yum --enablerepo=rhel-7-server-e4s-rpms install -y yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel --skip-broken
+  193  yum install fontconfig-devel -y
+  194  yum --enablerepo=rhel-7-server-e4s-rpms install -y yasm fribidi  --skip-broken
+  195  yum --enablerepo=rhel-7-server-e4s-rpms install -y yasm fribidi youtube-dl --skip-broken
+  196  yum --enablerepo=rhel-7-server-e4s-rpms install -y yasm fribidi youtube-dl freetype-devel --skip-broken
+  197  yum --enablerepo=rhel-7-server-e4s-rpms install -y yasm fribidi youtube-dl freetype-devel fribidi-devel --skip-broken
+  198  yum --enablerepo=rhel-7-server-e4s-rpms install -y yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel --skip-broken
+  199  yum --enablerepo=rhel-7-server-e4s-rpms install -y yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel --skip-broken
+  200  yum --enablerepo=rhel-7-server-e4s-rpms install -y yasm  harfbuzz-devel --skip-broken
+  201  yum info harfbuzz-devel
+  202  yum install harfbuzz-devel.x86_64 -y --enablerepo=rhel-7-server-e4s-rpms --skip-broken
+  203  yum-config-manager --disable rhel-atomic-7-cdk-3*
+  204  yum install harfbuzz-devel.x86_64 -y --enablerepo=rhel-7-server-e4s-rpms --skip-broken
+  205  yum install -y yasm fribidi youtube-dl freetype-devel fribidi-devel fontconfig-devel harfbuzz-devel cmake mercurial nasm openssl-devel libX11-devel python-docutils luajit-devel libbluray-devel libdvdread-devel libcdio-paranoia-devel lcms2-devel pulseaudio-libs-devel jack-audio-connection-kit-devel alsa-lib-devel libdrm-devel libxkbcommon-devel libXScrnSaver-devel libXext-devel libXv-devel PyQt4-devel libvdpau-devel libva-devel gstreamer1-vaapi-devel libcaca-devel --skip-broken
+  206  cd /etc/yum.repos.d/
+  207  clear
+  208  wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+  209  yum update
+  210  rpm -qa kernel |sort -V |tail -n 1
+  211  rpm -qa kernel |sort -V |tail -n 4
+  212  rpm -qa openssl |sort -V |tail -n 4
+  213  uname -r
+  214  clear
+  215  exit
+  216  clear
+  217  yum update -y
+  218  clear
+  219  history | grep openssl
+  220  history | grep egrep
+  221  yum list | egrep 'openssl'
+  222  yum list openssl
+  223  yum --enablerepo=rhel-7-server-e4s-rpms install openssl-devel.x86_64 --skip-broken -y
+  224  clear
+  225  rpm -ivh http://mirror.centos.org/centos/7/os/x86_64/Packages/openssl-devel-1.0.2k-8.el7.x86_64.rpm
+  226  yum install zmap
+  227  cd /opt
+  228  clear
+  229  wget https://sourceforge.net/projects/smplayer/files/SMPlayer/18.2.0/smplayer-18.2.0.tar.bz2
+  230  tar -xvf smplayer-18.2.0.tar.bz2
+  231  cd /opt/smplayer-18.2.0
+  232  make QMAKE=qmake-qt4 LRELEASE=lrelease-qt4
+  233  make install
+  234  cd
+  235  clear
+  236  yum install kexec-tools -y --skip-broken
+  237  yum install system-config-kdump -y --skip-broken
+  238  systemctl enable kdump.service
+  239  systemctl start kdump.service
+  240  yum install gcc rpm-build rpm-devel rpmlint make python bash coreutils diffutils patch rpmdevtools -y --skip-broken
+  241  exit
+  242  clear
+  243  yum install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
+  244  yum install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms --skip-broken
+  245  yum-config-manager --disable \*rhel/atomic/*
+  246  yum-config-manager --disable \*rhel/atomic*
+  247  yum-config-manager --disable \*rhel-atomic*
+  248  yum install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms --skip-broken -y
+  249  cls
+  250  clear
+  251  cp -f '/home/adminpc10/Desktop/terminal_history_ALL-IN-ONE - 14' /run/media/adminpc10/home/RHEL 7.4 (Maipo)/Desktop
+  252  cp -f '/home/adminpc10/Desktop/terminal_history_ALL-IN-ONE - 14' '/run/media/adminpc10/home/RHEL 7.4 (Maipo)/Desktop'
+  253  clear
+  254  yum install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-PAE-devel dkms --skip-broken -y
+  255  yum clean all
+  256  rm -rf /var/cache/yum/*
+  257  clear
+  258  yum install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-PAE-devel dkms --skip-broken -y
+  259  yum install nodejs
+  260  export KERN_DIR=/usr/src/kernels/`uname -r`
+  261  yum install VirtualBox-5.2 -y --skip-broken
+  262  service vboxdrv setup
+  263  systemctl start vboxdrv.service
+  264  /usr/lib/virtualbox/vboxdrv.sh setup
+  265  usermod -a -G vboxusers adminpc10
+  266  VirtualBox
+  267  KERN_DIR=/usr/src/kernels/`uname -r`-`uname -m`
+  268  KERN_DIR=/usr/src/kernels/2.6.18-194.11.1.el5-x86_64
+  269  export KERN_DIR
+  270  cd /media/VirtualBoxGuestAdditions
+  271  clear
+  272  virtualboax
+  273  virtualbox
+  274  sudo /sbin/vboxconfig
+  275  virtualbox
+  276  clear
+  277  yum update -y
+  278  yum install -y qt5-qtwebkit-devel --skip-broken
+  279  clear
+  280  package-cleanup --dupes
+  281  package-cleanup --cleandupes
+  282  rpm -qa | grep selinux-policy
+  283  systemctl status systemd-modules-load.service
+  284  dracut --regenerate-all --force
+  285  systemctl status systemd-modules-load.service
+  286  systemctl status systemd-modules-load
+  287  setenforce 0
+  288  systemctl restart systemd-modules-load
+  289   journalctl -f
+  290  clear
+  291  yum clean all
+  292  rpm --rebuilddb
+  293  yum update
+  294  package-cleanup --problems
+  295  package-cleanup --dupes
+  296  yum clean expire-cache
+  297  yum update selinux-policy\*
+  298  rpm -q --whatprovides /etc/yum/pluginconf.d/search-disabled-repos.conf
+  299  yum whatprovides */libfftw3.so.3
+  300  clear
+  301  subscription-manager repos --disable=rhel-atomic-host-rpms 
+  302  yum clean dbcache
+  303  yum clean dbcache 
+  304  yum clean all 
+  305  yum clean metadata
+  306  yum clean dbcache
+  307  yum makecache
+  308  mv /var/lib/rpm/__db* /tmp
+  309  tree ~/rpmbuild/
+  310  clear
+  311  useradd -M -l samba
+  312  useradd -M -l snail
+  313  smbpasswd -a samba
+  314  smbpasswd -a snail
+  315  smbpasswd -a adminpc10
+  316  mkdir /testsingle
+  317  mkdir /testmulti
+  318  cd
+  319  semanage fcontext -a -t samba_share_t "/testmulti(/.*)?"
+  320  semanage fcontext -a -t samba_share_t "/testsingle(/.*)?"
+  321  restorecon -R -v /testsingle
+  322  restorecon -R -v /testmulti
+  323  clear
+  324  gedit /etc/samba/smb.conf
+  325  clear
+  326  mkdir /smbshare
+  327  semanage fcontext -a -t samba_share_t "/smbshare(/.*)?"
+  328  mkdir /testmulti/recyclebin
+  329  semanage fcontext -a -t samba_share_t "/testmulti/recyclebin(/.*)?"
+  330  gedit /etc/samba/smb.conf
+  331  clear
+  332  systemctl enable smb.service nmb.service
+  333  systemctl start smb.service nmb.service
+  334  systemctl status network.service
+  335  systemctl status httpd
+  336  systemctl enable httpd
+  337  systemctl start httpd
+  338  nmcli connection reload
+  339  localectl status
+  340  systemctl status smbd.service
+  341  systemctl status smb.service
+  342  nano /etc/hosts
+  343  systemctl status smb.service
+  344  clear
+  345  systemctl status smb.service
+  346  systemctl reload smb.service
+  347  systemctl start smb.service
+  348  rpm -qa | grep -i portmap
+  349  service network restart
+  350  clear
+  351  setsebool -P unconfined_mozilla_plugin_transition 0
+  352  systemctl enable smb.service nmb.service
+  353  systemctl is-active smb
+  354  service iptables restart
+  355  smbclient -U samba -L cpanel.adminpc10.com
+  356  usermod -G SAMBA -a adminpc10
+  357  systemctl enable portmap
+  358  yum -y install portmap --skip-broken
+  359  systemctl enable rpcbind
+  360  history | grep portmap
+  361  systemctl enable portmap
+  362  systemctl enable rpcbind
+  363  clear
+  364  clear
+  365  yum info mplayer
+  366  yum --enablerepo=nux-dextop info mplayer
+  367  yum --enablerepo=nux-dextop install -y mplayer --skip-broken
+  368  yum --enablerepo=nux-dextop info mplayer
+  369  yum --enablerepo=nux-dextop | --enablerepo=rpmfusion-free-updates install -y mplayer --skip-broken
+  370  yum --enablerepo=nux-dextop  --enablerepo=rpmfusion-free-updates install -y mplayer --skip-broken
+  371  clear
+  372  history | grep repo.id
+  373  history | grep repo
+  374  clear
+  375  cd
+  376  history | grep "cd /"
+  377  cd /etc/yum.repos.d/
+  378  clear
+  379  wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
+  380  clear
+  381   wget http://ftp.cc.uoc.gr/mirrors/repoforge/redhat/el7/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
+  382  rpm -Uvh rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
+  383  ls
+  384  wget http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt
+  385  rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt
+  386  clear
+  387  yum --enablerepo=rpmforge install aria2
+  388  yum --enablerepo=rpmforge install mplayer mplayerplug-in
+  389  ls
+  390  clear
+  391  pwd
+  392  cd
+  393  nano /etc/yum.repos.d
+  394  echo '[fedora]
+  395  name=Fedora 20 - $basearch
+  396  failovermethod=priority
+  397  #baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/20/Everything/$basearch/os/
+  398  mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-20&arch=$basearch
+  399  enabled=1
+  400  metadata_expire=7d
+  401  gpgcheck=1
+  402  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch' | sudo tee /etc/yum.repos.d/fedora.repo
+  403  echo '[updates]
+  404  name=Fedora 20 - $basearch - Updates
+  405  failovermethod=priority
+  406  #baseurl=http://download.fedoraproject.org/pub/fedora/linux/updates/20/$basearch/
+  407  mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f20&arch=$basearch
+  408  enabled=1
+  409  gpgcheck=1
+  410  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch' | sudo tee /etc/yum.repos.d/fedora-updates.repo
+  411  echo '[rpmfusion-free]
+  412  name=RPM Fusion for Fedora 20 - Free
+  413  #baseurl=http://download1.rpmfusion.org/free/fedora/releases/20/Everything/$basearch/os/
+  414  mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-20&arch=$basearch
+  415  enabled=1
+  416  metadata_expire=7d
+  417  gpgcheck=1
+  418  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-20' | sudo tee /etc/yum.repos.d/rpmfusion-free.repo
+  419  echo '[rpmfusion-free-updates]
+  420  name=RPM Fusion for Fedora 20 - Free - Updates
+  421  #baseurl=http://download1.rpmfusion.org/free/fedora/updates/20/$basearch/
+  422  mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-20&arch=$basearch
+  423  enabled=1
+  424  gpgcheck=1
+  425  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-20' | sudo tee /etc/yum.repos.d/rpmfusion-free-updates.repo
+  426  echo '[rpmfusion-nonfree]
+  427  name=RPM Fusion for Fedora 20 - Nonfree
+  428  #baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/20/Everything/$basearch/os/
+  429  mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-20&arch=$basearch
+  430  enabled=1
+  431  metadata_expire=7d
+  432  gpgcheck=1
+  433  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-nonfree-fedora-20' | sudo tee /etc/yum.repos.d/rpmfusion-nonfree.repo
+  434  echo '[rpmfusion-nonfree-updates]
+  435  name=RPM Fusion for Fedora 20 - Nonfree - Updates
+  436  #baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/20/$basearch/
+  437  mirrorlist=http://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-20&arch=$basearch
+  438  enabled=1
+  439  gpgcheck=1
+  440  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-nonfree-fedora-20' | sudo tee /etc/yum.repos.d/rpmfusion-nonfree-updates.repo
+  441  history | grep "cd /"
+  442  cd /etc/yum.repos.d/
+  443  ls
+  444  yum clean all
+  445  exit
+  446  setsebool -P samba_enable_home_dirs
+  447  groupadd -g 1400 SAMBA
+  448  groupadd -g 1800 SAMBA
+  449  usermod -G SAMBA -a root
+  450  usermod -G SAMBA -a adminpc10
+  451  usermod -G SAMBA -a samba
+  452  usermod -G SAMBA -a snail
+  453  smbclient -U samba -L cpanel.adminpc10.com
+  454  systemctl enable smb.service nmb.service
+  455  yum -y install samba* --skip-broken
+  456  firewall-cmd --permanent --add-service=samba
+  457  ps aux | grep smb
+  458  systemctl restart smb.service
+  459  rpm -qa portmap
+  460  rpm -qa rpcbind
+  461  rpm -qa xinetd
+  462  yum install -y xinetd --skip-broken
+  463  rpm -qa xinetd
+  464  systemctl enable rpcbind.service
+  465  systemctl enable rpcbind
+  466  systemctl status rpcbind
+  467  sestatus
+  468  smbclient //192.168.78.214/single -U snail
+  469  smbclient //cpanel.adminpc10.com/single -U snail
+  470  smbclient U- snail L- cpanel.adminpc10.com
+  471  history | grep smbclient
+  472  clear
+  473  smbclient -U snail -L cpanel.adminpc10.com
+  474  clear
+  475  yum info iptables
+  476  yum --enablerepo=rhel-7-server-e4s-rpms install -y --skip-broken iptables
+  477  iptables-save > ~/firewall.rules
+  478  systemctl status network.service
+  479  systemctl reload network.service
+  480  systemctl restart network.service
+  481  nmcli dev status
+  482  chkconfig NetworkManager on
+  483  systemctl enable NetworkManager.service
+  484  systemctl start network.service
+  485  smbclient //cpanel.adminpc10.com/single -U samba
+  486  smbclient //cpanel.adminpc10.com/bibi -U samba
+  487  smbclient //cpanel.adminpc10.com/bibi -U adminpc10
+  488  smbclient //cpanel.adminpc10.com/film -U adminpc10
+  489  clear
+  490  setsebool -P samba_export_all_rw 1
+  491  smbclient //cpanel.adminpc10.com/multi -U snail
+  492  yum install policycoreutils-python
+  493  grep | caja
+  494  cd /opt
+  495  exit
+  496  clear
+  497  yum clean all 
+  498  yum clean metadata
+  499  yum clean dbcache
+  500  yum makecache
+  501  clear
+  502  subscription-manager remove --all
+  503  subscription-manager unregister
+  504  subscription-manager clean
+  505  yum clean all
+  506  clear
+  507  yum clean metadata
+  508  yum clean dbcache
+  509  clear
+  510  cd
+  511  clear
+  512  subscription-manager register --username matahkhabi12 --password kadina90 --auto-attach
+  513  clear
+  514  yum repolist all
+  515  clear
+  516  history >> '/home/adminpc10/Desktop/terminal_history_ALL-IN-ONE - 20-b.txt' &&  chmod 777 '/home/adminpc10/Desktop/terminal_history_ALL-IN-ONE - 20-b.txt' 

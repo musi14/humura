@@ -1,0 +1,19 @@
+adb push --sync  "D:\Sunny-06-09-2020\Download" /storage/emulated/0/Download
+adb push --sync  "D:\Wiko Sunny 2 Plus\Download\DUSHYA" /storage/emulated/0/Download
+adb push --sync  "C:\Users\Kmna\Desktop\D\F-12-TKA.zip" /storage/emulated/0/Download
+adb push --sync  "C:\Users\Kmna\Desktop\D\Hanura-1.zip" /storage/emulated/0/Download
+adb push --sync  "C:\Users\Kmna\Desktop\D\Ibiseke-12.zip" /storage/emulated/0/Download
+adb push --sync  "C:\Users\Kmna\Desktop\D\kagame-cartoon.zip" /storage/emulated/0/Download
+adb push --sync  "C:\Users\Kmna\Desktop\EI\rooted" /storage/emulated/0/Download/rooted
+adb push --sync  "C:\Users\Kmna\Desktop\EI\non-rooted" /storage/emulated/0/Download/non-rooted
+adb push --sync  "D:\Sunny-06-09-2020\Download" /storage/emulated/0
+adb push --sync  "D:\Sunny-06-09-2020\film\Movies\Torrents" /storage/emulated/0/Download
+adb push --sync  "D:\Sunny-06-09-2020\film\IDM\Torrents" /storage/emulated/0/Download
+adb push --sync  "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\1.1.1.1_v5.1_apkmody.io.apks" /storage/emulated/0/Download/apks
+adb push --sync  "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\1Password_v7.5.1_apkmody.io.apks" /storage/emulated/0/Download/apks
+adb push --sync  "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\Camscanner_v5.19.0.20200508_apkmody.io.apks" /storage/emulated/0/Download/apks
+adb push --sync  "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\iTranslate_Pro_v5.5.6.apks" /storage/emulated/0/Download/apks
+adb push --sync  "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\Runtastic_PRO-v9.10.1_modapkdl.io.apks" /storage/emulated/0/Download/apks
+adb push --sync  "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\YouTube_Vanced-v15.05.54-nonroot-legacy-black.apks" /storage/emulated/0/Download/apks
+adb push --sync  "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\YouTube_Vanced-v15.05.54-root.apks" /storage/emulated/0/Download/apks
+adb push --sync  "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\YouTube_Vanced-v15.05.54-root-legacy-black.apks" /storage/emulated/0/Download/apks

@@ -1,0 +1,72 @@
+
+DISM.exe /Online /Get-CurrentEdition
+Dism /Get-ImageInfo /imagefile:"C:\Users\Kmna\Downloads\19008.1000_amd64_en-us_all_2a0597c5_convert_virtual\19008.1.191019-1715.VB_RELEASE_CLIENTMULTI_X64FRE_EN-US\sources\install.wim"
+
+
+https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-edition-configuration-and-product-id-files--eicfg-and-pidtxt
+
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+{Edition ID} must be a valid Windows edition ID, for example, "Enterprise". To obtain the current EditionID, use the Dism /Get-ImageInfo command or the Dism /Get-CurrentEdition command. For more information, see Take Inventory of an Image or Component Using DISM and DISM Windows Edition-Servicing Command-Line Options.
+{Channel Type} must be either "OEM" or "Retail"
+{Volume License} must be either 1, if this is a volume license, or 0, if this is not a volume license. For example:
+[EditionID]
+Enterprise
+[Channel]
+OEM
+[VL]
+0
+PID.txt Format
+
+The PID.txt file contains the product key for the edition of Windows that you are installing.
+The PID.txt file has the following format:
+[PID]
+Value=XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+where XXXXX-XXXXX-XXXXX-XXXXX-XXXXX is the product key.
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Open a Command Prompt (Adimin) window:
+Win+X, A, Alt+Y
+
+
+==============
+net config workstation 
+						output 
+						Computer name                        \\DESKTOP-FUTDDBG
+						Full Computer name                   DESKTOP-FUTDDBG
+						User name                            zgba-14
+
+						Workstation active on
+								NetBT_Tcpip_{107B28E5-A4E9-46B5-A563-FF4587CE9DD5} (4437E6B547C4)
+								NetBT_Tcpip_{0337179B-524B-406E-956F-76C0F022E79F} (6215BD47F5C4)
+
+						Software version                     Windows 10 Enterprise
+
+						Workstation domain                   WORKGROUP
+						Logon domain                         DESKTOP-FUTDDBG
+
+						COM Open Timeout (sec)               0
+						COM Send Count (byte)                16
+						COM Send Timeout (msec)              250
+						The command completed successfully.
+	How to change computer name					
+hostname
+WMIC computersystem where caption='DESKTOP-FUTDDBG' rename zgba-14
+WMIC computersystem where caption='current_pc_name' rename new_pc_name
+wmic ComputerSystem where "name='%DESKTOP-FUTDDBG%'" call rename zgba-14
+						
+						
+						in powershell
+
+
+RENAME-COMPUTER –computername CURRENT-PC-NAME –newname NEWPCNAME
+RENAME-COMPUTER –computername DESKTOP-FUTDDBG –newname zgba-14 [ this works ]
+						
+notepad C:\\Windows\System32\drivers\etc\hosts
+
+netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes
+netsh advfirewall firewall set rule group="Network Discovery" new enable=Yes

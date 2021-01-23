@@ -1,0 +1,1297 @@
+kali linux
+
+kakex
+xekak
+
+vmware workstation fix
+There is no advanced options in VMware Workstation Player. To disable the side channel mitigation, shut down the VM and add the following to the VM vmx configuration file.
+
+ulm.disableMitigations = "TRUE"
+ulm.disableMitigations = "TRUE"
+
+-------------------------------------
+ForFiles options
+Below are descriptions of the options used with the ForFiles command in this guide:
+
+/ p - specifies the pathname to start searching.
+/ s - Instructs ForFiles to search subdirectories.
+/ d - specifies the last modified date of a file.
+/ c - Instructs ForFiles to execute the command that should be enclosed in double quotes, default is “ cmd / c del @file ”.
+/ q - allows to delete folders without requiring confirmation.
+000000000000000000000000000000000000000000000000000000000000000000000000000
+
+mkdir "c:\Program Files\Android\Android Studio Preview"
+C:\Users\Mbwirande\AppData\Roaming\Rainmeter\
+
+Powershell
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -All
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+
+C:\$WINDOWS.~BT\Sources
+C:\Windows\SoftwareDistribution	[%windir%\softwaredistribution\download]
+
+C:\Windows\SoftwareDistribution\Download\ab368af3cc1b8f5130c28ebc46a391c2
+
+
+android studio in cmd
+--------------------------------------------------------------------
+%userprofile%\appdata\Local\Android\Sdk\platform-tools
+--------------------------------------------------------------------
+
+bcdedit /set {globalsettings} advancedoptions true && shutdown /r /o /f /t 72
+==================================
+https://aka.ms/wslinstall
+shutdown /r /o /f /t 00
+bcdedit /set {globalsettings} advancedoptions true
+bcdedit /set {globalsettings} advancedoptions false
+
+---------- 		cmd setts.	------------------
+red 4
+green 28
+blue 4
+-----------------------------------
+transparency 88
+
+bkgrd	4	28	4
+text	255	255	255
+-----------------------------------
+bkgrd	4	4	28
+	28	4	4
+---------------
+
+
+---------------------------------------------------------------
+
+
+
+Sources:
+https://www.tenforums.com/tutorials/43450-enable-always-boot-advanced-startup-settings-windows-10-a.html
+======================================
+DISM /Online /Cleanup-Image /CheckHealth
+DISM /Online /Cleanup-Image /ScanHealth
+DISM /Online /Cleanup-Image /RestoreHealth && sfc /scannow
+DISM /Online /Cleanup-Image /RestoreHealth /Source:f:\sources\install.wim\install.wim
+DISM /Online /Cleanup-Image /RestoreHealth /Source:g:\sources\install.wim\install.wim /LimitAccess
+DISM /Online /Cleanup-Image /RestoreHealth /Source:wim:e:\sources\install.wim\install.wim:1 /LimitAccess
+
+DISM /Online /Cleanup-Image /RestoreHealth /Source:g:\sources\install.wim\install.wim /LimitAccess && sfc /scannow
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+WinPE 10-8 Sergei Strelec (x86/x64/Native x86) 2020.09.21 English version
+
+https://sergeistrelec.ru/winpe-10-8-sergei-strelec-english/
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
+how to view windows 10 product key
+
+wmic path softwarelicensingservice get OA3xOriginalProductKey
+
+
+
+
+systeminfo
+Get-ComputerInfo [in powershell]
+
+
+
+
+
+
+
+
+
+
+echo list volume | diskpart
+bcdedit | find /i "OSDEVICE"
+chkdsk d: /F /X
+chkdsk <the drive letter>: /R /X
+sfc /scannow /offbootdir=C:\ /offwindir=D:\Windows\
+powercfg -h off
+dir E:\ /ah
+del E:\hiberfil.sys /ah
+bcdedit /set {default} recoveryenabled NO
+bcdedit /set {default} recoveryenabled YES
+bcdedit /set {default} bootmenupolicy legacy
+
+bootrec /fixmbr (not necessary if your device is in the UEFI mode)
+bootrec /fixboot
+bootrec /rebuildbcd
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+Enable or Disable Administrator Account On Login Screen in Windows 10
+By Mitch Bartlett 14 Comments
+
+When you are on the login or welcome screen, the Administrator account is not an option by default in Microsoft Windows 10. You can enable this feature with the following steps.
+
+
+Method 1 � Via Command
+Hold the Windows Key while pressing �R� to bring up the Windows Run dialog box.
+Type: 
+
+net user administrator /active:yes
+
+
+Press �Enter�.
+Replace �yes� with �no� to disable the admin account on the welcome screen.
+
+Method 2 � From Admin Tools
+
+
+Hold the Windows Key while pressing �R� to bring up the Windows Run dialog box.
+Type �lusrmgr.msc�, then press �Enter�.
+Open �Users�.
+Select �Administrator�.
+Uncheck or check �Account is disabled� as desired.
+Select �OK�.
+Method 3 � From Registry
+Hold the Windows Key while pressing �R� to bring up the Windows Run dialog box.
+Type �regedit�, then press �Enter�.
+Navigate to the following:
+HKEY_LOCAL_MACHINE
+SOFTWARE
+Microsoft
+Windows NT
+CurrentVersion
+Winlogon
+SpecialAccounts
+UserList
+On the right side, right-click on �UserList� and select �New� > �DWORD Value�.
+Give the value a name of �Administrator�. Press the �Enter� key when you are done.
+Close the Registry Editor and restart the computer.
+Delete the �Administrator� value to turn it off and prevent it from appearing on the Welcome screen.
+
+Method 4 � Group Policy
+Note: This will not work in Home editions of Windows 10.
+
+Hold the Windows Key while pressing �R� to bring up the Windows Run dialog box.
+Type �gpedit.msc�, then press �Enter�.
+Navigate to the following:
+Local Computer Configuration
+Windows Settings
+Security Settings
+Local Policies
+Security Options
+Accounts: Administrator Account Status
+Enable or Disable the setting as desired.
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+1
+2
+Set-ExecutionPolicy Bypass -Scope Process -Force; `iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+===============================================================================================
+
+DISM /Online /Cleanup-Image /RestoreHealth /Source:repairSource\install.wim
+
+DISM /Online /Cleanup-Image /RestoreHealth /Source:repairSource\install.wim /LimitAccess
+
+DISM /Online /Cleanup-Image /RestoreHealth /Source:wim:repairSource\install.wim:1 /LimitAccess
+_______________
+to replace "repairSource"  	For example, D:\Sources\install.wim.
+
+e:\sources\install.wim
+===============================================================================================
+
+
+DISM /Online /Cleanup-Image /RestoreHealth /Source:e:\sources\install.wim\install.wim
+
+DISM /Online /Cleanup-Image /RestoreHealth /Source:e:\sources\install.wim\install.wim /LimitAccess
+
+DISM /Online /Cleanup-Image /RestoreHealth /Source:wim:e:\sources\install.wim\install.wim:1 /LimitAccess
+
+
+______________
+to replace "repairSource"  	For example, D:\Sources\install.wim.
+
+e:\sources\install.wim
+
+======================================
+
+
+
+DISM /Online /Cleanup-Image /CheckHealth
+DISM /Online /Cleanup-Image /ScanHealth
+DISM /Online /Cleanup-Image /RestoreHealth
+DISM /Online /Cleanup-Image /RestoreHealth /Source:e:\sources\install.wim\install.wim
+DISM /Online /Cleanup-Image /RestoreHealth /Source:e:\sources\install.wim\install.wim /LimitAccess
+DISM /Online /Cleanup-Image /RestoreHealth /Source:wim:e:\sources\install.wim\install.wim:1 /LimitAccess
+sfc /scannow
+
+
+========================   ubuntu  windows ==================================
+
+
+home directory
+%LOCALAPPDATA%\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs
+
+
+
+
+https://www.howtogeek.com/261417/how-to-change-your-user-account-in-windows-10s-ubuntu-bash-shell/
+https://docs.microsoft.com/en-us/windows/wsl/user-support
+
+
+Enter new UNIX username: Ubuntu-14  | mntu-12
+adduser: Please enter a username matching the regular expression configured
+via the NAME_REGEX[_SYSTEM] configuration variable.  Use the `--force-badname'
+option to relax this check or reconfigure NAME_REGEX.
+Enter new UNIX username: zgba-14
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+Installation successful!
+
+\\wsl\Ubuntu\home\zgba-14
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+==================
+
+Powershell
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -All
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+
+"C:\Users\Mbwirande\Downloads\Programs\wsl_update_x64.msi"  [ shaka ako gaprgrm ukensitare ]
+
+
+
+RESOURCES
+
+https://www.windowscentral.com/how-use-dism-command-line-utility-repair-windows-10-image
+
+
+
+
+====================================== windows 10 enterprise specs ============================
+
+WindowsBuildLabEx                                       : 20231.1000.amd64fre.rs_prerelease.201002-1444
+WindowsCurrentVersion                                   : 6.3
+WindowsEditionId                                        : Enterprise
+WindowsInstallationType                                 : Client
+WindowsInstallDateFromRegistry                          : 10-Oct-20 21:56:57
+WindowsProductId                                        : 00328-90000-00000-AAOEM
+WindowsProductName                                      : Windows 10 Enterprise
+WindowsRegisteredOrganization                           :
+WindowsRegisteredOwner                                  : Kmna
+WindowsSystemRoot                                       : C:\WINDOWS
+WindowsVersion                                          : 2004
+BiosCharacteristics                                     : {7, 10, 11, 12...}
+BiosBIOSVersion                                         : {ACRSYS - 1072009, P11-B4, American Megatrends - 4028E}
+BiosBuildNumber                                         :
+BiosCaption                                             : P11-B4
+BiosCodeSet                                             :
+BiosCurrentLanguage                                     : en|US|iso8859-1
+BiosDescription                                         : P11-B4
+BiosEmbeddedControllerMajorVersion                      : 255
+BiosEmbeddedControllerMinorVersion                      : 255
+BiosFirmwareType                                        : Uefi
+BiosIdentificationCode                                  :
+BiosInstallableLanguages                                : 1
+BiosInstallDate                                         :
+BiosLanguageEdition                                     :
+BiosListOfLanguages                                     : {en|US|iso8859-1}
+BiosManufacturer                                        : American Megatrends Inc.
+BiosName                                                : P11-B4
+BiosOtherTargetOS                                       :
+BiosPrimaryBIOS                                         : True
+BiosReleaseDate                                         : 11-Jun-15 02:00:00
+BiosSeralNumber                                         : DTSXLEH00244707AFA3000
+BiosSMBIOSBIOSVersion                                   : P11-B4
+BiosSMBIOSMajorVersion                                  : 2
+BiosSMBIOSMinorVersion                                  : 8
+BiosSMBIOSPresent                                       : True
+BiosSoftwareElementState                                : Running
+BiosStatus                                              : OK
+BiosSystemBiosMajorVersion                              : 4
+BiosSystemBiosMinorVersion                              : 6
+BiosTargetOperatingSystem                               : 0
+BiosVersion                                             : ACRSYS - 1072009
+CsAdminPasswordStatus                                   : Enabled
+CsAutomaticManagedPagefile                              : True
+CsAutomaticResetBootOption                              : True
+CsAutomaticResetCapability                              : True
+CsBootOptionOnLimit                                     :
+CsBootOptionOnWatchDog                                  :
+CsBootROMSupported                                      : True
+CsBootStatus                                            : {0, 0, 0, 0...}
+CsBootupState                                           : Normal boot
+CsCaption                                               : KANA
+CsChassisBootupState                                    : Safe
+CsChassisSKUNumber                                      :
+CsCurrentTimeZone                                       : 120
+CsDaylightInEffect                                      : True
+CsDescription                                           : AT/AT COMPATIBLE
+CsDNSHostName                                           : Kana
+CsDomain                                                : WORKGROUP
+CsDomainRole                                            : StandaloneWorkstation
+CsEnableDaylightSavingsTime                             : True
+CsFrontPanelResetStatus                                 : NotImplemented
+CsHypervisorPresent                                     : False
+CsInfraredSupported                                     : False
+CsInitialLoadInfo                                       :
+CsInstallDate                                           :
+CsKeyboardPasswordStatus                                : NotImplemented
+CsLastLoadInfo                                          :
+CsManufacturer                                          : Acer
+CsModel                                                 : Aspire XC-705
+CsName                                                  : KANA
+CsNetworkAdapters                                       : {Ethernet, Local Area Connection, Ethernet 3, Ethernet 5...}
+CsNetworkServerModeEnabled                              : True
+CsNumberOfLogicalProcessors                             : 4
+CsNumberOfProcessors                                    : 1
+CsProcessors                                            : {Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz}
+CsOEMStringArray                                        : {Intel Haswell + LynxPoint}
+CsPartOfDomain                                          : False
+CsPauseAfterReset                                       : -1
+CsPCSystemType                                          : Desktop
+CsPCSystemTypeEx                                        : Desktop
+CsPowerManagementCapabilities                           :
+CsPowerManagementSupported                              :
+CsPowerOnPasswordStatus                                 : Enabled
+CsPowerState                                            : Unknown
+CsPowerSupplyState                                      : Safe
+CsPrimaryOwnerContact                                   :
+CsPrimaryOwnerName                                      : Kmna
+CsResetCapability                                       : Other
+CsResetCount                                            : -1
+CsResetLimit                                            : -1
+CsRoles                                                 : {LM_Workstation, LM_Server, NT}
+CsStatus                                                : OK
+CsSupportContactDescription                             :
+CsSystemFamily                                          : Acer Desktop
+CsSystemSKUNumber                                       :
+CsSystemType                                            : x64-based PC
+CsThermalState                                          : Safe
+CsTotalPhysicalMemory                                   : 8390115328
+CsPhyicallyInstalledMemory                              : 8388608
+CsUserName                                              : Kana\Kmna
+CsWakeUpType                                            : PowerSwitch
+CsWorkgroup                                             : WORKGROUP
+OsName                                                  : Microsoft Windows 10 Enterprise Insider Preview
+OsType                                                  : WINNT
+OsOperatingSystemSKU                                    : EnterpriseEdition
+OsVersion                                               : 10.0.20231
+OsCSDVersion                                            :
+OsBuildNumber                                           : 20231
+OsHotFixes                                              : {KB4578967, KB4586245, KB4586238}
+OsBootDevice                                            : \Device\HarddiskVolume2
+OsSystemDevice                                          : \Device\HarddiskVolume4
+OsSystemDirectory                                       : C:\WINDOWS\system32
+OsSystemDrive                                           : C:
+OsWindowsDirectory                                      : C:\WINDOWS
+OsCountryCode                                           : 1
+OsCurrentTimeZone                                       : 120
+OsLocaleID                                              : 0409
+OsLocale                                                : en-US
+OsLocalDateTime                                         : 22-Oct-20 11:03:50
+OsLastBootUpTime                                        : 21-Oct-20 15:22:07
+OsUptime                                                : 19:41:41.7254100
+OsBuildType                                             : Multiprocessor Free
+OsCodeSet                                               : 1252
+OsDataExecutionPreventionAvailable                      : True
+OsDataExecutionPrevention32BitApplications              : True
+OsDataExecutionPreventionDrivers                        : True
+OsDataExecutionPreventionSupportPolicy                  : OptIn
+OsDebug                                                 : False
+OsDistributed                                           : False
+OsEncryptionLevel                                       : 256
+OsForegroundApplicationBoost                            : Maximum
+OsTotalVisibleMemorySize                                : 8193472
+OsFreePhysicalMemory                                    : 3318388
+OsTotalVirtualMemorySize                                : 18677056
+OsFreeVirtualMemory                                     : 7844084
+OsInUseVirtualMemory                                    : 10832972
+OsTotalSwapSpaceSize                                    :
+OsSizeStoredInPagingFiles                               : 10483584
+OsFreeSpaceInPagingFiles                                : 9579380
+OsPagingFiles                                           : {C:\pagefile.sys}
+OsHardwareAbstractionLayer                              : 10.0.20231.1000
+OsInstallDate                                           : 10-Oct-20 23:56:57
+OsManufacturer                                          : Microsoft Corporation
+OsMaxNumberOfProcesses                                  : 4294967295
+OsMaxProcessMemorySize                                  : 137438953344
+OsMuiLanguages                                          : {en-US, fr-FR, ru-RU}
+OsNumberOfLicensedUsers                                 : 0
+OsNumberOfProcesses                                     : 289
+OsNumberOfUsers                                         : 2
+OsOrganization                                          :
+OsArchitecture                                          : 64-bit
+OsLanguage                                              : en-US
+OsProductSuites                                         : {TerminalServicesSingleSession}
+OsOtherTypeDescription                                  :
+OsPAEEnabled                                            :
+OsPortableOperatingSystem                               : False
+OsPrimary                                               : True
+OsProductType                                           : WorkStation
+OsRegisteredUser                                        : Kmna
+OsSerialNumber                                          : 00328-90000-00000-AAOEM
+OsServicePackMajorVersion                               : 0
+OsServicePackMinorVersion                               : 0
+OsStatus                                                : OK
+OsSuites                                                : {TerminalServices, TerminalServicesSingleSession}
+OsServerLevel                                           :
+KeyboardLayout                                          : en-US
+TimeZone                                                : (UTC+01:00) Brussels, Copenhagen, Madrid, Paris
+LogonServer                                             : \\KANA
+PowerPlatformRole                                       : Desktop
+HyperVisorPresent                                       : False
+HyperVRequirementDataExecutionPreventionAvailable       : True
+HyperVRequirementSecondLevelAddressTranslation          : True
+HyperVRequirementVirtualizationFirmwareEnabled          : True
+HyperVRequirementVMMonitorModeExtensions                : True
+DeviceGuardSmartStatus                                  : Off
+DeviceGuardRequiredSecurityProperties                   :
+DeviceGuardAvailableSecurityProperties                  :
+DeviceGuardSecurityServicesConfigured                   :
+DeviceGuardSecurityServicesRunning                      :
+DeviceGuardCodeIntegrityPolicyEnforcementStatus         :
+DeviceGuardUserModeCodeIntegrityPolicyEnforcementStatus :
+
+
+
+==========		drivers zananiranye	================
+
+C:\Users\Kmna\Desktop\Aspire XC-705\VGA_Intel_10.18.15.4248_W10x64_A\VGA_Intel_10.18.15.4248_W10x64
+C:\Users\Kmna\Desktop\Aspire XC-705\VGA_NVIDIA_10.18.13.5362_W10x64_A\VGA_NVIDIA_10.18.13.5362_W10x64
+
+
+
+
+
+=======================
+
+
+
+dir /s /b /p "DriverPack_17.10.14_20104.iso"
+where /r /f /t "DriverPack_17.10.14_20104.iso"
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux  [ in powershell ]
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+===========================================
+"DriverPack_17.10.14_20104.iso"
+"DriverPack_17.10.14_20104.iso"
+"DriverPack_17.10.14_20104.iso"
+=======================
+how to search for a file in cmd
+cd\
+you can also export the list to a text file using
+
+dir /b/s *.exe >> filelist.txt
+and search within using
+
+type filelist.txt | find /n "filename"
+EDIT 1: Although this dir command works since the old dos days but Win7 added something new called Where
+
+where /r c:\Windows *.exe *.dll
+
+
+---------------------------
+and search within using
+
+type filelist.txt | find /n "filename"
+EDIT 1: Although this dir command works since the old dos days but Win7 added something new called Where
+
+where /r c:\Windows *.exe *.dll
+will search for exe & dll in the drive c:\Windows as suggested by @SPottuit you can also copy the output to the clipboard with
+
+where /r c:\Windows *.exe |clip
+=======================
+where /r c:\Windows *.exe |more
+
+============
+dir *.txt /s /p will give more detailed information
+
+==============
+
+
+At prompt (Command Line) type:
+
+dir /S /P "Path\FileName"
+
+=================
+If you want to save the results in a text file:
+
+dir /S "Path\FileName" > "Path\ResultFilename"
+==============
+use the /b switch to dir to print full path might be helpful. say, C:\ > dir /b /s *file*.*
+
+=============-
+dir was not meant for searching files but to list directories, but now there is where which can be used to search multiple file types as where /R c:\Users *.dll *.exe *.jpg
+
+WHERE [/R dir] [/Q] [/F] [/T] pattern...
+
+Description:
+    Displays the location of files that match the search pattern.
+    By default, the search is done along the current directory and
+    in the paths specified by the PATH environment variable.
+
+Parameter List:
+    /R       Recursively searches and displays the files that match the
+             given pattern starting from the specified directory.
+
+    /Q       Returns only the exit code, without displaying the list
+             of matched files. (Quiet mode)
+
+    /F       Displays the matched filename in double quotes.
+
+    /T       Displays the file size, last modified date and time for all
+             matched files.
+
+    pattern  Specifies the search pattern for the files to match.
+             Wildcards * and ? can be used in the pattern. The
+             "$env:pattern" and "path:pattern" formats can also be
+             specified, where "env" is an environment variable and
+             the search is done in the specified paths of the "env"
+             environment variable. These formats should not be used
+             with /R. The search is also done by appending the
+             extensions of the PATHEXT variable to the pattern.
+
+     /?      Displays this help message.
+
+  NOTE: The tool returns an error level of 0 if the search is
+        successful, of 1 if the search is unsuccessful and
+        of 2 for failures or errors.
+
+Examples:
+    WHERE /?
+    WHERE myfilename1 myfile????.*
+    WHERE $windir:*.* 
+    WHERE /R c:\windows *.exe *.dll *.bat  
+    WHERE /Q ??.??? 
+    WHERE "c:\windows;c:\windows\system32:*.dll"
+    WHERE /F /T *.dll 
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+===============
+systeminfo | findstr /B /C:"Domain"	WORKGROUP
+echo %userdomain%			Kana
+wmic computersystem get domain		Domain
+				WORKGROUP
+
+
+
+
+
+
+
+wmic
+product get name
+
+product where name=”name of program” call uninstall (To NOT be prompted Y/N to approve.)
+product where name=”name of program” call uninstall /nointeractive
+
+===================================
+Windows Update Standalone installer
+wusa.exe
+
+/?, /h, /help Will show all possible commands on the screen as in picture 1
+wusa.exe d:\934\Windows6.0­KB934307­x86.msu /quiet
+
+/norestart​­ Not allowing wusa.exe restart your computer after finishing update installation. …
+
+
+
+
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& find &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
+
+
+dir c:\ /s /b | find CPU
+
+To search your hard disk to find and display the file names on drive C that contain the string CPU, use the pipe (|) to direct the output of the dir command to the find command as follows:
+====================
+
+
+To search for a set of files, you can use the find command within the for command. To search the current directory for files that have the extension .bat and that contain the string PROMPT, type:
+
+====================
+
+for %f in (*.bat) do find PROMPT %f
+
+====================
+
+
+====================
+
+findstr Windows proposal.txt
+
+To find all occurrences of the word Windows (with an initial capital letter W) in the file proposal.txt, type
+---------------------
+
+findstr /s /i Windows *.*
+
+To search every file in the current directory and all subdirectories that contained the word Windows, regardless of the letter case, type:
+====================
+
+====================
+
+findstr /b /n /r /c:^ *FOR *.bas
+
+To find all occurrences of lines that begin with FOR and are preceded by zero or more spaces (as in a computer program loop), and to display the line number where each occurrence is found, type:
+====================
+
+
+====================
+
+findstr /g:stringlist.txt /f:filelist.txt > results.out
+
+To list the exact files that you want to search in a text file, use the search criteria in the file stringlist.txt, to search the files listed in filelist.txt, and then to store the results in the file results.out, type:
+====================
+
+====================
+
+findstr /s /i /m \<computer\> *.*
+
+
+To list every file containing the word computer within the current directory and all subdirectories, regardless of case, type:
+====================
+
+====================
+
+findstr /s /i /m \<comp.* *.*
+
+To list every file containing the word computer and any other words that begin with comp, (such as compliment and compete), type:
+
+====================
+
+====================
+
+dir /s/w/o/p
+
+To display all directories one after the other, in alphabetical order, in wide format, and pausing after each screen, make sure that the root directory is the current directory, and then type:
+
+====================
+
+====================
+
+dir /s/w/o/p/a:-d
+
+The output lists the root directory, the subdirectories, and the files in the root directory, including extensions. This command also lists the subdirectory names and the file names in each subdirectory in the tree.
+
+To alter the preceding example so that dir displays the file names and extensions, but omits the directory names, type:
+====================
+
+====================
+
+dir > prn
+
+To print a directory listing, type:
+====================
+
+====================
+
+dir > \records\dir.doc
+
+When you specify prn, the directory list is sent to the printer that is attached to the LPT1 port. If your printer is attached to a different port, you must replace prn with the name of the correct port.
+
+You can also redirect output of the dir command to a file by replacing prn with a file name. You can also type a path. For example, to direct dir output to the file dir.doc in the Records directory, type:
+
+====================
+
+====================
+
+dir c:\*.txt /w/o/s/p
+
+
+To display a list of all the file names with the .txt extension in all directories on drive C, type:
+====================
+
+====================
+
+forfiles /P c:\ /S /M *.bat /C "cmd /c echo @file is a batch file"
+
+To list all of the batch files on drive C, type:
+====================
+
+====================
+
+forfiles /P c:\ /S /M *.* /C "cmd /c if @isdir==TRUE echo @file is a directory"
+
+To list all of the directories on drive C, type:
+====================
+
+====================
+
+forfiles /S /M *.* /D -365 /C "cmd /c echo @file is at least one year old."
+
+To list all of the files in the current directory that are at least one year old, type:
+====================
+
+====================
+
+To display the text file is outdated for each of the files in the current directory that are older than January 1, 2007, type:
+
+
+Copy
+forfiles /S /M *.* /D -01/01/2007 /C "cmd /c echo @file is outdated."
+To list the file name extensions of all the files in the current directory in column format, and add a tab before the extension, type:
+
+
+Copy
+forfiles /S /M *.* /C "cmd /c echo The extension of @file is 0x09@ext"
+
+====================
+
+====================
+
+To move all files with the .xls extension from the \Data directory to the \Second_Q\Reports directory, type:
+
+
+Copy
+move \data\*.xls \second_q\reports\
+
+====================
+
+====================
+
+To find all files named Test in drive C of the current computer and its subdirectories, type:
+
+
+Copy
+where /r c:\ test
+To list all files in the Public directory, type:
+
+
+Copy
+where $public:*.*
+To find all files named Notepad in drive C of the remote computer, Computer1, and its subdirectories, type:
+
+
+Copy
+where /r \\computer1\c notepad.*
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+====================
+
+
+
+====================
+
+====================
+
+
+
+====================
+
+
+https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/findstr
+

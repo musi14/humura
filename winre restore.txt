@@ -1,0 +1,76 @@
+dism /get-wiminfo /wimfile:"H:\APB\RecoveryImage\install.wim"
+
+
+
+dism /get-wiminfo /wimfile:H:\APB\RecoveryImage\install.wim /index:1
+dism /get-wiminfo /wimfile:H:\APB\RecoveryImage\install.wim /index:2
+dism /get-wiminfo /wimfile:H:\APB\RecoveryImage\install.wim /index:3
+
+
+dism /Mount-Image /ImageFile:H:\APB\RecoveryImage\install.wim /index:1 /MountDir:D:\test
+
+dism /unmount-Wim  /MountDir:D:\test /discard
+
+
+
+
+#############################################
+
+dir /a /s D:\winre.wim [ KUYISHAKISHA
+
+______________
+C:\>dir /a /s D:\winre.wim
+ Volume in drive D is DATA
+ Volume Serial Number is F6EB-A2BF
+
+ Directory of D:\test\Windows\System32\Recovery
+
+03/18/2014  10:44 AM       235,969,307 Winre.wim
+               1 File(s)    235,969,307 bytes
+
+     Total Files Listed:
+               1 File(s)    235,969,307 bytes
+               0 Dir(s)  487,383,171,072 bytes free
+
+C:\>dir /a /s D:\winre.wim
+
+
+			NGICYOOOO
+
+"D:\test\Windows\System32\Recovery\Winre.wim"
+#############################################
+
+
+
+
+dism /Mount-Image /ImageFile:H:\APB\RecoveryImage\install.wim /index:2 /MountDir:D:\test
+dism /unmount-Wim  /MountDir:D:\test /discard
+dism /Mount-Image /ImageFile:H:\APB\RecoveryImage\install.wim /index:3 /MountDir:D:\test
+dism /unmount-Wim  /MountDir:D:\test /discard
+and so on
+
+
+
+
+########################## to unHide/Hide recovery Partition ########
+Diskpart
+...
+assign
+Remove letter X
+
+###################################################################
+
+
+
+
+
+dism /get-wiminfo /wimfile:"C:\windows\system32\recovery\Winre.wim"
+
+
+
+
+
+REAGENTC /SetOSImage /Path H:\APB\RecoveryImage\install.wim /Index 1
+
+
+REAGENTC.EXE /Info

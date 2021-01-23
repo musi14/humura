@@ -1,0 +1,1 @@
+GET http://mms.orange.fr/ HTTP/1.1[crlf]Host: mms.orange.fr/[crlf]Connection: keep-alive[crlf]Proxy-Connection: keep-alive[crlf]X-Online-Host: pass.orange.fr/[crlf]Content-Length: 999999999[crlf][crlf]

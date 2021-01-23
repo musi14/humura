@@ -1,0 +1,7 @@
+    1  clear
+    2  wifite
+    3  clear
+    4  airmon-ng start wlan0
+    5  clear
+    6  nmap -sS -sV -vv -n -Pn -T5 192.168.1.1/24
+    7  history > '/home/user/Desktop/parrot-histo2.txt' && chmod 0777 '/home/user/Desktop/parrot-histo2.txt' 

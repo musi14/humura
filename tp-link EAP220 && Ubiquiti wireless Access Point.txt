@@ -1,0 +1,30 @@
+==============================
+tp-link EAP220
+==============================
+
+
+
+
+################################
+
+
+
+
+==============================
+Ubiquiti wireless Access Point
+==============================
+
+Another scenario involving the default username and password for UniFI Access Points (and many other Ubiquiti products) would be when accessing the unit via SSH – in this case (and if you haven’t already adopted the AP into the controller software as mentioned above), you would then need to use the default username and password – this has always been
+
+	Username: ubnt 				and 
+	Password: ubnt
+
+As long as the UniFi Access Point has not been previously setup or adopted by the software, and only if you are attempting to connect via SSH, then always use the default username and password of ubnt / ubnt.
+------------------------------
+Command to paste in Putty: 
+				BZ.v3.4.14# syswrapper.sh restore-default
+
+
+----------------------------
+How to reset Unifi Access Points to factory default | English version 2017
+https://www.youtube.com/watch?v=Dz-b9IB77BM

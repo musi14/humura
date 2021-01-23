@@ -1,0 +1,251 @@
+==========================================================
+sunny2plus_rom.zip that worked is that which is signed in assayed.
+no need of deleting previous rom_install.
+previous installed rom was rooted.
+it BOOTED successively
+
+==========================================================
+
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\Sunny2Plus\dushya-deodex-tools\ClassyKitchen_Free_Beta_1.0.4\b\OUTPUT\[Nougat-7.0]-V2600CN.zip" /storage/sdcard1 
+==========================================================
+fastboot oem device-info
+fastboot oem unlock
+fastboot erase %PARTITION NAME%
+---------------------------------------------------------
+
+fastboot erase system
+fastboot erase boot
+fastboot erase cache
+fastboot erase userdata
+fastboot erase recovery
+
+--------------------------------------
+fastboot format:ext4 system
+fastboot format:ext4 boot
+fastboot format:ext4 cache
+fastboot format:ext4 userdata
+fastboot format:ext4 recovery
+
+-------------------------------------
+fastboot format system
+fastboot format boot
+fastboot format cache
+fastboot format userdata
+fastboot format recovery
+-------------------------------------
+				▂▃▄▅▆▇█▓▒░A word of attention░▒▓█▇▆▅▄▃▂
+error: invalid sparse file format at header magic
+
+fastboot flash "C:\Users\Mbwirande\Desktop\Sunny2Plus\dushya-deodex-tools\ClassyKitchen_Free_Beta_1.0.4\b\OUTPUT\wiko_zuba_48_ngat.zip"
+adb sideload  "C:\Users\Mbwirande\Desktop\Sunny2Plus\dushya-deodex-tools\ClassyKitchen_Free_Beta_1.0.4\b\OUTPUT\wiko_zuba_48_ngat.zip"
+
+fastboot flash "C:\Users\Mbwirande\Desktop\Sunny2Plus\dushya-deodex-tools\ClassyKitchen_Free_Beta_1.0.4\b\OUTPUT\Sunny2_Plus-V01.24.OPE.20.zip"
+adb sideload  "C:\Users\Mbwirande\Desktop\Sunny2Plus\dushya-deodex-tools\ClassyKitchen_Free_Beta_1.0.4\b\OUTPUT\Sunny2_Plus-V01.24.OPE.20.zip"
+
+fastboot flash boot  "C:\cygwin64\home\Kmna\kitchen\FbWinTools_v1.1_UPLOAD_BY_OROCHI@TURKDEVS\[Hovatek] IMG Unsign Tool V1.0\[Hovatek] IMG Unsign Tool V1.0\unsigned\boot.img"
+fastboot flash system "C:\cygwin64\home\Kmna\kitchen\FbWinTools_v1.1_UPLOAD_BY_OROCHI@TURKDEVS\[Hovatek] IMG Unsign Tool V1.0\[Hovatek] IMG Unsign Tool V1.0\unsigned\system.img"
+fastboot flash recovery "C:\cygwin64\home\Kmna\kitchen\FbWinTools_v1.1_UPLOAD_BY_OROCHI@TURKDEVS\[Hovatek] IMG Unsign Tool V1.0\[Hovatek] IMG Unsign Tool V1.0\unsigned\recovery.img"
+fastboot reboot 
+
+fastboot flash boot "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\bkup\boot3.img"
+fastboot flash system "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\bkup\system3.img"
+fastboot flash recovery "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\bkup\recovery3.img"
+fastboot reboot recovery
+✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸
+fastboot flash lk "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\lk.bin"
+fastboot flash logo "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\logo.bin"
+fastboot flash cache "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\cache.img"
+fastboot flash userdata "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\userdata.img"
+fastboot flash boot "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\boot-org.img"
+fastboot flash system "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\system-org.img"
+fastboot flash recovery "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\recovery-org.img"
+---------------------------------------------------
+fastboot flash secro "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\secro.img" 	*
+fastboot flash apedata "C:\Users\Mbwirande\Desktop\Sunny2Plus\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\Sunny2Plus_V24\rom\apedata.img" *
+fastboot reboot 
+
+fastboot flash rpm rpm.mbn
+fastboot flash tz tz.mbn
+
+❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂
+
+Example:
+
+#To erase system partition
+fastboot erase system
+
+#To erase boot partition
+fastboot erase boot
+
+#To erase cache partition
+fastboot erase cache
+
+#To erase user data partition
+fastboot erase userdata
+
+#To erase recovery partition
+fastboot erase recovery
+
+
+================================
+fastboot format %PARTITION NAME%
+---------------------------------------------------------
+Example:
+
+#To format system partition
+fastboot format system
+fastboot format:ext4 system
+
+#To format boot partition
+fastboot format boot
+fastboot format:ext4 boot
+
+#To format cache partition
+fastboot format cache
+fastboot format:ext4 cache
+
+#To format user data partition
+fastboot format userdata
+fastboot format:ext4 userdata
+
+#To format recovery partition
+fastboot format recovery
+fastboot format:ext4 recovery
+
+
+
+================================
+
+fastboot flash %FILENAME.ZIP%
+Example:
+
+fastboot flash newfirmware.zip
+
+------------------------------------------------------------------------
+fastboot flash recovery twrp.img
+fastboot flash boot bootimage.img
+========================================
+fastboot flash modem_a modem.bin
+fastboot flash vbmeta_a vbmeta.img
+=======================================
+fastboot flash gpt PGPT
+fastboot flash preloader preloader.bin
+fastboot flash lk_a lk.img
+fastboot flash tee_a tee.img
+fastboot flash md1img_a md1img.img
+fastboot erase nvdata
+fastboot flash spmfw_a spmfw.img
+fastboot flash scp_a scp.img
+fastboot flash sspm_a sspm.img
+fastboot flash cam_vpu1_a cam_vpu1.img
+fastboot flash cam_vpu2_a cam_vpu2.img
+fastboot flash cam_vpu3_a cam_vpu3.img
+fastboot flash vbmeta_a vbmeta.img
+fastboot flash oem_a oem.img
+fastboot flash logo_a logo.bin
+fastboot flash boot_a boot.img
+fastboot flash dtb_a dtb.img
+fastboot flash dtbo_a dtbo.img
+fastboot flash system_a system.img_sparsechunk.0
+fastboot flash system_a system.img_sparsechunk.1
+fastboot flash system_a system.img_sparsechunk.2
+fastboot flash system_a system.img_sparsechunk.3
+fastboot flash system_a system.img_sparsechunk.4
+fastboot flash system_a system.img_sparsechunk.5
+fastboot flash system_a system.img_sparsechunk.6
+fastboot flash system_a system.img_sparsechunk.7
+fastboot flash system_a system.img_sparsechunk.8
+fastboot flash system_a system.img_sparsechunk.9
+fastboot flash system_b system_other.img_sparsechunk.0
+fastboot flash system_b system_other.img_sparsechunk.1
+fastboot flash vendor_a vendor.img_sparsechunk.0
+fastboot flash vendor_a vendor.img_sparsechunk.1
+fastboot erase metadata
+fastboot reboot bootloader
+
+=======================================
+fastboot flash boot boot.img
+fastboot flash system system.img
+fastboot flash recovery recovery.img
+fastboot flash cache cache.img
+fastboot flash modem NON-HLOS.bin
+fastboot flash sbl1 sbl1.mbn
+fastboot flash dbi sdi.mbn
+fastboot flash aboot emmc_appsboot.mbn
+fastboot flash rpm rpm.mbn
+fastboot flash tz tz.mbn
+fastboot flash LOGO logo.bin
+
+
+=======================================
+
+fastboot flash devcfg_a devcfg.mbn
+fastboot flash devcfg_b devcfg.mbn
+fastboot flash dsp_a adspso.bin
+fastboot flash dsp_b adspso.bin
+fastboot flash bluetooth_a BTFM.bin
+fastboot flash bluetooth_b BTFM.bin
+fastboot flash modem_a NON-HLOS.bin
+fastboot flash modem_b NON-HLOS.bin
+fastboot flash pmic_a pmic.elf
+fastboot flash pmic_b pmic.elf
+fastboot flash rpm_a rpm.mbn
+fastboot flash rpm_b rpm.mbn
+fastboot flash splash splash.img
+fastboot flash tz_a tz.mbn
+fastboot flash tz_b tz.mbn
+fastboot flash xbl_a xbl.elf
+fastboot flash xbl_b xbl.elf
+fastboot flash abl_a abl.elf
+fastboot flash abl_b abl.elf
+fastboot flash boot_a boot.img
+fastboot flash boot_b boot.img
+fastboot flash dtbo_a dtbo.img
+fastboot flash dtbo_b dtbo.img
+fastboot flash system_a system.img
+fastboot flash system_b system.img
+fastboot flash vendor_a vendor.img
+fastboot flash vendor_b vendor.img
+fastboot flash mdtp_a mdtp.img
+fastboot flash mdtp_b mdtp.img
+fastboot flash vbmeta_a vbmeta.img
+fastboot flash vbmeta_b vbmeta.img
+
+fastboot erase userdata
+=======================================
+
+
+
+fastboot oem writecid
+
+fastboot oem writeimei
+
+fastboot oem get_identifier_token
+
+fastboot flash unlocktoken unlock_code.bin   (for htc devices, learn more: at htcdev.com)
+
+fastboot oem unlock-go
+
+fastboot oem unlock
+
+fastboot oem lock
+
+fastboot oem device-info preflash
+
+fastboot oem enable-charger-screen
+
+fastboot oem disable-charger-screen
+
+fastboot oem off-mode-charge
+
+fastboot oem select-display-panel
+
+fastboot oem bootlog
+
+fastboot oem getvar
+
+fastboot oem mmcinfo
+
+fastboot oem info
+
+fastboot oem securewipe

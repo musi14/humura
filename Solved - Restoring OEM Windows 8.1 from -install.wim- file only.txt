@@ -1,0 +1,294 @@
+Restoring OEM Windows 8.1 from "install.wim" file only
+ Thread starterj0nesy  Start dateJul 23, 2015
+
+j0nesy
+New Member
+Posts3
+Jul 23, 2015#1
+Hello,
+
+I hope this post isn't too redundant, but I've spent the last 3 days trying to restore my OEM version of Windows 8.1 with the "install.wim" file that I had saved (before deleting the recovery partition to save space), to no avail. So I thought I'd share my solution in case others run into the same problem.
+
+I recently installed Windows 10 Insider Preview on my Acer Aspire ES1-311 PC (which originally came with Windows 8.1 with Bing). When I realised that various things were not yet working in this beta build, such as Bluetooth, I decided to revert back to Windows 8.1 with a clean ISO downloaded using Microsoft's Media Creation Tool.
+What I didn't know, however, was that my Product Key was only valid for my OEM version of Windows, and no other, therefore I was unable to use the key when attempting to install the Windows 8.1 edition that I had downloaded.
+
+I found various tips and tricks online, including:
+Reinstall windows 8 by install.wim - Requests - reboot.pro
+http://www.eightforums.com/installation-setup/5074-recover-windows-8-wim-file.html
+https://www.winhelp.us/restore-windows-re.html
+
+None of which worked on Windows 10.
+
+I also tried to re-create the Recovery Partition, as I had saved all of its files, but that didn't work either.
+
+
+In the end, the following method is what worked for me (Updated on 30/07/15):
+
+If you are already using Windows 8.1: skip to the next step (Analyse your "install.wim")
+
+If you are currently using another version of Windows: then install a clean Windows 8.1 without the product key
+- Download the Windows 8.1 ISO using the Media Creation Tool
+- Make a bootable USB drive with the ISO using a tool like Rufus
+- Add an "ei.cfg" file to the "sources" folder of the USB (in order to be able to install Windows without the product key) by following this tutorial:
+http://www.pcsteps.com/627-install-windows-8-1-without-product-key/#The_Magic_eicfg_file
+- Install Windows 8.1 from the USB drive (click "Ignore" if asked to enter a product key)
+- Wait for install to complete
+
+Analyse your "install.wim" to determine how many images (ie "indexes") it contains
+- Do WinKey+Q, type "cmd"
+- Right-click on "Command prompt" and open it as Administrator
+- Run the following command:
+
+Code:
+dism /get-wiminfo /wimfile:C:\Win81-Recovery\install.wim
+(replace "C:\Win81-Recovery\install.wim" with the path to your own "install.wim" file)
+
+It will return something like this. Every "index" represents an image:
+
+Code:
+Index : 1
+Name : Factory Default Image Backup
+Description : <undefined>
+Size : 21 720 008 653 bytes
+
+Index : 2
+Name : PBR_IMAGE
+Description : <undefined>
+Size : 26 579 957 014 bytes
+In this example, "install.wim" contains two images named respectively "Factory Default Image Backup" and "PBR_IMAGE".
+
+If "install.wim" contains a single image: skip to the next step (Register your "install.wim" file as the recovery image)
+If "install.wim" contains multiple images: you must determine which index to use as your recovery image.
+
+Note: If one of the images is named something like "PBR" or "Push Button Reset", chances are this is the index you should use. Otherwise, you need to find out more about each image.
+
+- To get more detailed information on each image, run;
+
+Code:
+dism /get-wiminfo /wimfile:C:\Win81-Recovery\install.wim /index:1
+dism /get-wiminfo /wimfile:C:\Win81-Recovery\install.wim /index:2
+dism /get-wiminfo /wimfile:C:\Win81-Recovery\install.wim /index:3
+and so on
+Note: This includes the default language of every image. If your OEM Windows 8.1 was initially in a non-English language, then pick the image that is in your language.
+
+If this doesn't provide sufficient information, then you will need to check the contents of each image by mounting them separately:
+Note: This will take up at least as much space as the size of "Install.wim", so you can either create a local temporary folder (eg. "C:\test" ) if you have enough space, or mount the image to an external drive.
+
+- Run Command Prompt as Admin
+- Run the following command to mount the first image (index 1):
+
+Code:
+dism /Mount-Image /ImageFile:C:\Win81-Recovery\install.wim /index:1 /MountDir:C:\test
+(replace "C:\test" with the path to the folder you want to mount the image to)
+
+- Once the process is complete, browse to the folder containing the mounted image, and check for elements that you remember being in your factory build. To save time, look for more obvious things first:
+- Go to "Windows > Web > Wallpaper", to see if the original desktop background image is there.
+- Go to "Users > All Users > Desktop" to see if any of the bloatware links and apps (such as Ebay, Wild Tangent Games, Booking.com, Dropbox, etc.) are there (check the "desktop.ini" file as well). 
+- The "Program Files", "Program Files (x86)" and "ProgramData" folders can also provide some clues. Look for non-default applications that you remember of, such as software trials (eg Microsoft Office, Foxit Reader, etc.).
+?
+
+- When you have gathered all the information you need, dismount the image to save space:
+
+Code:
+dism /unmount-Wim  /MountDir:C:\test /discard
+- Mount, browse and dismount all images in the "install.wim" file by changing the number after "index" in the command.
+
+Code:
+dism /Mount-Image /ImageFile:C:\Win81-Recovery\install.wim /index:2 /MountDir:C:\test
+dism /unmount-Wim  /MountDir:C:\test /discard
+dism /Mount-Image /ImageFile:C:\Win81-Recovery\install.wim /index:3 /MountDir:C:\test
+dism /unmount-Wim  /MountDir:C:\test /discard
+and so on
+When you have determined which image to use as your OEM Win 8.1 recovery image, go to the next step.
+
+Register your "install.wim" file as the recovery image
+- Transfer your "image.wim" to your hard drive
+- Do WinKey+Q, type "cmd"
+- Right-click on "Command prompt" and open it as Administrator
+- Run the following command:
+
+Code:
+REAGENTC /SetOSImage /Path C:\Win81-Recovery\INSTALL.WIM /Index 1
+(replace "C:\Win81-Recovery\INSTALL.WIM" with the path to your own "install.wim" file)
+
+- Run this command to check that the Recovery Image path is the one you have just set it to:
+
+Code:
+REAGENTC.EXE /Info
+(Taken from: http://www.nextofwindows.com/how-to...ery-drive-to-an-external-drive-in-windows-8-1 )
+
+Create a recovery USB of your OEM Windows 8.1
+- Plug in your USB drive
+- Go to Control Panel > All Control Panel Items > Recovery and click on "Create a recovery drive"
+- Check the "Copy contents from the recovery partition to the recovery drive" box and click Next
+- Select the USB drive, click Next, then click Create
+- Wait for the process to complete (it will take a while)
+
+Reset PC with OEM Windows 8.1
+- Once the process is finished, reboot on the USB drive
+- Select your language
+- Click on "Troubleshoot"
+- Click on "Reset your PC", then click on Next
+- Click on "Windows 8.1"
+- Click on "No, keep existing partitions"
+- Click on "Just remove my files", then click on Reset
+This will start the recovery process
+As soon as the computer restarts, remove the USB drive so the installation can continue from the local hard drive.
+
+Follow the installation steps until install is complete. 
+
+Activate your OEM Windows 8.1
+You probably don't need an Internet connection for this step, but just in case: you might find that Wifi isn't working on the computer. This is because the driver isn't installed and the Wireless adapter isn't recognised. Just connect to the Internet with an Ethernet cable.
+
+Do WinKey+Q, search for "Activate Windows" and click on it (or go to Control Panel > System and Security > System, then click on "Activate Windows" at the bottom). Now enter the Product Key that came with your computer and click "Activate", it should validate within seconds.
+
+That's it!
+
+Note: The first thing you should do now is check if there are any missing drivers. The Device Manager might list a number of "Unknown devices". Here's the tutorial I used to identify them: http://www.makeuseof.com/tag/how-to-find-unknown-device-drivers-by-their-vendor-device-id/
+
+Once you've finished all this, your Windows is ready to use. 
+
+Hope this will be helpful to someone :geek:
+Last edited: Jul 30, 2015
+My Computer
+KYHI
+KYHI
+Well-Known Member
+Pro User
+usa us_kentucky
+Posts2,754
+Jul 23, 2015#2
+to pre-install a product key you create a PID file > https://technet.microsoft.com/en-us/library/Hh824952.aspx
+
+and all you had to do was use reagentc /setosimage
+
+to point to your a factory install.wim / your custom install.wim / a windows setup media install.wim
+
+Create the recovery drive and reset your pc
+
+the factory image would have read the factory "Bing" key
+
+a pid.txt file would inject the new version key
+
+Glad you figured it out in your own way, it worked for you..
+:)
+
+And you are Right, Recovery is very different on windows 10
+
+You can use the same type install.wim but you must apply the image - you can not recover the image
+My Computer
+j0nesy
+New Member
+Posts3
+Jul 23, 2015#3
+Hi KYHI, yes I did read about adding a PID file to the USB, but as some people were saying that it didn't work if the installation media wasn't the correct version of Windows, I didn't attempt it.
+
+Also, I did try what you said (using the last section of this WinHelp tutorial), but none of it worked under Win 10. Every time I ran the "reagentc /setosimage" command, nothing happened at all. I tried debugging it using "reagentc /setosimage /?" to see if the "reagentc" syntax and options had maybe changed between Win 8.1 and Win 10, but my command was correct. In fact, I deliberately entered some incorrect commands, and it did return an error, telling me I had forgotten the path or used the wrong target, etc. 
+
+I also tried to apply install.wim to the USB drive, using ImageX (as described by jimbo45 here), but that failed (I don't remember why, I think it was a "file too large" error, or due to the USB stick being in FAT32).
+
+So basically, there was no way I could create a recovery drive in Win 10.
+
+The one and only thing that worked in Win 10, was mounting the "install.wim" file with DISM, in the hopes of recovering its "winre.wim" file (and then using "reagentc /setreimage" to register it), but it didn't have one.
+
+I also considered using a tool like Acronis True Image to make an image of the contents of the mounted install.wim, and simply restore that image to the C drive, but no matter how many times/ways I tried, I was unable to get either Acronis or Clonezilla bootable USBs to boot (which I don't understand, as GParted Live USB boots just fine from my PC).
+
+Finally, as I am dual-booting with Linux Mint 17, I considered wiping out the Windows partition from there and simply copying the contents of install.wim onto it, but figured all I'd achieve was to make a great big mess of things, lol (also some of the files seemed to be protected from deletion).
+
+Anyhoo, now that I have everything back to working order in Win 8.1, next on my to-do list is making a system image backup, as well as an ISO from the recovery USB that I made. I'll obviously also keep the factory install.wim, just in case. :cool:
+My Computer
+KYHI
+KYHI
+Well-Known Member
+Pro User
+usa us_kentucky
+Posts2,754
+Jul 23, 2015#4
+Control panel - recovery - create a recovery drive
+
+reagentc /info
+should show enabled and the registered reimage partition..
+win10 recovery does not use an install.wim
+My Computer
+j0nesy
+New Member
+Posts3
+Jul 30, 2015#5
+Hi again, I've updated my first post to add a very important step that I didn't know about before. 
+
+When registering the "install.wim" file as the recovery image, you have to make sure that you are using the right index of the file, or else you might end up with a slightly different version of Win 8.1 from your originally factory version, which might not work as well. 
+
+That's the issue I had with my fresh install of OEM Win 8.1 from last week: it was in English instead of French, lots of programs and drivers were missing, whereas the original install was loaded with custom OEM bloatware, and had all the drivers I needed. Plus, my new install was not recognised as Windows 10 compatible, whereas I had previously been able to reserve Win 10 with the GWX app before reinstalling Windows.
+
+What I didn't know is that my "install.wim" actually contained two images, one named "Factory Default Backup Image" (index 1), and the other named "PBR_Image" (index 2).
+
+I found this out when opening the WIM file in Windows System Image Manager (included in the Deployment Tools of Windows ADK for Windows 8.1). I then mounted both of those images in order to directly check their contents. Turns out that the "PBR_Image" one contained all the bloatware. Also, the utter genius that I am eventually figured out that PBR stands for "Push Button Reset" (duh lol), which was the original name of my recovery partition. So there you go. I used "reagentc /setosimage /c:install.win /index 2" this time and created a new recovery USB.
+
+So on Monday I reinstalled Win 8.1 to its original state (and uninstalled all the stuff I don't need), everything works 100% as before and I was immediately asked if I wanted to reserve Win10.
+
+Pffew!
+
+By the way, I was able to make an ISO of my recovery drive using Isomaster in Linux.
+
+PS: I added PID.txt to my Recovery USB this time, as you advised, and it worked perfectly, thanks :)
+My Computer
+Chatagra
+New Member
+Posts1
+Sep 22, 2015#6
+@j0nesy ..please help . I have the same laptop aspire s1-311.When updating to win 10 the installation failed . In the process the recovery partition became corrupted and cannot extract the image in order to restore the factory rubbish . I need an working 8.1 image for this crappy netbook with all the factory bloatware in order to make it stock and send it back ..Will U help me please ? Thanx
+My Computer
+letryst
+New Member
+Posts1
+Sep 30, 2015#7
+Thanks guys,
+I spent hours trying to recover from a failed update to windows 10, ending up installing a clean but unactivated win 10. With your help I was able to restore win 8.1 OEM and finally upgrade to win10!
+I was able to use reagentc /setosimage directly from win 10 and then build the recovery usb
+My Computer
+KYHI
+KYHI
+Well-Known Member
+Pro User
+usa us_kentucky
+Posts2,754
+Oct 1, 2015#8
+I was able to use reagentc /setosimage directly from win 10 and then build the recovery usb
+So let me see if I understood you correctly..
+
+Your Host OS was Windows 10
+You /setosimage to the factory windows 8.1 recovery image
+You created a recovery drive from Host Windows 10 OS
+Booted from recovery drive
+and RESET Windows 8.1
+
+Is this correct..
+Because this is very good information to know...
+My Computer
+c0r3
+c0r3
+New Member
+usa us_california
+Posts7
+Oct 11, 2015#9
+Error 11 using install.wim
+
+Hi everyone, It seem like ASUS backtracker wiped out all the files in every partition I have including the Restore partition. I did use the method posted in my thread here (with KYHI's help). 
+
+Now, I found this thread, hoping to recover back what I've lost, Unfortunately I have to reinstall windows from scratch using the media creation tool (which I created even before my posted thread)
+
+I somehow manage to recover the "install.wim" file using recovery tools Eassos, Disk Doctor, Easeus, etc. but when I ran this
+Code:
+dism /get-wiminfo /wimfile:D:\oem-recovery\EaseUs\install.wim
+I got this error:
+error11.PNG 
+
+Is my install.wim file corrupted due to recovery?
+I think, I got some serious issues, sorry being such a pain here. but there's none I do, without your help. Thanks.
+
+NOTE: I also temporarily used this command
+Code:
+ reagentc /setosimage /path D:\oem-recovery\EaseUs\install.wim
+setosimage.PNG 
+
+Am I doing it right, as well?

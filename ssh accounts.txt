@@ -1,0 +1,97 @@
+Server		SSH Server Germany 1
+Username	matah14
+Passd		1234matah
+
+
+Server		SSH Server France 2
+Username	matah14
+Passd		1234matah
+_______________
+[+] creating an username.....
+[+] Username has been successfully created
+[+] setting an expiry date.....
+[+] Expiry date has been updated
+[+] setting up a password.....
+[+] Password has been set
+---------------------
+
+Your Username fastssh.com-matah14 has been successfully created !
+
+Username SSH : 
+fastssh.com-matah14
+
+Password SSH : 
+1234matah
+
+Host IP Addr : 
+fr-1.serverip.co
+
+Date Created : 18-October-2019
+Date Expired : 21-October-2019
+
+Account will expire on 21-October-2019.
+You allowed use this account up to two (2) multi-bitvise, else you will be automatically disconnected from the server
+
+_______
+
+SSH Server France 2 can create 250 SSH Accounts/Day
+Host IP
+fr-1.serverip.co
+Dropbear Port
+80,443
+OpenSSH Port 22
+
+
+https://www.fastssh.com/page/ssh-account-creator/server/33/SSH-Server-France-2/
+
+
+
+
+==================================================
+
+You account has been created! Please, Support Us!
+
+
+Note : One click ads thats will support our website keep alive!
+Username: cyberssh.com-kgl14
+Password: 1234matah
+Hostname: ssh-fr2.cyberssh.com
+IP Address: 199.247.12.147
+Port: 22,109,443 / SSL 444
+Expired: 2019-10-24
+
+
+
+https://cyberssh.com/ssh/create/ssh-france-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.techfoe.com/2016/08/how-to-get-free-proxy-servers-that_46.html
+
+
+
+https://technohexes.blogspot.com/2016/03/how-to-get-free-internet-on-any-isp-in.html
+
+
+
+
+

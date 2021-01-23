@@ -1,0 +1,158 @@
+
+ROBOCOPY d:\Users\zgba-14\Desktop c:\Users\zgba-14\Desktop\ /MIR /XX /SEC
+ROBOCOPY d:\Users\zgba-14\Documents c:\Users\zgba-14\Documents\ /MIR /XX /SEC
+ROBOCOPY d:\Users\zgba-14\Downloads c:\Users\zgba-14\Downloads\ /MIR /XX /SEC
+ROBOCOPY d:\Users\zgba-14\Pictures c:\Users\zgba-14\Pictures\ /MIR /XX /SEC
+
+ROBOCOPY "D:\Windows insider preview" "C:\Windows 10 insider preview" /MIR /XX /SEC
+==============================================
+
+ROBOCOPY d:\Users\zgba-14\Desktop c:\Users\zgba-14\Desktop\ /MIR /XX /SEC
+ROBOCOPY d:\Users\zgba-14\Desktop c:\Users\zgba-14\Desktop\ /MIR /XX /SEC
+
+=================================
+
+Mirror directory structure but keep destination data
+
+
+C:\>Robocopy C:\Documents E:\ /MIR /XX /SEC
+
+===================================
+Try using the /xf switch with /mir to prevent the purge of your destination file.   
+
+For example
+
+robocopy d:\source d:\destination /mir /xf d:\destination\testfile.txt
+
+ ===================================
+ directories:
+ C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\o-recovery-unsign\
+ 
+ 
+ ===================================
+								RAW -TEMPLATE
+								
+								
+								
+aaaaaaaaaaaaaa     C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\recovery-unsign
+
+xxxxxxxxxxxxxx     C:\Users\adminpc-ms-14\Desktop\Wiko Sunny2 Plus\FACTORY\carliv_image_kitchen-v1.3-x64-\recovery-TWRP_3.2 - Copy
+
+=====================================
+								
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\data C:\xxxxxxxxxxxxxx\ramdisk\data /MIR /XX /SEC
+
+ 
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\dev C:\xxxxxxxxxxxxxx\ramdisk\dev /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\proc C:\xxxxxxxxxxxxxx\ramdisk\proc /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\sys C:\xxxxxxxxxxxxxx\ramdisk\sys  /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\system C:\xxxxxxxxxxxxxx\ramdisk\system  /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\tmp C:\xxxxxxxxxxxxxx\ramdisk\tmp /MIR /XX /SEC
+
+
+
+
+========================================
+
+
+========================================
+								TEST 1
+								
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\data C:\xxxxxxxxxxxxxx\ramdisk\data /MIR /XX /SEC
+
+ 
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\dev C:\xxxxxxxxxxxxxx\ramdisk\dev /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\proc C:\xxxxxxxxxxxxxx\ramdisk\proc /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\sys C:\xxxxxxxxxxxxxx\ramdisk\sys  /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\system C:\xxxxxxxxxxxxxx\ramdisk\system  /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\tmp C:\xxxxxxxxxxxxxx\ramdisk\tmp /MIR /XX /SEC
+
+
+
+
+======================================== ===================================
+								TEST 2
+								
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\data C:\xxxxxxxxxxxxxx\ramdisk\data /MIR /XX /SEC
+
+ 
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\dev C:\xxxxxxxxxxxxxx\ramdisk\dev /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\proc C:\xxxxxxxxxxxxxx\ramdisk\proc /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\sys C:\xxxxxxxxxxxxxx\ramdisk\sys  /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\system C:\xxxxxxxxxxxxxx\ramdisk\system  /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\tmp C:\xxxxxxxxxxxxxx\ramdisk\tmp /MIR /XX /SEC
+
+
+
+
+======================================== ===================================
+								TEST 3
+								
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\data C:\xxxxxxxxxxxxxx\ramdisk\data /MIR /XX /SEC
+
+ 
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\dev C:\xxxxxxxxxxxxxx\ramdisk\dev /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\proc C:\xxxxxxxxxxxxxx\ramdisk\proc /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\sys C:\xxxxxxxxxxxxxx\ramdisk\sys  /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\system C:\xxxxxxxxxxxxxx\ramdisk\system  /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\tmp C:\xxxxxxxxxxxxxx\ramdisk\tmp /MIR /XX /SEC
+
+
+
+
+======================================== ===================================
+								TEST 4
+								
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\data C:\xxxxxxxxxxxxxx\ramdisk\data /MIR /XX /SEC
+
+ 
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\dev C:\xxxxxxxxxxxxxx\ramdisk\dev /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\proc C:\xxxxxxxxxxxxxx\ramdisk\proc /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\sys C:\xxxxxxxxxxxxxx\ramdisk\sys  /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\system C:\xxxxxxxxxxxxxx\ramdisk\system  /MIR /XX /SEC
+
+
+robocopy C:\aaaaaaaaaaaaaa\ramdisk\tmp C:\xxxxxxxxxxxxxx\ramdisk\tmp /MIR /XX /SEC
+
+
+
+
+========================================

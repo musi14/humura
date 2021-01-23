@@ -1,0 +1,2957 @@
+
+Step 14:- Now go ahead and put this zip in your Internal Storage and go to your recovery. First backup your current ROM or data. Then wipe system, cache, dalvik and data from your Recovery and finally FLASH YOUR ROM!!!
+
+
+forum.xda-developers.com/android/software/guide-how-to-develop-modify-roms-t3616040
+
+------------------------------------------------------------
+
+DETECTING SIZE OF SYSTEM FOLDER
+WE HAVE DETECTED SYSTEM SIZE [2174M]
+IT IS HIGHLY RECOMMENDED THAT YOU DON'T CHANGE IT
+BUT IF YOU A DEVELOPER AND IF YOU KNOW WHAT YOU ARE DOING
+YOU CAN EXPAND IT AS YOUR DEVICE SYSTEM SIZE
+WHAT YOUR CHOICE [DEFAULT=NO 0=CANCEL 1=YES 2=TRY_AUTO]:
+
+------------- after modification -------------------------
+DETECTING SIZE OF SYSTEM FOLDER
+WE HAVE DETECTED SYSTEM SIZE [1972M]
+IT IS HIGHLY RECOMMENDED THAT YOU DON'T CHANGE IT
+BUT IF YOU A DEVELOPER AND IF YOU KNOW WHAT YOU ARE DOING
+YOU CAN EXPAND IT AS YOUR DEVICE SYSTEM SIZE
+WHAT YOUR CHOICE [DEFAULT=NO 0=CANCEL 1=YES 2=TRY_AUTO]:
+
+------------------		-------------------------
+
+
+
+
+GT-I9295_pdaI9295XXUDPF1_phI9295XXUDPF1_cscI9295OJKDPE2_PTR
+
+&&&&&&&&& partition ext-sdcard &&&&&&&&&&&&&& apps2sd pro
+
+banza ufomate na phone...
+apps2sd pro from playstore
+if reboot is required [ SOMETHING WRONG !!!] IT MUSTN'T RESTART!!!
+
+1st ppt ------- 107824	MB	--------	exfat	[fat32/ not work]
+2nd ppt ------- 40960 	MB	--------	ext4
+swap	-------	3072 	MB	--------	swap
+
+---------
+The crash happens if the SD card doesn’t have a name (aka disk label). To avoid the crash you need to give a name to the card, for example, by following these steps
+
+=======================
+
+adb shell
+sm list-disks
+// HERE YOU GET YOUR DISK ID, SOMETHING LIKE "disk:179,64" - REMEMBER THOSE NUMBERS
+sm set-force-adoptable true
+// IN NEXT LINE, SIMPLY PUT THOSE NUMBERS AFTER "disk:" AND ALSO AFTER WORD "mixed" TYPE PERCENTAGE OF SPACE LEFT AS EXTERNAL, SO IN MY CASE:
+sm partition disk:179,64 mixed 60
+// IT TAKES TIME. BE PATIENT. WITH THIS LINE I TRANSFORMED WHOLE EXTERNAL SD INTO 40% OF INTERNAL AND 60% OF EXTERNAL
+sm set-force-adoptable false
+
+
+
+adb shell cat /proc/partitions
+
+&&&&&&&&&&&&&&&&&&&&&&&
+
+
+enable USB debugging
+connect your device to your computer
+
+execute the command 
+----------------------------------------------------------------
+sm list-disks
+sm partition disk:179,0 private
+
+https://highonandroid.com/android-howtos/how-to-convert-microsd-into-internal-storage-for-galaxy-s7-s7-edge-adoptable-storage/
+
+--------------------
+adb shell
+sm list-disks
+adb shell pm setInstallLocation 2
+
+
+----------------------------------------------------------------
+(or, new syntax, adb shell pm set-install-location 2)
+
+
+
+
+
+
+=================================================================
+
++33 77 459 73 64
+
+
+powershell
+adb -s "411265f0" shell 
+getprop | grep -e 'model' -e 'version.sdk' -e 'manufacturer' -e 'hardware' -e 'platform' -e 'revision' -e 'serialno' -e 'product.name' -e 'brand'
+
+
+
+[ro.board.platform]: [msm8960]
+[ro.boot.hardware]: [qcom]
+[ro.boot.serialno]: [411265f0]
+[ro.build.version.sdk]: [21]
+[ro.hardware]: [qcom]
+[ro.product.brand]: [samsung]
+[ro.product.manufacturer]: [samsung]
+[ro.product.model]: [GT-I9295]
+[ro.product.name]: [jactiveltexx]
+[ro.revision]: [16]
+[ro.serialno]: [411265f0]
+
+
+
+WRITTING [updater-script]
+NOTE: IF YOU WANT TO ADD ANY THING TO ROM INSTALLER TO INSTALL
+IN DEVICE [DATA] ADD IT TO: [WORK/META-INF/ADD-ONS/DATA]
+
+
+
+---------------
+adb -s "411265f0" -s 411265f0 shell getprop
+
+
+==========================================
+adb -s "411265f0" devices -l
+
+anonytun [codes]
+
+==========================================
+
+GET http://mms.orange.fr/ HTTP/1.1[crlf]Host: mms.orange.fr/[crlf]Connection: keep-alive[crlf]Proxy-Connection: keep-alive[crlf]X-Online-Host: pass.orange.fr/[crlf]Content-Length: 999999999[crlf][crlf]
+
+==========================================
+android - How to use ADB Shell when Multiple Devices are connected
+-----------------------
+
+List of devices attached
+411265f0        device
+HYBUG6ZD7LR4LJKF        device
+
+adb -s "411265f0" -s "HYBUG6ZD7LR4LJKF" install "C:\Users\joel.joel\Downloads\release.apk"
+adb -s "411265f0" -s "HYBUG6ZD7LR4LJKF"
+
+
+adb -s "411265f0" -s "411265f0" 
+
+---------------------
+
+
+List of devices attached
+411265f0        device
+HYBUG6ZD7LR4LJKF        device
+
+
+===========================================
+bypassandroid_5apk
+BypassFRP-1.0.apk
+
+
+adb -s "411265f0" kill-server
+adb -s "411265f0" start-server
+adb -s "411265f0" devices
+
+===========================================
+
+adb -s "411265f0" -s "HYBUG6ZD7LR4LJKF" reboot bootloader
+
+fastboot -s "HYBUG6ZD7LR4LJKF" oem unlock
+
+fastboot -s "HYBUG6ZD7LR4LJKF" reboot
+
+===========================================
+adb -s "411265f0" reboot bootloader
+
+fastboot oem unlock
+fastboot flashing unlock
+
+fastboot reboot
+
+[ allow installation of unknow apps]
+
+
+adb -s "411265f0" install -r -d -f  --force-agent "C:\Users\Kmna\Desktop\E\nexus asus 4\com.koushikdutta.rommanager_5.5.3.7_paid-www.apkhere.com.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "C:\Users\Kmna\Desktop\E\nexus asus 4\WhatsApp.apk"
+
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Sunny-06-09-2020\Download\PModN\YouTube_Downloader_6.8.9.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Sunny-06-09-2020\Download\PModN\SAI_v4.2_[Modded].apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Sunny-06-09-2020\Download\PModN\ADM-Pro-v8.5_build_80522-Mod_Lite.apk"
+
+adb -s "411265f0" install -r -d -f  --force-agent "D:\DEPLOY\C\Lucky Patcher_v8.9.0_apkmody.io.apk"
+
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko-04.09.2020\Download\ModApps\Sesame_Full_v3.6.3_build_36310_Apk4all.com.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko-04.09.2020\Download\ES-File-Explorer-File-Manager-v4.2.2.9.2-www.ReXdl.com.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko-04.09.2020\Download\File_Manager_v2.4.9_Premium_Mod_Apk4all.com.apk"
+
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko-04.09.2020\Download\ModApps\App2SD Pro All in One Tool ROOT_v16_apkpure.com.apk"
+
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\Titanium_Backup-MoDaCo-v8.4.0.2.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\BusyBox_Pro_71.apk"
+
+
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko-Rainbow 4G-BK\Download\id-ch& expo\XposedInstaller_3.1.5.apk"
+
+=========================================================================================================================================================
+
+
+for %f in ("D:\Wiko Sunny 2 Plus\Download\DUSHYA\"*.apk) do adb -s "411265f0" install -r -d -f  --force-agent "%f"
+
+
+[
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\AdGuard_VPN-Pro-v1.0.155_mod.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Amazon-Video_v3.0.276.247_MOD_apkmody.io.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\BusyBox_Pro_71.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\com.zalivka.animation.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\ExpressVPN_v9.0.3-beta_Mod.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\ExVPN v9.0.40 (Beta)-Patched (1).apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\ExVPN v9.0.40 (Beta)-Patched.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\fotmob8299_signed.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Hotspot_Shield_VPN_Premium_v7.9.0_arm64-v8a (1).apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Hotspot_Shield_VPN_Premium_v7.9.0_arm64-v8a.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\IDM+-v11.6.4_build_142-armeabi-v7a.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\KillApps_v1.19.4_b411_Pro_Modded.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Lucky Patcher_v8.9.3_apkmody.io.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Netflix_v7.77.0 MOD_apkmody.io.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\NetGuard-Pro-v2.288_build_2020082601.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Nova_Launcher-Prime-v6.2.14_build_62014.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\NoxCleaner_2.9.0.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\PDF_Extra-Premium-v6.8.1.917_build_917-armeabi-v7aarm64-v8a.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Pixomatic-Pro-v4.8.0_build_985-Mod.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Simply_Piano_by_JoyTunes_v5.0_Premium_apkmody.io.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\TapScanner-Premium-2_5_44.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\TextNow_v20.39.0.2 MOD_apkmody.io.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\TikTok_v17.4.5 MOD_apkmody.io.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Titanium TV_v2.0.23_apkmody.io.apk"
+adb -s "411265f0" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\youtube_vanced_15.43.32.apk"
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+
+======================
+
+adb -s "411265f0" install -r -d -f  --force-agent "C:\Users\Kmna\Desktop\E\nexus asus 4\XposedInstaller-3.0-alpha4.apk"
+
+*******************************************************
+adb -s "411265f0" reboot bootloader
+fastboot flash recovery "C:\Users\Kmna\Desktop\Sunny2Plus\WikoSunny2plusResource_2\WikoSunny2plusResource\recovery.img"
+
+fastboot.exe oem reboot-recovery
+
+----------------------------------
+
+adb -s "411265f0" reboot recovery
+
+# [ go to adb -s "411265f0" sideload 😪 ]
+
+adb sideload "D:\Sunny-06-09-2020\Download\ModApps\Files\SuperSU+PRO+v2.82SR3.zip"
+
+adb sideload "C:\Users\Kmna\Desktop\E\nexus asus 4\xposed-v89-sdk22-arm.zip"
+
+_______________________________________________________________________________________________________
+adb -s "411265f0" sideload "D:\Sunny-06-09-2020\Download\ModApps\Files\UPDATE-unSU-signed.zip"
+_______________________________________________________________________________________________________
+[supersu => GRANT ]
+[set to install to an external sd-💳 ]
+
+adb -s "411265f0" reboot recovery
+# [ go to adb -s "411265f0" sideload 😪 ]
+
+adb -s "411265f0" sideload "D:\xposed-v89-sdk24-arm.zip"
+
+adb -s "411265f0" sideload "D:\Sunny-06-09-2020\Download\ModApps\Files\SuperSU+PRO+v2.82SR3.zip"
+
+
+
+
+
+
+
+
+
+
+------------------------
+for %f in (D:\DEPLOY\A\*.apk) do adb -s "411265f0" install "%f"
+for %f in (D:\DEPLOY\C\*.apk) do adb -s "411265f0" install "%f"
+for %f in (D:\Wiko-04.09.2020\Download\*.apk) do adb -s "411265f0" install "%f"
+
+for %f in ("D:\Sunny-06-09-2020\Download\"*.apk) do adb -s "411265f0" install "%f"
+
+for %f in ("D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\"*.apk) do adb -s "411265f0" install "%f"
+
+Imana Ishimwe
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+for %f in ("D:\Wiko Sunny 2 Plus\Download\DUSHYA\"*.apk) do adb -s "411265f0" install "%f"
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+==================
+for %f in (D:\Sunny-06-09-2020\Download\PModN\*.apk) do adb -s "411265f0" install "%f"
+==================
+
+/storage/extSdCard/Download
+
+adb -s "411265f0" push --sync  "C:\Users\Kmna\Desktop\F\wiko sunny 2" /storage/extSdCard/Download
+
+adb -s "411265f0" push --sync  "C:\Users\Kmna\Desktop\F\Galaxy s4 i9295\B" /storage/extSdCard/Download
+adb -s "411265f0" push --sync  "D:\Sunny-06-09-2020\Download" /storage/extSdCard/Download
+adb -s "411265f0" push --sync  "D:\Wiko Sunny 2 Plus\Download\DUSHYA" /storage/extSdCard/Download
+
+adb -s "411265f0" push --sync  "C:\Users\Kmna\Desktop\D\F-12-TKA.zip" /storage/extSdCard/Download
+adb -s "411265f0" push --sync  "C:\Users\Kmna\Desktop\D\Hanura-1.zip" /storage/extSdCard/Download
+adb -s "411265f0" push --sync  "C:\Users\Kmna\Desktop\D\Ibiseke-12.zip" /storage/extSdCard/Download
+adb -s "411265f0" push --sync  "C:\Users\Kmna\Desktop\D\kagame-cartoon.zip" /storage/extSdCard/Download
+
+adb -s "411265f0" push --sync  "C:\Users\Kmna\Desktop\EI\rooted" /storage/extSdCard/Download/rooted
+adb -s "411265f0" push --sync  "C:\Users\Kmna\Desktop\EI\non-rooted" /storage/extSdCard/Download/non-rooted
+
+adb -s "411265f0" push --sync  "D:\Sunny-06-09-2020\Download" /storage/emulated/0
+Birangiye
+
+
+adb -s "411265f0" push --sync  
+adb -s "411265f0" push --sync  
+adb -s "411265f0" push --sync  
+adb -s "411265f0" push --sync  
+
+
+-------------------------------
+adb -s "411265f0" push --sync  "C:\Users\Kmna\Desktop\EI\rooted" /storage/extSdCard/Download/rooted
+adb -s "411265f0" push --sync  "C:\Users\Kmna\Desktop\EI\non-rooted" /storage/extSdCard/Download/non-rooted
+
+********************************* videos *************************************************
+
+adb -s "411265f0" push --sync "D:\Sunny-06-09-2020\film\Movies\Torrents" /storage/extSdCard/Download
+adb -s "411265f0" push --sync "D:\Sunny-06-09-2020\film\IDM\Torrents" /storage/extSdCard/Download
+-----------------------------------------------------------------------------------------------
+adb -s "411265f0" push --sync "D:\Sunny-06-09-2020\film\Movies\A" /storage/extSdCard/Download
+adb -s "411265f0" push --sync "D:\Sunny-06-09-2020\film\Movies\NEW-FILMS" /storage/extSdCard/Download
+adb -s "411265f0" push --sync "D:\Sunny-06-09-2020\film\Movies\DEPOT" /storage/extSdCard/Download
+
+************************** apks*******************
+
+........................
+
+[Trick] Make a dir (or various) in a non-rooted phone using adb push:
+
+if you use the command
+
+adb -s "411265f0" push apks /storage/sdcard0/Download
+.......................
+
+
+
+**************************************************
+
+
+
+
+
+
+
+ADB Basics
+=============================
+adb devices (lists connected devices)
+adb root (restarts adbd with root permissions)
+adb start-server (starts the adb server)
+adb kill-server (kills the adb server)
+adb reboot (reboots the device)
+adb devices -l (list of devices by product/model)
+adb shell (starts the backround terminal)
+exit (exits the background terminal)
+adb help (list all commands)
+adb -s <deviceName> <command> (redirect command to specific device)
+adb –d <command> (directs command to only attached USB device)
+adb –e <command> (directs command to only attached emulator)
+
+Package Installation
+=============================
+adb shell install <apk> (install app)
+adb shell install <path> (install app from phone path)
+adb shell install -r <path> (install app from phone path)
+adb shell uninstall <name> (remove the app)
+
+Paths
+=============================
+/data/data/<package>/databases (app databases)
+/data/data/<package>/shared_prefs/ (shared preferences)
+/data/app (apk installed by user)
+/system/app (pre-installed APK files)
+/mmt/asec (encrypted apps) (App2SD)
+/mmt/emmc (internal SD Card)
+/mmt/adcard (external/Internal SD Card)
+/mmt/adcard/external_sd (external SD Card)
+
+adb shell ls (list directory contents)
+adb shell ls -s (print size of each file)
+adb shell ls -R (list subdirectories recursively)
+
+File Operations
+=============================
+adb push <local> <remote> (copy file/dir to device)
+adb pull <remote> <local> (copy file/dir from device)
+run-as <package> cat <file> (access the private package files)
+
+Phone Info
+=============================
+adb get-stat? (print device state)
+adb get-serialno (get the serial number)
+adb shell dumpsys iphonesybinfo (get the IMEI)
+adb shell netstat (list TCP connectivity)
+adb shell pwd (print current working directory)
+adb shell dumpsys battery (battery status)
+adb shell pm list features (list phone features)
+adb shell service list (list all services)
+adb shell dumpsys activity <package>/<activity> (activity info)
+adb shell ps (print process status)
+adb shell wm size (displays the current screen resolution)
+dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp' (print current app's opened activity)
+
+Package Info
+=============================
+adb shell list packages (list package names)
+adb shell list packages -r (list package name + path to apks)
+adb shell list packages -3 (list third party package names)
+adb shell list packages -s (list only system packages)
+adb shell list packages -u (list package names + uninstalled)
+adb shell dumpsys package packages (list info on all apps)
+adb shell dump <name> (list info on one package)
+adb shell path <package> (path to the apk file)
+
+Configure Settings Commands
+=============================
+adb shell dumpsys battery set level <n> (change the level from 0 to 100)
+adb shell dumpsys battery set status<n> (change the level to unknown, charging, discharging, not charging or full)
+adb shell dumpsys battery reset (reset the battery)
+adb shell dumpsys battery set usb <n> (change the status of USB connection. ON or OFF)
+adb shell wm size WxH (sets the resolution to WxH)
+
+Device Related Commands
+=============================
+adb reboot-recovery (reboot device into recovery mode)
+adb reboot fastboot (reboot device into recovery mode)
+adb shell screencap -p "/path/to/screenshot.png" (capture screenshot)
+adb shell screenrecord "/path/to/record.mp4" (record device screen)
+adb backup -apk -all -f backup.ab (backup settings and apps)
+adb backup -apk -shared -all -f backup.ab (backup settings, apps and shared storage)
+adb backup -apk -nosystem -all -f backup.ab (backup only non-system apps)
+adb restore backup.ab (restore a previous backup)
+adb shell am start|startservice|broadcast <INTENT>[<COMPONENT>]
+-a <ACTION> e.g. android.intent.action.VIEW
+-c <CATEGORY> e.g. android.intent.category.LAUNCHER (start activity intent)
+
+adb shell am start -a android.intent.action.VIEW -d URL (open URL)
+adb shell am start -t image/* -a android.intent.action.VIEW (opens gallery)
+
+Logs
+=============================
+adb logcat [options] [filter] [filter] (view device log)
+adb bugreport (print bug reports)
+
+Permissions
+=============================
+adb shell permissions groups (list permission groups definitions)
+adb shell list permissions -g -r (list permissions details)
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+== Update app
+adb install -r yourApp.apk  //  -r means re-install the app and keep its data on the device.
+adb install –k <.apk file path on computer> 
+
+== Home button
+adb shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN
+
+== Activity Manager
+adb shell am start -a android.intent.action.VIEW
+adb shell am broadcast -a 'my_action'
+
+adb shell am start -a android.intent.action.CALL -d tel:+972527300294 // Make a call
+
+// Open send sms screen with phone number and the message:
+adb shell am start -a android.intent.action.SENDTO -d sms:+972527300294   --es  sms_body "Test --ez exit_on_sent false
+
+// Reset permissions
+adb shell pm reset-permissions -p your.app.package 
+adb shell pm grant [packageName] [ Permission]  // Grant a permission to an app. 
+adb shell pm revoke [packageName] [ Permission]   // Revoke a permission from an app.
+
+
+// Emulate device
+adb shell wm size 2048x1536
+adb shell wm density 288
+// And reset to default
+adb shell wm size reset
+adb shell wm density reset
+
+
+
+
+
+
+
+
+--DEVICE MODEL: samsung -- GT-I9295
+--ARCHITECTURE: armeabi-v7a
+--ANDROID VERSION: 5.0.1 -- 21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& samsung galaxy s4 active &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
+adb -s "411265f0" sideload "C:\Users\Kmna\Desktop\F\Galaxy s4 i9295\A\twrp\xposed-v89-sdk21-arm.zip"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================= appendix  ====================================
+
+
+adb -s "411265f0" sideload "D:\magisk\Magisk-uninstaller-20190204.zip"
+
+---------------------------------- samsung galaxy s4 active -----------------------------------
+
+
+C:\>adb -s "411265f0" -s 411265f0 shell getprop
+[DEVICE_PROVISIONED]: [1]
+[af.resampler.quality]: [255]
+[audio.gapless.playback.disable]: [true]
+[audioflinger.bootsnd]: [0]
+[audit.ondenial]: [0]
+[bluetooth.a2dp.sink.enabled]: [false]
+[boot.sfbootcomplete]: [0]
+[camera2.portability.force_api]: [1]
+[config.disable_atlas]: [true]
+[dalvik.vm.dex2oat-Xms]: [64m]
+[dalvik.vm.dex2oat-Xmx]: [512m]
+[dalvik.vm.heapgrowthlimit]: [128m]
+[dalvik.vm.heapmaxfree]: [8m]
+[dalvik.vm.heapminfree]: [2m]
+[dalvik.vm.heapsize]: [512m]
+[dalvik.vm.heapstartsize]: [8m]
+[dalvik.vm.heaptargetutilization]: [0.75]
+[dalvik.vm.image-dex2oat-Xms]: [64m]
+[dalvik.vm.image-dex2oat-Xmx]: [64m]
+[dalvik.vm.isa.arm.features]: [div]
+[dalvik.vm.stack-trace-file]: [/data/anr/traces.txt]
+[debug.composition.type]: [c2d]
+[debug.egl.hw]: [1]
+[debug.enable.wl_log]: [1]
+[debug.force_rtl]: [0]
+[debug.mdpcomp.idletime]: [0]
+[debug.mdpcomp.logs]: [0]
+[debug.sf.hw]: [1]
+[dev.MDPLimitCondition]: [0]
+[dev.bootcomplete]: [1]
+[dev.kies.sommode]: [TRUE]
+[dev.kiessupport]: [TRUE]
+[dev.knoxapp.running]: [false]
+[dev.message.reserved]: [FALSE]
+[dev.ssrm.app.type]: [false]
+[dev.ssrm.emergencymode]: [false]
+[dev.ssrm.init]: [1]
+[dev.ssrm.live_thumbnail]: [1]
+[dev.ssrm.mode]: []
+[dev.ssrm.pst]: [429]
+[dhcp.wlan0.dns1]: [195.238.2.21]
+[dhcp.wlan0.dns2]: [195.238.2.22]
+[dhcp.wlan0.dns3]: [80.201.237.238]
+[dhcp.wlan0.dns4]: [80.201.237.239]
+[dhcp.wlan0.domain]: []
+[dhcp.wlan0.gateway]: [100.122.0.1]
+[dhcp.wlan0.ipaddress]: [100.122.23.236]
+[dhcp.wlan0.leasetime]: [7200]
+[dhcp.wlan0.mask]: [255.255.192.0]
+[dhcp.wlan0.mtu]: []
+[dhcp.wlan0.pid]: [1922]
+[dhcp.wlan0.reason]: [ROUTERADVERT]
+[dhcp.wlan0.result]: [ok]
+[dhcp.wlan0.roaming]: [0]
+[dhcp.wlan0.server]: [80.200.255.10]
+[dhcp.wlan0.vendorInfo]: []
+[gsm.current.phone-type]: [1]
+[gsm.network.type]: [Unknown]
+[gsm.operator.alpha]: []
+[gsm.operator.iso-country]: [be]
+[gsm.operator.ispsroaming]: [false]
+[gsm.operator.isroaming]: [false]
+[gsm.operator.numeric]: [20610]
+[gsm.sim.operator.alpha]: [Orange F]
+[gsm.sim.operator.iso-country]: [fr]
+[gsm.sim.operator.numeric]: [20801]
+[gsm.sim.state]: [READY]
+[gsm.version.baseband]: [I9295XXSDQD4]
+[gsm.version.ril-impl]: [Samsung RIL v3.0]
+[hw.cabl.version]: [1.1.20130401]
+[hw.cabl.yuv]: [0]
+[init.svc.BCS-daemon]: [running]
+[init.svc.DR-daemon]: [running]
+[init.svc.SIDESYNC_service]: [running]
+[init.svc.SMD-daemon]: [running]
+[init.svc.TvoutService_C]: [running]
+[init.svc.adbd]: [running]
+[init.svc.at_distributor]: [running]
+[init.svc.atfwd]: [stopped]
+[init.svc.auditd]: [running]
+[init.svc.bootanim]: [stopped]
+[init.svc.config_bluetooth]: [stopped]
+[init.svc.debuggerd]: [running]
+[init.svc.dhcpcd_wlan0]: [running]
+[init.svc.drm]: [running]
+[init.svc.drsd]: [running]
+[init.svc.edmaudit]: [running]
+[init.svc.flash_recovery]: [stopped]
+[init.svc.fuse_extSdCard]: [stopped]
+[init.svc.healthd]: [running]
+[init.svc.icd]: [stopped]
+[init.svc.immvibed]: [stopped]
+[init.svc.installd]: [running]
+[init.svc.insthk]: [stopped]
+[init.svc.irsc_util]: [stopped]
+[init.svc.keystore]: [running]
+[init.svc.kickstart]: [running]
+[init.svc.lmkd]: [running]
+[init.svc.logd]: [running]
+[init.svc.macloader]: [stopped]
+[init.svc.mcStarter]: [stopped]
+[init.svc.media]: [running]
+[init.svc.mobex-daemon]: [running]
+[init.svc.modem-sh]: [stopped]
+[init.svc.mpdecision]: [running]
+[init.svc.netd]: [running]
+[init.svc.netmgrd]: [stopped]
+[init.svc.p2p_supplicant]: [running]
+[init.svc.powersnd]: [stopped]
+[init.svc.ppd]: [running]
+[init.svc.prepare_param]: [stopped]
+[init.svc.qcamerasvr]: [running]
+[init.svc.qcom-c_core-sh]: [stopped]
+[init.svc.qcom-c_main-sh]: [stopped]
+[init.svc.qcom-post-boot]: [stopped]
+[init.svc.qcom-sh]: [stopped]
+[init.svc.qcom-usb-sh]: [stopped]
+[init.svc.qmuxd]: [running]
+[init.svc.qseecomd]: [running]
+[init.svc.ril-daemon]: [running]
+[init.svc.rmt_storage]: [stopped]
+[init.svc.run-mobicore]: [running]
+[init.svc.scranton_RD]: [stopped]
+[init.svc.scs]: [stopped]
+[init.svc.sdcard]: [stopped]
+[init.svc.sec-sh]: [stopped]
+[init.svc.secure_storage]: [running]
+[init.svc.sensorhubservice]: [running]
+[init.svc.servicemanager]: [running]
+[init.svc.ssr_diag]: [restarting]
+[init.svc.surfaceflinger]: [running]
+[init.svc.swapon]: [stopped]
+[init.svc.thermal-engine]: [running]
+[init.svc.time_daemon]: [running]
+[init.svc.ueventd]: [running]
+[init.svc.usf-post-boot]: [stopped]
+[init.svc.vold]: [running]
+[init.svc.wcnss-service]: [stopped]
+[init.svc.zygote]: [running]
+[installd.sdcard_manipulate_done]: [1]
+[keyguard.no_require_sim]: [true]
+[logd.auditd]: [false]
+[lpa.decode]: [false]
+[lpa.use-stagefright]: [true]
+[media.aac_51_output_enabled]: [true]
+[media.stagefright.enable-aac]: [true]
+[media.stagefright.enable-fma2dp]: [true]
+[media.stagefright.enable-http]: [true]
+[media.stagefright.enable-player]: [true]
+[media.stagefright.enable-qcp]: [true]
+[media.stagefright.enable-scan]: [true]
+[mm.enable.qcom_parser]: [33395]
+[mmp.enable.3g2]: [true]
+[mpq.audio.decode]: [true]
+[net.bt.name]: [Android]
+[net.change]: [net.mt.init]
+[net.dns1]: [195.238.2.21]
+[net.dns2]: [195.238.2.22]
+[net.dns3]: [80.201.237.238]
+[net.dns4]: [80.201.237.239]
+[net.hostname]: [android-7a75f094e47b8d17]
+[net.knoxscep.version]: [N/A]
+[net.knoxsso.version]: [2.1.1]
+[net.knoxvpn.version]: [2.2.0]
+[net.mt.init]: [DONE]
+[net.qtaguid_enabled]: [1]
+[net.tcp.buffersize.default]: [4096,87380,110208,4096,16384,110208]
+[net.tcp.buffersize.edge]: [4093,26280,35040,4096,16384,35040]
+[net.tcp.buffersize.evdo]: [4094,87380,262144,4096,16384,262144]
+[net.tcp.buffersize.gprs]: [4092,8760,11680,4096,8760,11680]
+[net.tcp.buffersize.hsdpa]: [4092,87380,704512,4096,16384,110208]
+[net.tcp.buffersize.hspa]: [4092,87380,704512,4096,16384,262144]
+[net.tcp.buffersize.hspap]: [4092,87380,704512,4096,16384,262144]
+[net.tcp.buffersize.hsupa]: [4092,87380,704512,4096,16384,262144]
+[net.tcp.buffersize.lte]: [524288,1048576,2560000,262144,524288,1220608]
+[net.tcp.buffersize.umts]: [4094,87380,704512,4096,16384,110208]
+[net.tcp.buffersize.wifi]: [524288,1048576,2097152,262144,524288,1048576]
+[net.tcp.default_init_rwnd]: [60]
+[net.tcp.delack.default]: [1]
+[net.tcp.delack.lte]: [8]
+[net.tcp.delack.wifi]: [20]
+[net.tcp.usercfg.default]: [0]
+[net.tcp.usercfg.lte]: [1]
+[net.tcp.usercfg.wifi]: [1]
+[persist.audio.allsoundmute]: [0]
+[persist.audio.fluence.mode]: [endfire]
+[persist.audio.globaleffect]: [0]
+[persist.audio.handset.mic]: [digital]
+[persist.audio.headsetsysvolume]: [4]
+[persist.audio.hphonesysvolume]: [4]
+[persist.audio.lowlatency.rec]: [false]
+[persist.audio.mpseek]: [0]
+[persist.audio.mysound]: [1]
+[persist.audio.ringermode]: [2]
+[persist.audio.soundalivefxsec]: [0]
+[persist.audio.stereospeaker]: [0]
+[persist.audio.sysvolume]: [4]
+[persist.audio.uhqa]: [0]
+[persist.audio.vr.enable]: [false]
+[persist.bluetooth_fw_ver]: [bcm4335B0_V0343.0353.hcd]
+[persist.data.netmgrd.qos.enable]: [false]
+[persist.debug.wfd.enable]: [1]
+[persist.eons.enabled]: [true]
+[persist.fuse_sdcard]: [true]
+[persist.gps.qc_nlp_in_use]: [1]
+[persist.gps.qmienabled]: [true]
+[persist.hwc.mdpcomp.enable]: [true]
+[persist.loc.nlp_name]: [com.qualcomm.location]
+[persist.radio.add_power_save]: [1]
+[persist.radio.apm_sim_not_pwdn]: [1]
+[persist.radio.initphone-type]: [1]
+[persist.radio.no_wait_for_card]: [1]
+[persist.radio.plmnname_1]: []
+[persist.radio.plmnname_2]: []
+[persist.radio.use_se_table_only]: [1]
+[persist.rild.nitz_long_ons_0]: []
+[persist.rild.nitz_long_ons_1]: []
+[persist.rild.nitz_long_ons_2]: []
+[persist.rild.nitz_long_ons_3]: []
+[persist.rild.nitz_plmn]: []
+[persist.rild.nitz_short_ons_0]: []
+[persist.rild.nitz_short_ons_1]: []
+[persist.rild.nitz_short_ons_2]: []
+[persist.rild.nitz_short_ons_3]: []
+[persist.rmnet.mux]: [disabled]
+[persist.security.ams.enforcing]: [1]
+[persist.service.bdroid.version]: [4.1]
+[persist.sys.clssprld1]: [700]
+[persist.sys.clssprld2]: [495]
+[persist.sys.country]: [US]
+[persist.sys.dalvik.vm.lib.2]: [libart.so]
+[persist.sys.drs.date]: [Tue Apr 18 21:18:33 KST 2017]
+[persist.sys.flipfontpath]: [/data/data/com.android.settings/app_fonts/Samsungsans#Samsung Sans]
+[persist.sys.language]: [en]
+[persist.sys.localevar]: []
+[persist.sys.media.use-awesome]: [true]
+[persist.sys.profiler_ms]: [0]
+[persist.sys.sb.setting.enabled]: [false]
+[persist.sys.setupwizard]: [FINISH]
+[persist.sys.storage_preload]: [2]
+[persist.sys.timezone]: [Europe/Brussels]
+[persist.sys.usb.config]: [mtp,adb]
+[persist.sys.webview.vmsize]: [104857600]
+[persist.sys.wfd.virtual]: [0]
+[persist.timed.enable]: [true]
+[qcom.audio.init]: [complete]
+[qcom.hw.aac.encoder]: [true]
+[ril.CompleteMsg]: [01]
+[ril.ICC_TYPE]: [2]
+[ril.RildInit]: [1]
+[ril.approved_codever]: [none]
+[ril.approved_cscver]: [none]
+[ril.approved_modemver]: [none]
+[ril.atd_status]: [1_1_0]
+[ril.cs_svc]: [1]
+[ril.deviceOffRes]: [0]
+[ril.ecclist00]: [112,911]
+[ril.ecclist0]: [911,*911,#911,112]
+[ril.hasisim]: [0]
+[ril.hw_ver]: [MP 0.600]
+[ril.ims.ecsupport]: [0]
+[ril.initPB]: [1]
+[ril.isIccChanged]: [0]
+[ril.modem.board]: [MDM9215M]
+[ril.modem.lte.powercontrol]: [on]
+[ril.official_cscver]: [I9295OJVDOE6]
+[ril.product_code]: [GT-I9295ZBAKSA]
+[ril.radiostate]: [10]
+[ril.rfcal_date]: [2013.07.31]
+[ril.sales_code]: [KSA]
+[ril.serialnumber]: [R31D717XSBF]
+[ril.servicestate]: [2]
+[ril.subscription.types]: [NV,RUIM]
+[ril.sw_ver]: [I9295XXSDQD4]
+[ril.timezoneID]: [Europe/Luxembourg]
+[rild.libargs]: [-d /dev/smd0]
+[rild.libpath]: [/system/lib/libsec-ril.so]
+[ro.adb.secure]: [1]
+[ro.allow.mock.location]: [0]
+[ro.baseband]: [mdm]
+[ro.bluetooth.hfp.ver]: [1.6]
+[ro.bluetooth.remote.autoconnect]: [true]
+[ro.bluetooth.request.master]: [true]
+[ro.bluetooth.sap]: [true]
+[ro.board.platform]: [msm8960]
+[ro.boot.baseband]: [mdm]
+[ro.boot.boot_recovery]: [0]
+[ro.boot.bootloader]: [I9295XXSDQD4]
+[ro.boot.cp_debug_level]: [0x55FF]
+[ro.boot.csb_val]: [1]
+[ro.boot.debug_level]: [0x4f4c]
+[ro.boot.emmc]: [true]
+[ro.boot.emmc_checksum]: [3]
+[ro.boot.hardware]: [qcom]
+[ro.boot.nvdata_backup]: [0]
+[ro.boot.serialno]: [411265f0]
+[ro.boot.warranty_bit]: [0]
+[ro.boot_recovery]: [0]
+[ro.bootloader]: [I9295XXSDQD4]
+[ro.bootmode]: [unknown]
+[ro.bt.bdaddr_path]: [/efs/bluetooth/bt_addr]
+[ro.build.PDA]: [I9295XXSDQD4]
+[ro.build.changelist]: [4856923]
+[ro.build.characteristics]: [default]
+[ro.build.date.utc]: [1492517913]
+[ro.build.date]: [Tue Apr 18 21:18:33 KST 2017]
+[ro.build.description]: [jactiveltexx-user 5.0.1 LRX22C I9295XXSDQD4 release-keys]
+[ro.build.display.id]: [LRX22C.I9295XXSDQD4]
+[ro.build.fingerprint]: [samsung/jactiveltexx/jactivelte:5.0.1/LRX22C/I9295XXSDQD4:user/release-keys]
+[ro.build.hidden_ver]: [I9295XXSDQD4]
+[ro.build.host]: [SWDD6303]
+[ro.build.id]: [LRX22C]
+[ro.build.official.release]: [true]
+[ro.build.product]: [jactivelte]
+[ro.build.scafe.cream]: [white]
+[ro.build.scafe.shot]: [single]
+[ro.build.scafe.size]: [short]
+[ro.build.scafe]: [americano]
+[ro.build.selinux.enforce]: [1]
+[ro.build.selinux]: [1]
+[ro.build.tags]: [release-keys]
+[ro.build.type]: [user]
+[ro.build.user]: [dpi]
+[ro.build.version.all_codenames]: [REL]
+[ro.build.version.base_os]: []
+[ro.build.version.codename]: [REL]
+[ro.build.version.incremental]: [I9295XXSDQD4]
+[ro.build.version.release]: [5.0.1]
+[ro.build.version.sdk]: [21]
+[ro.build.version.sdl]: [2101]
+[ro.build.version.security_patch]: []
+[ro.carrier]: [unknown]
+[ro.chipname]: [apq8064]
+[ro.com.android.dataroaming]: [false]
+[ro.com.android.dateformat]: [MM-dd-yyyy]
+[ro.com.google.clientidbase]: [android-samsung]
+[ro.com.google.gmsversion]: [5.0_r2]
+[ro.config.alarm_alert]: [Walk_in_the_forest.ogg]
+[ro.config.dha_cached_max]: [36]
+[ro.config.dha_cached_min]: [1]
+[ro.config.dha_empty_init]: [36]
+[ro.config.dha_empty_max]: [36]
+[ro.config.dha_empty_min]: [4]
+[ro.config.dha_ils_enable]: [true]
+[ro.config.dha_increase_th]: [12582912]
+[ro.config.dha_lmk_scale]: [0.594]
+[ro.config.dha_step]: [2]
+[ro.config.knox]: [v00]
+[ro.config.ldha_es_enable]: [true]
+[ro.config.media_sound]: [Media_preview_Touch_the_light.ogg]
+[ro.config.notification_sound]: [S_Whistle.ogg]
+[ro.config.ringtone]: [Over_the_horizon.ogg]
+[ro.config.tima]: [1]
+[ro.config.timaversion]: [2.0]
+[ro.cp_debug_level]: [0x55FF]
+[ro.crypto.state]: [unencrypted]
+[ro.csb_val]: [1]
+[ro.csc.country_code]: [KSA]
+[ro.csc.countryiso_code]: [SA]
+[ro.csc.sales_code]: [KSA]
+[ro.dalvik.vm.native.bridge]: [0]
+[ro.debug_level]: [0x4f4c]
+[ro.debuggable]: [0]
+[ro.emmc]: [true]
+[ro.emmc_checksum]: [3]
+[ro.error.receiver.default]: [com.samsung.receiver.error]
+[ro.factorytest]: [0]
+[ro.fuse_sdcard]: [true]
+[ro.gps.agps_provider]: [1]
+[ro.hardware]: [qcom]
+[ro.hdcp2.rx]: [tz]
+[ro.hdmi.enable]: [true]
+[ro.hwui.drop_shadow_cache_size]: [6]
+[ro.hwui.gradient_cache_size]: [2]
+[ro.hwui.layer_cache_size]: [34]
+[ro.hwui.path_cache_size]: [10]
+[ro.hwui.r_buffer_cache_size]: [4]
+[ro.hwui.shape_cache_size]: [4]
+[ro.hwui.text_cache_width]: [2048]
+[ro.hwui.text_large_cache_height]: [4096]
+[ro.hwui.text_large_cache_width]: [4096]
+[ro.hwui.text_small_cache_height]: [2048]
+[ro.hwui.text_small_cache_width]: [2048]
+[ro.hwui.texture_cache_size]: [50]
+[ro.kernel.qemu]: [0]
+[ro.nvdata_backup]: [0]
+[ro.opengles.version]: [196608]
+[ro.pip.gated]: [0]
+[ro.product.board]: [MSM8960]
+[ro.product.brand]: [samsung]
+[ro.product.cpu.abi2]: [armeabi]
+[ro.product.cpu.abi]: [armeabi-v7a]
+[ro.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.product.cpu.abilist64]: []
+[ro.product.cpu.abilist]: [armeabi-v7a,armeabi]
+[ro.product.device]: [jactivelte]
+[ro.product.locale.language]: [en]
+[ro.product.locale.region]: [GB]
+[ro.product.manufacturer]: [samsung]
+[ro.product.model]: [GT-I9295]
+[ro.product.name]: [jactiveltexx]
+[ro.product_ship]: [true]
+[ro.qc.sdk.audio.fluencetype]: [none]
+[ro.qc.sdk.audio.ssr]: [false]
+[ro.qc.sdk.camera.facialproc]: [true]
+[ro.qc.sdk.gestures.camera]: [false]
+[ro.qc.sdk.sensors.gestures]: [false]
+[ro.qualcomm.bluetooth.ftp]: [true]
+[ro.qualcomm.bluetooth.hfp]: [true]
+[ro.qualcomm.bluetooth.hsp]: [true]
+[ro.qualcomm.bluetooth.map]: [true]
+[ro.qualcomm.bluetooth.nap]: [true]
+[ro.qualcomm.bluetooth.opp]: [true]
+[ro.qualcomm.bluetooth.pbap]: [true]
+[ro.qualcomm.bt.hci_transport]: [smd]
+[ro.qualcomm.cabl]: [1]
+[ro.revision]: [16]
+[ro.ril.svdo]: [false]
+[ro.ril.svlte1x]: [false]
+[ro.ril.transmitpower]: [true]
+[ro.runtime.firstboot]: [1605441651606]
+[ro.sec.ecryptfs.fips.disabled]: [true]
+[ro.sec.fle.encryption]: [true]
+[ro.secure]: [1]
+[ro.securestorage.support]: [true]
+[ro.security.icd.flagmode]: [single]
+[ro.security.mdpp.release]: [4]
+[ro.security.mdpp.ver]: [1.0]
+[ro.security.vpnpp.release]: [4.1]
+[ro.security.vpnpp.ver]: [1.4]
+[ro.secwvk]: [144]
+[ro.serialno]: [411265f0]
+[ro.setupwizard.mode]: [DISABLED]
+[ro.sf.lcd_density]: [480]
+[ro.streaming.video.drs]: [true]
+[ro.telephony.call_ring.multiple]: [false]
+[ro.use_data_netmgrd]: [false]
+[ro.vendor.extension_library]: [libqti-perfd-client.so]
+[ro.warmboot.capability]: [1]
+[ro.warranty_bit]: [0]
+[ro.wifi.channels]: []
+[ro.zygote]: [zygote32]
+[sec.fle.encryption.status]: [Dec NewFile IncludeMedia]
+[secmm.player.gp.url]: [true]
+[security.ASKS.policy_version]: [161011]
+[security.mdpp.result]: [None]
+[security.mdpp]: [Ready]
+[selinux.policy_version]: [SEPF_GT-I9295_5.0.1_0011]
+[selinux.reload_policy]: [1]
+[service.bootanim.exit]: [0]
+[service.camera.running]: [0]
+[service.media.powersnd]: [1]
+[storage.mmc.size]: [15758000128]
+[storage.preload.complete]: [1]
+[supolicy.loaded]: [1]
+[sys.boot_completed]: [1]
+[sys.cameramode.blackbox]: [0]
+[sys.cameramode.vtcall]: [0]
+[sys.dockstate]: [0]
+[sys.enterprise.billing.version]: [1.0.0]
+[sys.hangouts.fps]: [-1]
+[sys.isdumpstaterunning]: [0]
+[sys.mobicore.loaded]: [true]
+[sys.mobicoredaemon.enable]: [true]
+[sys.pwrcntl.decision.change]: [0]
+[sys.qseecomd.enable]: [true]
+[sys.settings_global_version]: [3]
+[sys.settings_system_version]: [49]
+[sys.siop.level]: [0]
+[sys.ssrm.mdnie]: [-1]
+[sys.sysctl.extra_free_kbytes]: [24300]
+[sys.sysctl.tcp_def_init_rwnd]: [60]
+[sys.usb.config]: [mtp,adb]
+[sys.usb.state]: [mtp,adb]
+[tunnel.audiovideo.decode]: [false]
+[tunnel.decode]: [true]
+[vold.pfe]: [deactivated]
+[vold.post_fs_data_done]: [1]
+[wifi.interface]: [wlan0]
+[wlan.driver.status]: [ok]
+[wlan.wfd.status]: [disconnected]
+
+C:\>
+
+
+
+
+
+
+
+
+
+
+
+============================== adb tutorials ===============================
+
+adb shell pm setInstallLocation 2
+Error: unknown command 'setInstallLocation'
+usage: pm list packages [-f] [-d] [-e] [-s] [-3] [-i] [-u] [--user USER_ID] [FILTER]
+       pm list permission-groups
+       pm list permissions [-g] [-f] [-d] [-u] [GROUP]
+       pm list instrumentation [-f] [TARGET-PACKAGE]
+       pm list features
+       pm list libraries
+       pm list users
+       pm path PACKAGE
+       pm dump PACKAGE
+       pm install [-lrtsfd] [-i PACKAGE] [PATH]
+       pm install-create [-lrtsfdp] [-i PACKAGE] [-S BYTES]
+       pm install-write [-S BYTES] SESSION_ID SPLIT_NAME [PATH]
+       pm install-commit SESSION_ID
+       pm install-abandon SESSION_ID
+       pm uninstall [-k] [--user USER_ID] PACKAGE
+       pm set-installer PACKAGE INSTALLER
+       pm clear [--user USER_ID] PACKAGE
+       pm enable [--user USER_ID] PACKAGE_OR_COMPONENT
+       pm disable [--user USER_ID] PACKAGE_OR_COMPONENT
+       pm disable-user [--user USER_ID] PACKAGE_OR_COMPONENT
+       pm disable-until-used [--user USER_ID] PACKAGE_OR_COMPONENT
+       pm hide [--user USER_ID] PACKAGE_OR_COMPONENT
+       pm unhide [--user USER_ID] PACKAGE_OR_COMPONENT
+       pm grant PACKAGE PERMISSION
+       pm revoke PACKAGE PERMISSION
+       pm set-install-location [0/auto] [1/internal] [2/external]
+       pm get-install-location
+       pm set-permission-enforced PERMISSION [true|false]
+       pm trim-caches DESIRED_FREE_SPACE
+       pm create-user [--profileOf USER_ID] [--managed] USER_NAME
+       pm remove-user USER_ID
+       pm get-max-users
+
+pm list packages: prints all packages, optionally only
+  those whose package name contains the text in FILTER.  Options:
+    -f: see their associated file.
+    -d: filter to only show disbled packages.
+    -e: filter to only show enabled packages.
+    -s: filter to only show system packages.
+    -3: filter to only show third party packages.
+    -i: see the installer for the packages.
+    -u: also include uninstalled packages.
+
+pm list permission-groups: prints all known permission groups.
+
+pm list permissions: prints all known permissions, optionally only
+  those in GROUP.  Options:
+    -g: organize by group.
+    -f: print all information.
+    -s: short summary.
+    -d: only list dangerous permissions.
+    -u: list only the permissions users will see.
+
+pm list instrumentation: use to list all test packages; optionally
+  supply <TARGET-PACKAGE> to list the test packages for a particular
+  application.  Options:
+    -f: list the .apk file for the test package.
+
+pm list features: prints all features of the system.
+
+pm list users: prints all users on the system.
+
+pm path: print the path to the .apk of the given PACKAGE.
+
+pm dump: print system state associated with the given PACKAGE.
+
+pm install: install a single legacy package
+pm install-create: create an install session
+    -l: forward lock application
+    -r: replace existing application
+    -t: allow test packages
+    -i: specify the installer package name
+    -s: install application on sdcard
+    -f: install application on internal flash
+    -d: allow version code downgrade
+    -p: partial application install
+    -S: size in bytes of entire session
+
+pm install-write: write a package into existing session; path may
+  be '-' to read from stdin
+    -S: size in bytes of package, required for stdin
+
+pm install-commit: perform install of fully staged session
+pm install-abandon: abandon session
+
+pm set-installer: set installer package name
+
+pm uninstall: removes a package from the system. Options:
+    -k: keep the data and cache directories around after package removal.
+
+pm clear: deletes all data associated with a package.
+
+pm enable, disable, disable-user, disable-until-used: these commands
+  change the enabled state of a given package or component (written
+  as "package/class").
+
+pm grant, revoke: these commands either grant or revoke permissions
+  to applications.  Only optional permissions the application has
+  declared can be granted or revoked.
+
+pm get-install-location: returns the current install location.
+    0 [auto]: Let system decide the best location
+    1 [internal]: Install on internal device storage
+    2 [external]: Install on external media
+
+pm set-install-location: changes the default install location.
+  NOTE: this is only intended for debugging; using this can cause
+  applications to break and other undersireable behavior.
+    0 [auto]: Let system decide the best location
+    1 [internal]: Install on internal device storage
+    2 [external]: Install on external media
+
+pm trim-caches: trim cache files to reach the given free space.
+
+pm create-user: create a new user with the given USER_NAME,
+  printing the new user identifier of the user.
+
+pm remove-user: remove the user with the given USER_IDENTIFIER,
+  deleting all data associated with that user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Partitioning the SD Card using ADB
+Forest edited this page on Nov 18, 2015 · 15 revisions
+Introduction
+There are many ways to partition an SD Card, some prefer to use a program or under Ubuntu using Parted/Gparted. Even CWM includes a tool to do the partitioning. The drawback however is that sometimes programs tend to cause dificulties or require a PC with a card reader, etc. A while back, when I partitioned my SD Card I just did not want to install extra stuff on my PC and when trying the method via CWM the feature itself had problems.
+
+Why should I partition my SD Card?
+CyanogedMod 11 (KitKat) and newer Android versions and derivates (AOSP 5.x and CyanogenMod 12 (Lollipop)) take away a fairly large amount of internal storage from our phones. Additionally apps tend to get bigger and are often not movable to the SD Card by normal means. To overcome this limitation there are ways to expand the internal phone storage by assigning part of the SD Card to the phone internal storage partition.
+
+For this to work you first will have to create a special partition on your SD Card. How to do it will be explained in this guide. Once that is done you can use an app like link2Sd or Mount2Sd to expand your storage on CyanogenMod 11. AOSP 5.x and CyanogenMod 12 require a partition like this by default and therefore don't require installing any of the previous mentioned apps.
+
+What else do I have to know?
+Partitioning the SD Card will completely erase it! This means that you should back up EVERYTHING you want to keep.
+Since we are increasing the overall "internal" storage of the phone booting may take longer.
+Let's start!
+What you will need
+Custom recovery with parted and mkfs (included in LegacyXperia Kernel)
+Phone with SD Card inserted
+ADB and ADB Drivers (These come bundled in the Android SDK) See the Installing LX guide.
+Preparation
+On your phone:
+
+Enable Android debugging: Settings > Developer options > Android debugging
+Give root to ADB: Settings > Developer options > Root access : apps and adb
+Under Windows:
+Open a command prompt and navigate to the folder where adb.exe is located. You do this with the following command:
+
+cd <drive letter>:\<path to adb folder>\
+You can also right click on an empty space inside the adb.exe folder > Open command window here.
+
+Connect your phone to your computer via USB. Reboot into recovery mode manually or by typing the following command into the command prompt:
+
+adb shell reboot recovery
+A dialog may appear on your phone to allow access from your PC
+
+Step 1
+Once in the recovery type the following to start the shell:
+
+adb shell
+Your screen should look something like this (Obviously the path may be different)
+
+D:\Xperia Arc S\Tools\adb_fastboot\adb shell
+/# _
+NOTE: I've had the case that some random characters appeared before the #, just ignore.
+
+Step 2
+Open parted to start the partitioning tool by typing the following command into the shell:
+
+parted /dev/block/mmcblk0
+Your screen should look like this
+
+/# parted /dev/block/mmcblk0
+GNU Parted 1.8.8.1.179-aef3
+Using /dev/block/mmcblk0
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+(parted) _
+NOTE: Indepth information about parted can be found here.
+
+Step 3
+Display the SD Card information. Shell Command:
+
+print
+Your screen should look like this
+
+/# parted /dev/block/mmcblk0
+GNU Parted 1.8.8.1.179-aef3
+Using /dev/block/mmcblk0
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+(parted) print
+print
+print
+Model: SD SU08G (sd/mmc)
+Disk: /dev/block/mmcblk0: 7948MB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos
+
+Number  Start   End     Size    Type     File system     Flags
+ 1      512B    7948MB  7948MB  primary  fat32           lba
+
+(parted) _
+IMPORTANT: Write down the exact number of the size of your SD Card. Mine is 7948MB.
+
+NOTE: On bigger SD Cards you can use the command unit MiB to display everything in MB rather than GB.
+
+NOTE2: If you come across a SD Card that is already partitioned it should look something like this:
+
+Number  Start   End     Size    Type     File system     Flags
+ 1      512B    6796MB  6796MB  primary  fat32           lba
+ 2      6796MB  7820MB  1024MB  primary  ext2
+ 3      7820MB  7948MB  128MB   primary  linux-swap(v1)
+
+(parted) _
+NOTE3: If your SD Card is blank you can skip to Step 5
+
+Step 4
+Remove all partitions. If you have multiple partitions, remove each one at a time. You most likely will only have one partition so type:
+
+rm 1
+If you have more than one type rm x where x is the partition number. Type print when you are done to check if everything has been removed.
+
+Your screen should look like this
+
+Number  Start   End     Size    Type     File system     Flags
+
+(parted) _
+Step 5
+Create your new partitions. You can make these any size, but the most common setup is 32 MB linux-swap partition, 512 MB ext2 partition, and remaining free space as a fat32 partition. In order to work properly, the partitions must be created in this order: fat32, ext2, linux-swap.
+
+Now you will have to do some math. We will take the output of my SD Card from Step 3 as an example:
+
+  7948MB  Total SD Card size  
+-  128MB  linux-swap  
+= 7820MB  Rest size  
+- 1024MB  ext2  
+= 6796MB  Rest size (for fat32)  
+Now we have to create the partitions. Use the following command to do so:
+
+mkpartfs primary <file system> <start> <end>
+For my SD Card with the calculated values it would look like this:
+
+mkpartfs primary fat32 0 6796
+mkpartfs primary ext2 6796 7820
+mkpartfs primary linux-swap 7820 7948
+NOTE: The order in which you type the commants is important! First create the fat32 - partition then ext2 and finally linux-swap.
+
+Step 6
+Check if everything went well. Type print again and you should see your newly created partitions. Typing quit will return you to the shell. If you don't wish to continue with the optional filesystem upgrade you can now reboot your phone.
+
+Your partitions are ready to be used with any sd-ext linking App. Remember that ext2,ext3, ext4 and f2fs partitions are "invisible" to Windows, so you only will see the fat32 partition when you plug in your phone. In my case Windows will tell me it's 7GB in size because the other 1GB belongs to ext2.
+
+Enjoy!
+
+Upgrading the ext2 filesystem (Optional)
+You can further upgrade your filesystem either to ext3/ext4 or f2fs. Which one you choose is up to you. Migrating from ext4 to f2fs by following the instructions for ext2 to f2fs is also possible.
+
+Upgrade ext2 to ext4
+To upgrade your ext2 partition to an ext3 and ext4 filesystem you will use the tune2fs command. Remember to type this command into the shell (/# _) via ADB and NOT into the parted tool.
+
+The command to upgrade to ext3 looks as follows:
+
+tune2fs -j /dev/block/mmcblk0p2
+to upgrade to ext4 type this:
+
+tune2fs -O extents,uninit_bg,dir_index /dev/block/mmcblk0p2
+Just to make sure run e2fsck to make sure the filesystem was upgraded and is without errors. Type the following:
+
+e2fsck -fpDC0 /dev/block/mmcblk0p2
+Check your work
+
+From the shell open parted again and use the print command to list your SD Card details. Type:
+
+parted /dev/block/mmcblk0
+then
+
+print
+Your screen should look like this
+
+/# parted /dev/block/mmcblk0
+GNU Parted 1.8.8.1.179-aef3
+Using /dev/block/mmcblk0
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+(parted) print
+print
+print
+Model: SD SU08G (sd/mmc)
+Disk: /dev/block/mmcblk0: 7948MB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos
+
+Number  Start   End     Size    Type     File system     Flags
+ 1      512B    6796MB  6796MB  primary  fat32           lba
+ 2      6796MB  7820MB  1024MB  primary  ext4
+ 3      7820MB  7948MB  128MB   primary  linux-swap(v1)
+
+(parted) _
+Now you can quit and reboot your phone.
+
+Success!
+
+Upgrade ext2 to f2fs
+As an alternative you can create a f2fs partition by formatting the created ext2 filesystem to f2fs. To do this you simply need to open a shell via ADB and type:
+
+mkfs.f2fs -l f2fs /dev/block/mmcblk0p2
+Make sure that /system is mounted because the f2fs - tool is located under /system/bin.
+
+Wait for it to finish, type quit and reboot your phone.
+
+Success!
+
+
+github.com/LegacyXperia/Wiki/wiki/Partitioning-the-SD-Card-using-ADB
+
+https://www.gnu.org/software/parted/manual/parted.html#Partitioning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nlock SD-card write / access permission for all Apps in Android
+Unlock SD-card write / access permission for all Apps in Android
+To gain external SDcard acees and write permission in Android Kitkat and Lollipop, do the following:
+1.
+Launch your favorite file manager, like Root Explorer
+2.
+Navigate to /system/etc/permissions/platform.xml (Do remember to backup “platform.xml” in safer place)
+3.
+Open Platform.xml by long pressing on it and then selecting EDIT
+4.
+Find android.permission.WRITE_EXTERNAL_STORAGE and android.permission.WRITE_MEDIA_STORAGE lines
+5.
+Add the below Highlighted code line or Simply make WRITE_EXTERNAL_STORAGE and WRITE_MEDIA_STORAGE blocks look exactly the same and then save the file.
+<permission name=”android.permission.WRITE_EXTERNAL_STORAGE” >
+<group gid=”sdcard_r” />
+<group gid=”sdcard_rw” />
+<group gid=”media_rw” />
+</permission>
+<permission name=”android.permission.WRITE_MEDIA_STORAGE” >
+<group gid=”sdcard_rw” />
+<group gid=”media_rw” />
+</permission>
+
+
+
+m.facebook.com/nt/screen/?params=%7B"note_id"%3A273315770595862%7D&path=%2Fnotes%2F&_rdr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+forum.xda-developers.com/showthread.php?t=965190
+
+
+Re-packaging the firmware:
+
+Quote:
+1. Make a and rename a folder/directory and extract the firmware tar package to that folder or simply open using a compression utility like 7zip or winrar then highlight and drag the files to the new folder. It's easier to make the directory on drive C if you are a windows user.
+Quote:
+
+Quote:
+2. Extract the Empty_dbdata.rfs_file archive and copy the extracted dbdata.rfs to the same folder
+Quote:
+
+Quote:
+Note:
+I have created a directory on drive C which I called ROM and in the same example I'm repackaging a JS5 firmware, so if you have created a directory with different name, path/location or firmware name then you need to change the following commands to suit your changes.
+
+
+Quote:
+3. Start cygwin from the shortcut on your Desktop, Linux users can use the terminal and change to the firmware directory.
+
+Quote:
+Changing to the extracted firmware directory:
+Quote:
+cd c:/ROM
+
+
+Quote:
+Creating a PDA.tar.md5:
+
+Creating a PDA.tar file (Please read the note regarding this command at the end of this guide)*
+Quote:
+tar -c param.lfs zImage factoryfs.rfs dbdata.rfs >> PDA_JS5.tar
+
+Creating an MD5 hash
+Quote:
+md5sum -t PDA_JS5.tar >> PDA_JS5.tar
+
+Moving the MD5 hash information to the tar file
+Quote:
+mv PDA_JS5.tar PDA_JS5.tar.md5
+
+
+Quote:
+Creating a Phone.tar.md5:
+
+Creating a Phone.tar
+Quote:
+tar -c modem.bin >> PHONE_JPY.tar
+
+Creating an MD5 hash
+Quote:
+md5sum -t PHONE_JPY.tar >> PHONE_JPY.tar
+
+Moving the MD5 hash information to the tar file
+Quote:
+mv PHONE_JPY.tar PHONE_JPY.tar.md5
+
+
+Quote:
+Creating a CSC.tar.md5
+
+Creating CSC.tar
+Quote:
+tar -c cache.rfs >> CSC_XENJS3.tar
+
+Creating an MD5 hash
+Quote:
+md5sum -t GT-I9295_1_esau_32bit_ext4.tar >> GT-I9295_1_esau_32bit_ext4.tar
+---------------------
+md5sum -t 
+
+
+Moving the MD5 hash information to the tar file
+Quote:
+mv GT-I9295_1_esau_32bit_ext4.tar GT-I9295_1_esau_32bit_ext4.tar.md5
+
+
+Quote:
+Note:
+All command for packaging and creating a single tar.md5 file(3 commands) can be executed as one single command as follows with PDA as example:
+Code:
+tar -c param.lfs zImage factoryfs.rfs dbdata.rfs >> PDA_JS5.tar ; md5sum -t PDA_JS5.tar >> PDA_JS5.tar ; mv PDA_JS5.tar PDA_JS5.tar.md5
+and so on..
+Quote:
+
+We have by now repackaged a firmware of 1 tar file to 3 tar.md5 files, these files are now ready to be tested before flashing or sharing.
+
+Quote:
+Note:
+One reason for a failing MD5 checksum of a file is renaming it after it has been repackaged as a tar.md5, so don't rename the repackaged files.
+
+
+
+Quote:
+Testing the tar.md5 files (Windows):
+
+Quote:
+Start Odin and load PDA, PHONE and the CSC files without connecting the phone to any USB port and hit Start and look at the massage panel of Odin and see if your packages are valid, if they are not then you haven't repackaged the files right, and you need to start over.
+Quote:
+
+
+
+Quote:
+Sharing the repackaged firmware:
+
+I have many times seen our members upload and share firmwares that are not compressed, this is not good for two reasons:
+
+Quote:
+1. The file could be corrupt when downloaded, and there is no fun in flashing a corrupt firmware, this can be avoided when extracting a compressed firmware. A corrupt archive cannot be extracted, and thereby you will know that your downloaded firmware is corrupt.
+
+2. A tar file is not a compressed file, it's only a package that contains file(s). Please take a look and see how all the extracted files are almost equal in size to the tar.md5 files
+Quote:
+
+Quote:
+If you compress your files before uploading them, then file(s) size, upload time for you and the download time for them you are sharing your file(s) with will be cut in half, take a look to see what I mean
+Quote:
+
+
+
+
+Quote:
+
+Quote:
+Conclusion:
+
+
+
+We have by now learned how to repackage firmware(s), use them and share them without worrying about re-partitioning.
+
+We can now repackage and remove boot.bin and Sbl.bin in any leaked or official firmware that is already split in 3 files, that may disable Download and Recovery modes of our devices.
+
+Good luck repackaging, flashing and sharing your firmwares..
+
+Quote:
+Quote:
+*Note:
+The first file in the command will be the first file to be added to the tar file and the first to be flashed. I'm using this command in this particular order according to the pit files and the device partitions which are:
+
+START
+boot.bin
+.pit
+efs.rfs
+sbl.bin
+sbl.bin
+param.lfs
+zImage
+zImage
+factoryfs.rfs
+dbdata.rfs
+cache.rfs
+modem.bin
+END
+
+
+
+
+
+
+
+
+RIFF BOX PACKAGE EDITOR
+
+
+
+
+tar -H ustar -c recovery.img > recovery.tar
+md5sum -t recovery.tar >> recovery.tar
+mv recovery.tar recovery.tar.md5
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+tar -H ustar -c GT-I9295_1_esau_32bit_ext4 > GT-I9295_1_esau_32bit_ext4.tar
+md5sum -t GT-I9295_1_esau_32bit_ext4.tar >> GT-I9295_1_esau_32bit_ext4.tar
+mv GT-I9295_1_esau_32bit_ext4.tar GT-I9295_1_esau_32bit_ext4.tar.md5
+
+==================================================
+
+tar: param.lfs: Cannot stat: No such file or directory
+
+tar -c param.lfs zImage factoryfs.rfs dbdata.rfs >> parts.tar
+
+md5sum -t parts.tar >> parts.tar
+
+mv parts.tar parts.tar.md5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+r=4
+w=2
+x=1
+in every group. Your example is 6(r+w=4+2)4(r=4)4(r=4).
+
+share  improve this answer  follow 
+answered May 31 '12 at 5:13
+
+Jan Marek
+3,05211 gold badge1111 silver badges1212 bronze badges
+add a comment
+
+29
+
+The full permissions mode number is a 4-digit octal number, though most of the time, you only use the 3 least-significant digits. Add up each group in the permissions string, taking r=4, w=2, x=1. For example:
+
+ 421421421
+-rwxr-xr--
+ \_/        -- r+w+x = 4+2+1 = 7
+    \_/     -- r+_+x = 4+0+1 = 5
+       \_/  -- r+_+_ = 4+0+0 = 4     => 0754
+Now, sometimes you'll see an odd modestring like this:
+
+-rwsr-xr-T
+The fourth digit is overloaded onto the x bits in the modestring. If you see a letter other than x there, then it means one of these "special" fourth-digit bits is set, and if the letter is lower case, then x for that position is also set. So the translation for this one is:
+
+   4  2  1
+ 421421421
+
+
+
+https://unix.stackexchange.com/questions/39710/how-to-get-permission-number-by-string-rw-r-r/39712#39712
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Edify script language
+Edify is the script language for updates that is interpreted by update-binary. It is the successor to the Amend script language.
+
+Contents
+1 Syntax
+2 Functions
+2.1 Disk operations
+2.2 Image operations
+2.3 File operations
+2.4 Patching operations
+2.5 Control
+2.6 Predicates
+2.7 User feedback
+3 Testing
+4 See also
+5 Links
+Syntax
+Syntax errors will result in this script not running (Installer skips right over it. In comparison, if Aroma Installer has a syntax error, phone will boot right past Installer into Android as if it never happened but VERY quickly show an error)
+The script file must use UNIX newlines as EOL.
+Whitespace (space, tab, LF 0x0a, but not CR 0x0d) may be freely used. EXCEPT last line cannot be a blank line!
+Comments are any line prefaced with #
+All commands are terminated with a semicolon. Clauses (in ifelse) may contain any number of commands, each terminated with a semicolon.
+Strings are usually delimited with double quotation marks.
+The characters \n, \t, \", and \\ are understood, as are hexadecimal escapes like \x4a
+Numbers are really just strings and are usually not delimited.
+Logical values are "t" for true or "" for false.
+The comparison operators are == (string equal), != (string not equal).
+The logical operators are || (logical or), && (logical and), ! (logical not).
+The concatenation operator is +. (Caution: 2+2==22)
+The conditional keywords if, then, else and endif operate as expected if they are unquoted. The ifelse macro may be used instead.
+Functions
+Disk operations
+format(fs_type, partition_type, device, fs_size, mountpoint) - usually use "0" for fs_size (entire partition)
+mount(fs_type, partition_type, device, mountpoint)
+unmount(mountpoint)
+is_mounted(mountpoint)
+wipe_cache()
+Image operations
+write_raw_image(filename, device)
+write_firmware_image
+File operations
+package_extract_file(source, destination) - returns "t" on success and "" on failure (e.g. if the file does not exist in the archive)
+package_extract_dir(source, destination)
+delete(file) – deletes a file
+delete_recursive(directory) – completely deletes a directory
+symlink(target, link0, ...) – create any number of links to a target
+set_perm(user, group, mode, file) – performs a chown, chmod on a file
+set_perm_recursive(user, group, directory-mode, files-mode, directory) – performs a chown, chmod on the directory itself, and chmod on all contents of a directory
+getprop(key) – returns a string value of the associated key from the system properties
+file_getprop(file, key) – returns a string value of the associated key from a specific file
+sha1_check(file) - return sha1 hash of file
+sha1_check(file, sha1_hex, [sha1_hex2, ...]) - return the hash which matches or "" if none matches
+Patching operations
+apply_patch(srcfile, tgtfile, tgtsha1, tgtsize, sha1_1, patch_1, ...)
+apply_patch_check(file, [sha1_1, ...])
+apply_patch_space(bytes)
+run_program(program, arg0, ...) - returns the exit code of the program
+Control
+assert(condition0, ...) – aborts and prints on any false condition
+abort(message)
+ifelse(condition, trueclause, falseclause) – conditional, falseclause is optional
+Predicates
+is_substring(substring, string) – checks to see if string constains substring anywhere
+less_than_int(x, y) – checks to see if x<y when considered as integers
+greater_than_int(x, y) – checks to see if x>y when considered as integers
+User feedback
+show_progress(fraction, seconds) – advance progress bar a fractional amount over a period of seconds
+set_progress(fraction) – advance progress bar a fractional amount
+ui_print(message0, ...) – print any number of strings
+sleep(seconds) – pause a number of seconds
+Testing
+Scripts may be tested by executing update-binary directly:
+
+update-binary version output package
+An example would be:
+
+update-binary 2 stdout /sdcard/update.zip
+See also
+Aroma installer
+Links
+Inside OTA packages -- Google explanation on OTA packages, contains an extensive edify language reference.
+
+Category: Guide
+
+
+
+
+forum.xda-developers.com/wiki/Edify_script_language
+
+
+
+
+unix.stackexchange.com/questions/39710/how-to-get-permission-number-by-string-rw-r-r/39712#39712
+
+
+
+
+
+
+
+
+
+ZIPALIGNING 1 of 378: KnoxAttestationAgent.apk
+ZIPALIGNING 2 of 378: KLMSAgent.apk
+ZIPALIGNING 3 of 378: SPDClient.apk
+ZIPALIGNING 4 of 378: AASAservice.apk
+ZIPALIGNING 5 of 378: AccessControl.apk
+ZIPALIGNING 6 of 378: AccuweatherPhone2013_J_LMR.apk
+ZIPALIGNING 7 of 378: AirMotionTryActually.apk
+ZIPALIGNING 8 of 378: AirWakeUp.apk
+ZIPALIGNING 9 of 378: AllShareCastPlayer.apk
+ZIPALIGNING 10 of 378: AllshareFileShare.apk
+ZIPALIGNING 11 of 378: AllshareFileShareClient.apk
+ZIPALIGNING 12 of 378: AllshareFileShareServer.apk
+ZIPALIGNING 13 of 378: AllshareMediaServer.apk
+ZIPALIGNING 14 of 378: AllshareMediaShare.apk
+ZIPALIGNING 15 of 378: AssistantMenu2.apk
+ZIPALIGNING 16 of 378: BadgeProvider.apk
+ZIPALIGNING 17 of 378: BandService.apk
+ZIPALIGNING 18 of 378: BasicDreams.apk
+ZIPALIGNING 19 of 378: BCService.apk
+ZIPALIGNING 20 of 378: BeaconManager.apk
+ZIPALIGNING 21 of 378: BeamService.apk
+ZIPALIGNING 22 of 378: Bluetooth.apk
+ZIPALIGNING 23 of 378: BluetoothTest.apk
+ZIPALIGNING 24 of 378: Blurb.apk
+ZIPALIGNING 25 of 378: Books.apk
+ZIPALIGNING 26 of 378: BrowserProviderProxy.apk
+ZIPALIGNING 27 of 378: CaptivePortalLogin.apk
+ZIPALIGNING 28 of 378: CertInstaller.apk
+ZIPALIGNING 29 of 378: ChatON_MARKET.apk
+ZIPALIGNING 30 of 378: ChocoEUKor.apk
+ZIPALIGNING 31 of 378: Chrome.apk
+ZIPALIGNING 32 of 378: ClipboardSaveService.apk
+ZIPALIGNING 33 of 378: ClipboardUIService.apk
+ZIPALIGNING 34 of 378: ClockPackage_Osup.apk
+ZIPALIGNING 35 of 378: ColorBlind.apk
+ZIPALIGNING 36 of 378: ConfigUpdater.apk
+ZIPALIGNING 37 of 378: CoolEUKor.apk
+ZIPALIGNING 38 of 378: DigitalClock.apk
+ZIPALIGNING 39 of 378: DigitalClock21.apk
+ZIPALIGNING 40 of 378: DigitalPenWorkService.apk
+ZIPALIGNING 41 of 378: DioDict3Service.apk
+ZIPALIGNING 42 of 378: DirectConnect.apk
+ZIPALIGNING 43 of 378: Divx.apk
+ZIPALIGNING 44 of 378: DocumentsUI.apk
+ZIPALIGNING 45 of 378: Drive.apk
+ZIPALIGNING 46 of 378: Dropbox.apk
+ZIPALIGNING 47 of 378: DropboxOOBE.apk
+ZIPALIGNING 48 of 378: DualClockDigital.apk
+ZIPALIGNING 49 of 378: EasyFavoritesContactsWidget.apk
+ZIPALIGNING 50 of 378: EasySettings.apk
+ZIPALIGNING 51 of 378: EdmSimPinService.apk
+ZIPALIGNING 52 of 378: EdmVpnServices.apk
+ZIPALIGNING 53 of 378: ELMAgent.apk
+ZIPALIGNING 54 of 378: FaceLock.apk
+ZIPALIGNING 55 of 378: FactoryCamera_FB.apk
+ZIPALIGNING 56 of 378: FilterInstaller.apk
+ZIPALIGNING 57 of 378: FilterProvider.apk
+ZIPALIGNING 58 of 378: Flipboard.apk
+ZIPALIGNING 59 of 378: GearManagerStub.apk
+ZIPALIGNING 60 of 378: GestureService.apk
+ZIPALIGNING 61 of 378: GlanceView.apk
+ZIPALIGNING 62 of 378: Gmail2.apk
+ZIPALIGNING 63 of 378: GoogleCalendarSyncAdapter.apk
+ZIPALIGNING 64 of 378: GoogleContactsSyncAdapter.apk
+ZIPALIGNING 65 of 378: GoogleSearchWidget.apk
+ZIPALIGNING 66 of 378: Hangouts.apk
+ZIPALIGNING 67 of 378: INDI_Server.apk
+ZIPALIGNING 68 of 378: InteractiveTutorial.apk
+ZIPALIGNING 69 of 378: InterfacePermissions.apk
+ZIPALIGNING 70 of 378: JobManager.apk
+ZIPALIGNING 71 of 378: KeyChain.apk
+ZIPALIGNING 72 of 378: LegacyInCallUI.apk
+ZIPALIGNING 73 of 378: LocalFOTA.apk
+ZIPALIGNING 74 of 378: Maps.apk
+ZIPALIGNING 75 of 378: MDMApp.apk
+ZIPALIGNING 76 of 378: minimode-res.apk
+ZIPALIGNING 77 of 378: MobilePrintSvc_Samsung.apk
+ZIPALIGNING 78 of 378: MobileTrackerEngineTwo.apk
+ZIPALIGNING 79 of 378: MultiWindowTrayService.apk
+ZIPALIGNING 80 of 378: Music2.apk
+ZIPALIGNING 81 of 378: MusicLiveShare2.apk
+ZIPALIGNING 82 of 378: Newsstand.apk
+ZIPALIGNING 83 of 378: NfcNci.apk
+ZIPALIGNING 84 of 378: OmaDrmPopup.apk
+ZIPALIGNING 85 of 378: PackageInstaller.apk
+ZIPALIGNING 86 of 378: PacProcessor.apk
+ZIPALIGNING 87 of 378: PalmSwipeTutorial.apk
+ZIPALIGNING 88 of 378: PartnerBookmarksProvider.apk
+ZIPALIGNING 89 of 378: Peel_L.apk
+ZIPALIGNING 90 of 378: Personalization.apk
+ZIPALIGNING 91 of 378: PhotoTable.apk
+ZIPALIGNING 92 of 378: PickUpTutorial.apk
+ZIPALIGNING 93 of 378: PlayGames.apk
+ZIPALIGNING 94 of 378: PlusOne.apk
+ZIPALIGNING 95 of 378: PolarisViewer5.apk
+ZIPALIGNING 96 of 378: PopupuiReceiver.apk
+ZIPALIGNING 97 of 378: Preconfig.apk
+ZIPALIGNING 98 of 378: PreloadInstaller.apk
+ZIPALIGNING 99 of 378: QComQMIPermissions.apk
+ZIPALIGNING 100 of 378: QuickConnect.apk
+ZIPALIGNING 101 of 378: ResourceManager.apk
+ZIPALIGNING 102 of 378: ringtoneBR.apk
+ZIPALIGNING 103 of 378: RootPA.apk
+ZIPALIGNING 104 of 378: RoseEUKor.apk
+ZIPALIGNING 105 of 378: SamsungAppsWidget.apk
+ZIPALIGNING 106 of 378: SamsungCamera2.apk
+ZIPALIGNING 107 of 378: SamsungContentsAgent.apk
+ZIPALIGNING 108 of 378: SamsungGames1.3_EOS.apk
+ZIPALIGNING 109 of 378: SamsungHub.apk
+ZIPALIGNING 110 of 378: SamsungHubUpdater.apk
+ZIPALIGNING 111 of 378: SamsungIME.apk
+ZIPALIGNING 112 of 378: SamsungOCR2.apk
+ZIPALIGNING 113 of 378: SamsungSans.apk
+ZIPALIGNING 114 of 378: SamsungTTS.apk
+ZIPALIGNING 115 of 378: SamsungWidget_ActiveApplication.apk
+ZIPALIGNING 116 of 378: SBrowser.apk
+ZIPALIGNING 117 of 378: SBrowserTry.apk
+ZIPALIGNING 118 of 378: SCONE_Android_ProxyService_Lib.apk
+ZIPALIGNING 119 of 378: SCParser.apk
+ZIPALIGNING 120 of 378: SecCalculator2.apk
+ZIPALIGNING 121 of 378: SecDownloadProviderUi.apk
+ZIPALIGNING 122 of 378: SecEmail_K.apk
+ZIPALIGNING 123 of 378: SecExchange.apk
+ZIPALIGNING 124 of 378: SecFactoryPhoneTest.apk
+ZIPALIGNING 125 of 378: SecHTMLViewer.apk
+ZIPALIGNING 126 of 378: SecSetupWizard2013.apk
+ZIPALIGNING 127 of 378: SecurityLogAgent.apk
+ZIPALIGNING 128 of 378: SecurityManagerService.apk
+ZIPALIGNING 129 of 378: SecurityProviderSEC.apk
+ZIPALIGNING 130 of 378: secvisualeffect-res.apk
+ZIPALIGNING 131 of 378: SetDefaultLauncher.apk
+ZIPALIGNING 132 of 378: ShareShotService.apk
+ZIPALIGNING 133 of 378: SharingAccessibilitySettings.apk
+ZIPALIGNING 134 of 378: SilentLog.apk
+ZIPALIGNING 135 of 378: SmartBriefing4x2.apk
+ZIPALIGNING 136 of 378: SmartcardManager.apk
+ZIPALIGNING 137 of 378: SmartcardService.apk
+ZIPALIGNING 138 of 378: SnsImageCache.apk
+ZIPALIGNING 139 of 378: SPenSdk3.apk
+ZIPALIGNING 140 of 378: SPlannerWidget_OS_UPG_EasyWidget.apk
+ZIPALIGNING 141 of 378: SPlanner_LEGACY.apk
+ZIPALIGNING 142 of 378: SPrintSpooler.apk
+ZIPALIGNING 143 of 378: Stk.apk
+ZIPALIGNING 144 of 378: SuperSU.apk
+ZIPALIGNING 145 of 378: S_Translator_CSLi.apk
+ZIPALIGNING 146 of 378: talkback.apk
+ZIPALIGNING 147 of 378: TasksProvider.apk
+ZIPALIGNING 148 of 378: TcpdumpService.apk
+ZIPALIGNING 149 of 378: TetheringAutomation.apk
+ZIPALIGNING 150 of 378: TimeService.apk
+ZIPALIGNING 151 of 378: TravelService_K.apk
+ZIPALIGNING 152 of 378: TravelWidget.apk
+ZIPALIGNING 153 of 378: TripAdvisor.apk
+ZIPALIGNING 154 of 378: USBSettings.apk
+ZIPALIGNING 155 of 378: UserDictionaryProvider.apk
+ZIPALIGNING 156 of 378: Videos.apk
+ZIPALIGNING 157 of 378: VoiceRecorder.apk
+ZIPALIGNING 158 of 378: WeatherDaemon2013_LMR.apk
+ZIPALIGNING 159 of 378: WebManual.apk
+ZIPALIGNING 160 of 378: WebViewGoogle.apk
+ZIPALIGNING 161 of 378: WfdBroker.apk
+ZIPALIGNING 162 of 378: WlanTest.apk
+ZIPALIGNING 163 of 378: YahooNewsPhone2013_LMR.apk
+ZIPALIGNING 164 of 378: YahooStocksPhone2013_LMR.apk
+ZIPALIGNING 165 of 378: YouTube.apk
+ZIPALIGNING 166 of 378: com.srk.mcl.MyFinder_Stub.apk
+ZIPALIGNING 167 of 378: Funtone_8.0.apk
+ZIPALIGNING 168 of 378: MyBeat_1.4.503.apk
+ZIPALIGNING 169 of 378: vvm_PartnerAndroid.apk
+ZIPALIGNING 170 of 378: framework-res.apk
+ZIPALIGNING 171 of 378: twframework-res.apk
+ZIPALIGNING 172 of 378: kioskdefault.apk
+ZIPALIGNING 173 of 378: AndroidForWork.apk
+ZIPALIGNING 174 of 378: AnimatedScene.apk
+ZIPALIGNING 175 of 378: AutomationTest_FB.apk
+ZIPALIGNING 176 of 378: BackupRestoreConfirmation.apk
+ZIPALIGNING 177 of 378: BestFace.apk
+ZIPALIGNING 178 of 378: CloudAgent.apk
+ZIPALIGNING 179 of 378: Collage_fhd.apk
+ZIPALIGNING 180 of 378: ContextProvider_H.apk
+ZIPALIGNING 181 of 378: CSC.apk
+ZIPALIGNING 182 of 378: DefaultContainerService.apk
+ZIPALIGNING 183 of 378: DeviceKeystring.apk
+ZIPALIGNING 184 of 378: DeviceTest.apk
+ZIPALIGNING 185 of 378: DiagMonAgent.apk
+ZIPALIGNING 186 of 378: DirectShareManager.apk
+ZIPALIGNING 187 of 378: DSMLawmo.apk
+ZIPALIGNING 188 of 378: EasyLauncher.apk
+ZIPALIGNING 189 of 378: Eraser.apk
+ZIPALIGNING 190 of 378: ExternalStorageProvider.apk
+ZIPALIGNING 191 of 378: FmmDM.apk
+ZIPALIGNING 192 of 378: FmmDS.apk
+ZIPALIGNING 193 of 378: FotaClient.apk
+ZIPALIGNING 194 of 378: FusedLocation.apk
+ZIPALIGNING 195 of 378: GmsCore.apk
+ZIPALIGNING 196 of 378: GoogleBackupTransport.apk
+ZIPALIGNING 197 of 378: GoogleFeedback.apk
+ZIPALIGNING 198 of 378: GoogleLoginService.apk
+ZIPALIGNING 199 of 378: GoogleOneTimeInitializer.apk
+ZIPALIGNING 200 of 378: GooglePartnerSetup.apk
+ZIPALIGNING 201 of 378: GoogleServicesFramework.apk
+ZIPALIGNING 202 of 378: GroupPlay_25.apk
+ZIPALIGNING 203 of 378: HealthService.apk
+ZIPALIGNING 204 of 378: Hearingdro.apk
+ZIPALIGNING 205 of 378: Hs20Settings.apk
+ZIPALIGNING 206 of 378: HwModuleTest.apk
+ZIPALIGNING 207 of 378: InputDevices.apk
+ZIPALIGNING 208 of 378: Kies.apk
+ZIPALIGNING 209 of 378: LogsProvider.apk
+ZIPALIGNING 210 of 378: ManagedProvisioning.apk
+ZIPALIGNING 211 of 378: MmsService.apk
+ZIPALIGNING 212 of 378: MtpApplication.apk
+ZIPALIGNING 213 of 378: MusicCommonUtility.apk
+ZIPALIGNING 214 of 378: MusicFX.apk
+ZIPALIGNING 215 of 378: NoiseField.apk
+ZIPALIGNING 216 of 378: OmaCP.apk
+ZIPALIGNING 217 of 378: PageBuddyNotiSvcK.apk
+ZIPALIGNING 218 of 378: PCWClientS18.apk
+ZIPALIGNING 219 of 378: PhaseBeam.apk
+ZIPALIGNING 220 of 378: PhoneErrService.apk
+ZIPALIGNING 221 of 378: Phonesky.apk
+ZIPALIGNING 222 of 378: PhotoRetouching_FHD_J.apk
+ZIPALIGNING 223 of 378: PicAction.apk
+ZIPALIGNING 224 of 378: ProxyHandler.apk
+ZIPALIGNING 225 of 378: S-Voice_Android_phone.apk
+ZIPALIGNING 226 of 378: SamsungApps.apk
+ZIPALIGNING 227 of 378: SamsungBilling.apk
+ZIPALIGNING 228 of 378: SamsungLink20.apk
+ZIPALIGNING 229 of 378: SamsungLinkPlatform.apk
+ZIPALIGNING 230 of 378: SamsungMusic_20.apk
+ZIPALIGNING 231 of 378: Samsungservice2_xxhdpi.apk
+ZIPALIGNING 232 of 378: SamsungVideo.apk
+ZIPALIGNING 233 of 378: sCloudBackupApp.apk
+ZIPALIGNING 234 of 378: sCloudDataRelay.apk
+ZIPALIGNING 235 of 378: sCloudDataSync.apk
+ZIPALIGNING 236 of 378: sCloudQuotaApp.apk
+ZIPALIGNING 237 of 378: sCloudSyncCalendar.apk
+ZIPALIGNING 238 of 378: sCloudSyncContacts.apk
+ZIPALIGNING 239 of 378: sCloudSyncSBrowser.apk
+ZIPALIGNING 240 of 378: sCloudSyncSNote.apk
+ZIPALIGNING 241 of 378: sCloudSyncSNote3.apk
+ZIPALIGNING 242 of 378: SecCalendarProvider.apk
+ZIPALIGNING 243 of 378: SecContactsProvider.apk
+ZIPALIGNING 244 of 378: SecContacts_Phone_OSup.apk
+ZIPALIGNING 245 of 378: SecDownloadProvider.apk
+ZIPALIGNING 246 of 378: SecGallery2013.apk
+ZIPALIGNING 247 of 378: SecLiveWallpapersPicker.apk
+ZIPALIGNING 248 of 378: SecMediaProvider.apk
+ZIPALIGNING 249 of 378: SecMms_Candy.apk
+ZIPALIGNING 250 of 378: SecNoteMyFiles.apk
+ZIPALIGNING 251 of 378: SecSafetyAssurance.apk
+ZIPALIGNING 252 of 378: SecSettings.apk
+ZIPALIGNING 253 of 378: SecSettingsProvider.apk
+ZIPALIGNING 254 of 378: SecTelephonyProvider_Candy.apk
+ZIPALIGNING 255 of 378: SecVideo.apk
+ZIPALIGNING 256 of 378: SecVideoPlayer.apk
+ZIPALIGNING 257 of 378: SecWallpaperPicker.apk
+ZIPALIGNING 258 of 378: serviceModeApp_FB.apk
+ZIPALIGNING 259 of 378: ServiceModeApp_RIL.apk
+ZIPALIGNING 260 of 378: SetupWizard.apk
+ZIPALIGNING 261 of 378: SFinder.apk
+ZIPALIGNING 262 of 378: SharedStorageBackup.apk
+ZIPALIGNING 263 of 378: ShareVideo.apk
+ZIPALIGNING 264 of 378: SHealth3_5.apk
+ZIPALIGNING 265 of 378: Shell.apk
+ZIPALIGNING 266 of 378: SMemo2.apk
+ZIPALIGNING 267 of 378: SNoteProvider.apk
+ZIPALIGNING 268 of 378: SNS.apk
+ZIPALIGNING 269 of 378: SOAgent.apk
+ZIPALIGNING 270 of 378: SPPPushClient_Prod.apk
+ZIPALIGNING 271 of 378: StoryAlbum2013_L.apk
+ZIPALIGNING 272 of 378: StoryAlbumWidget.apk
+ZIPALIGNING 273 of 378: SyncmlDM.apk
+ZIPALIGNING 274 of 378: SysScope.apk
+ZIPALIGNING 275 of 378: SystemUI.apk
+ZIPALIGNING 276 of 378: Tag.apk
+ZIPALIGNING 277 of 378: Telecom.apk
+ZIPALIGNING 278 of 378: TeleService.apk
+ZIPALIGNING 279 of 378: TouchWizHome_K.apk
+ZIPALIGNING 280 of 378: TrimApp_phone_light.apk
+ZIPALIGNING 281 of 378: Velvet.apk
+ZIPALIGNING 282 of 378: VpnDialogs.apk
+ZIPALIGNING 283 of 378: WallpaperCropper.apk
+ZIPALIGNING 284 of 378: wssyncmlnps.apk
+ZIPALIGNING 285 of 378: allshare.jar
+ZIPALIGNING 286 of 378: am.jar
+ZIPALIGNING 287 of 378: android.policy.jar
+ZIPALIGNING 288 of 378: android.test.runner.jar
+ZIPALIGNING 289 of 378: apache-xml.jar
+ZIPALIGNING 290 of 378: appops.jar
+ZIPALIGNING 291 of 378: appwidget.jar
+ZIPALIGNING 292 of 378: bmgr.jar
+ZIPALIGNING 293 of 378: bouncycastle.jar
+ZIPALIGNING 294 of 378: bu.jar
+ZIPALIGNING 295 of 378: cneapiclient.jar
+ZIPALIGNING 296 of 378: com.android.future.usb.accessory.jar
+ZIPALIGNING 297 of 378: com.android.location.provider.jar
+ZIPALIGNING 298 of 378: com.android.media.remotedisplay.jar
+ZIPALIGNING 299 of 378: com.android.mediadrm.signer.jar
+ZIPALIGNING 300 of 378: com.android.nfc_extras.jar
+ZIPALIGNING 301 of 378: com.broadcom.bt.jar
+ZIPALIGNING 302 of 378: com.broadcom.nfc.jar
+ZIPALIGNING 303 of 378: com.dropboxpartner.jar
+ZIPALIGNING 304 of 378: com.google.android.maps.jar
+ZIPALIGNING 305 of 378: com.google.android.media.effects.jar
+ZIPALIGNING 306 of 378: com.google.widevine.software.drm.jar
+ZIPALIGNING 307 of 378: com.gsma.services.nfc.jar
+ZIPALIGNING 308 of 378: com.qti.dpmframework.jar
+ZIPALIGNING 309 of 378: com.quicinc.cne.jar
+ZIPALIGNING 310 of 378: com.samsung.device.jar
+ZIPALIGNING 311 of 378: commonimsinterface.jar
+ZIPALIGNING 312 of 378: conscrypt.jar
+ZIPALIGNING 313 of 378: content.jar
+ZIPALIGNING 314 of 378: core-junit.jar
+ZIPALIGNING 315 of 378: core-libart.jar
+ZIPALIGNING 316 of 378: digitalpensdk.jar
+ZIPALIGNING 317 of 378: digitalpenutil.jar
+ZIPALIGNING 318 of 378: dpm.jar
+ZIPALIGNING 319 of 378: dpmapi.jar
+ZIPALIGNING 320 of 378: ethernet-service.jar
+ZIPALIGNING 321 of 378: ext.jar
+ZIPALIGNING 322 of 378: framework.jar
+ZIPALIGNING 323 of 378: ime.jar
+ZIPALIGNING 324 of 378: ims-common.jar
+ZIPALIGNING 325 of 378: imsmanager.jar
+ZIPALIGNING 326 of 378: input.jar
+ZIPALIGNING 327 of 378: javax.obex.jar
+ZIPALIGNING 328 of 378: knoxvpnuidtag.jar
+ZIPALIGNING 329 of 378: libvtmanagerjar.jar
+ZIPALIGNING 330 of 378: media_cmd.jar
+ZIPALIGNING 331 of 378: minimode.jar
+ZIPALIGNING 332 of 378: mms-common.jar
+ZIPALIGNING 333 of 378: monkey.jar
+ZIPALIGNING 334 of 378: motionrecognitionservice.jar
+ZIPALIGNING 335 of 378: multiwindow.jar
+ZIPALIGNING 336 of 378: okhttp.jar
+ZIPALIGNING 337 of 378: org.codeaurora.Performance.jar
+ZIPALIGNING 338 of 378: org.simalliance.openmobileapi.jar
+ZIPALIGNING 339 of 378: pm.jar
+ZIPALIGNING 340 of 378: qcmediaplayer.jar
+ZIPALIGNING 341 of 378: rcsopenapi.jar
+ZIPALIGNING 342 of 378: requestsync.jar
+ZIPALIGNING 343 of 378: scrollpause.jar
+ZIPALIGNING 344 of 378: seccamera.jar
+ZIPALIGNING 345 of 378: secEmailBC.jar
+ZIPALIGNING 346 of 378: sechardware.jar
+ZIPALIGNING 347 of 378: secimaging.jar
+ZIPALIGNING 348 of 378: secmediarecorder.jar
+ZIPALIGNING 349 of 378: secocsp.jar
+ZIPALIGNING 350 of 378: secsmartcard.jar
+ZIPALIGNING 351 of 378: secvision.jar
+ZIPALIGNING 352 of 378: secvisualeffect.jar
+ZIPALIGNING 353 of 378: sec_edm.jar
+ZIPALIGNING 354 of 378: sec_feature.jar
+ZIPALIGNING 355 of 378: sec_platform_library.jar
+ZIPALIGNING 356 of 378: services.jar
+ZIPALIGNING 357 of 378: settings.jar
+ZIPALIGNING 358 of 378: sgi.jar
+ZIPALIGNING 359 of 378: simageis.jar
+ZIPALIGNING 360 of 378: SLinkNTSManager.jar
+ZIPALIGNING 361 of 378: smartbondingservice.jar
+ZIPALIGNING 362 of 378: smartfaceservice.jar
+ZIPALIGNING 363 of 378: smartfaceserviceapi.jar
+ZIPALIGNING 364 of 378: smatlib.jar
+ZIPALIGNING 365 of 378: ssrm.jar
+ZIPALIGNING 366 of 378: stayrotation.jar
+ZIPALIGNING 367 of 378: svc.jar
+ZIPALIGNING 368 of 378: svi.jar
+ZIPALIGNING 369 of 378: sws.jar
+ZIPALIGNING 370 of 378: tcmiface.jar
+ZIPALIGNING 371 of 378: telephony-common.jar
+ZIPALIGNING 372 of 378: timakeystore.jar
+ZIPALIGNING 373 of 378: twframework.jar
+ZIPALIGNING 374 of 378: uiautomator.jar
+ZIPALIGNING 375 of 378: videowall.jar
+ZIPALIGNING 376 of 378: voip-common.jar
+ZIPALIGNING 377 of 378: wifi-service.jar
+ZIPALIGNING 378 of 378: wm.jar
+
+				HOW TO ADD CSC MODS
+
+============= tweaks ============= "WORK/system/csc" ============ "others.xml" =============
+
+Now, open this file WITH NOTEPAD++ and you should see a lot of lines of codes which includes some value between <CscFeature...> </CscFeature...> or something like this.
+
+
+<CscFeature_Camera_ShutterSoundMenu>TRUE</CscFeature_Camera_ShutterSoundMenu>
+<CscFeature_Setting_SupportRealTimeNetworkSpeed>TRUE</CscFeature_Setting_SupportRealTimeNetworkSpeed>
+<CscFeature_VoiceCall_ConfigRecording>RecordingAllowed</CscFeature_VoiceCall_ConfigRecording>
+<CscFeature_Message_DisableConvertingEffectBetweenSMSMMS>TRUE</CscFeature_Message_DisableConvertingEffectBetweenSMSMMS>
+<CscFeature_Message_DisableSmsToMmsConversionByTextInput>TRUE</CscFeature_Message_DisableSmsToMmsConversionByTextInput>
+<CscFeature_Common_ConfigSvcProviderForUnknownNumber>whitepages,whitepages,whitepages</CscFeature_Common_ConfigSvcProviderForUnknownNumber>
+<CscFeature_NFC_StatusBarIconType>DEFAULT</CscFeature_NFC_StatusBarIconType>
+<CscFeature_SystemUI_SupportDataUsageViewOnQuickPanel>TRUE</CscFeature_SystemUI_SupportDataUsageViewOnQuickPanel>
+
+
+
+============================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================
+
+
+Tutoriel creation rom custom Assayyed Kitchen Phonandroid
+
+https://www.youtube.com/watch?v=ShuWKB6iViY&list=PLWK1Ft2fmoS8_y_3LfQ_u4HHcWtvYTtDP&index=7
+
+
+
+
+===============================
+
+
+
+tar -H ustar -c recovery.img > recovery.tar
+md5sum -t recovery.tar >> recovery.tar
+mv recovery.tar recovery.tar.md5
+
+===
+If you want to end your file wilth *.tar ... Just type
+===
+tar -H ustar -c recovery.img > recovery.tar
+md5sum -t recovery.tar >> recovery.tar
+
+===========
+http://www.w0lfdroid.com/2013/04/android-how-to-convert-img-recovery-to.html
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+The next part requires linux, OS X, or cygwin.
+Cygwin
+
+If you are using heimdall, the above images are ready for flashing.
+If using Odin, we must still package them.
+
+Code:
+
+---------------------------
+
+$ tar -H ustar -c image_1 [image_2 ...] > your_odin_package.tar
+
+---------------------------
+
+
+
+If you want an all in one package, put each image name in. if not, make one image per tar file.
+Example: tar -H ustar -c zImage > zImage.tar
+This would give us a zImage.tar file. Now we will turn it into a tar.md5 file, so that Odin can make sure its not corrupt before flashing.
+
+Code:
+---------------------------
+
+$ md5sum -t your_odin_package.tar >> your_odin_package.tar
+$ mv your_odin_package.tar your_odin_package.tar.md5
+
+
+==============
+https://forum.xda-developers.com/showthread.php?t=926546
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==============================  How to increase system.img partition size ================================
+
+
+Okay, for other people looking for an answer for this, it is impossible to change the partition size for system.img. It is defined as part of BoardConfig.mk and is static for the device.
+
+In theory, it may be possible to increase system.img size by altering the parameter BOARD_SYSTEMIMAGE_PARTITION_SIZE and reducing other partition sizes, but I guess that would fail if the partitions are on different physical devices.
+
+See for example device/samsung/manta/BoardConfig.mk
+
+-------------------------
+
+This is NOT actually true. It's system.img is an linux ext4 file system and you can resize it from uBuntu using the following command:
+
+dd if=/dev/zero bs=1M count=128 >> system.img  
+e2fsck -f system.img  
+resize2fs system.img    
+Now, you added 128 MB to system.img!
+
+David
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&& PARTITIONING IN TWRP &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
+[HOW TO] BOOT FROM SD CARD [SUCCESSFULLY] on QMobile Z8 with BRICKED/DEAD eMMC
+634 posts
+Thanks: 356
+ 
+By mirfatif, Senior Member on 29th November 2017, 04:30 PM Post Reply Email Thread123Last 
+
+Search Thread
+I'm a mechanical engineer, not an IT guy. I can fix machines, perhaps, but not bricked phones. So try anything at your own extreme risk. This is NOT a step by step guide.
+
+DEVICE:
+QMobile Z8, same as Wikio Ridge 4G, (MSM8916).
+Running Android 5.0.2, SuperSU rooted.
+Kernel v 3.10.49
+Thanks to @ASAZING for TWRP 3.0.2-0
+
+PROBLEM:
+So the screen started blinking and locking / unlocking automatically like UI resetting. And there was no SIM. At first I thought it's launcher or SuperSU causing problem. But it got worse over days. So I decided a factory flash since I didn't have untouched flashable zip.
+Flashed firmware using QFIL but no success. Rebooted to recovery and TWRP was still there.
+/data partition was locked and TWRP doesn't support decryption. So I did a factory reset and the message came: /data not mounted. Invalid Argument
+Formatted /data from "Repair or Change Filesystem" option in TWRP and as a result /data and /cache both couldn't be mounted.
+Formatted /cache, and /system too not mounted.
+Manually formatted using 'make_ext4' and tried 'fastboot format:ext4 userdata' as well. Both succeeded apparently but mount still failed.
+Run 'e2fsck' and that showed: "Bad magic number in super block" and "The superblock could not be read."
+Run 'mke2fs -n' for alternate super blocks, run again 'e2fsck' but no success. Images are attached.
+'sgdisk --verify' gives this error log:
+Code:
+sgdisk --verify mmcblk0p1
+
+***************************************************************
+Found invalid GPT and valid MBR; converting MBR to GPT format in memory. 
+***************************************************************
+
+Exact type match not found for type code 7200; assigning type code for 'Linux filesystem'
+Exact type match not found for type code 6500; assigning type code for 'Linux filesystem'
+Exact type match not found for type code 7900; assigning type code for 'Linux filesystem'
+Exact type match not found for type code 0D00; assigning type code for 'Linux filesystem'
+Warning! Main partition table overlaps the first partition by 34 blocks!
+You will need to delete this partition or resize it in another utility.
+
+Warning! Secondary partition table overlaps the last partition by 3805778618 blocks!
+You will need to delete this partition or resize it in another utility.
+
+Problem: partitions 2 and 1 overlap:
+  Partition 2: 168689522 to 2104717761
+  Partition 1: 778135908 to 1919645538
+
+Problem: partitions 3 and 1 overlap:
+  Partition 3: 1869881465 to 3805909656
+  Partition 1: 778135908 to 1919645538
+
+Problem: partitions 3 and 2 overlap:
+  Partition 3: 1869881465 to 3805909656
+  Partition 2: 168689522 to 2104717761
+
+Problem: partition 1 is too big for the disk.
+Problem: partition 2 is too big for the disk.
+Problem: partition 3 is too big for the disk.
+Problem: partition 4 is too big for the disk.
+
+Warning! Main partition table overlaps the first partition by 34 blocks!
+You will need to delete this partition or resize it in another utility.
+
+Warning! Secondary partition table overlaps the last partition by 3805778618 blocks!
+You will need to delete this partition or resize it in another utility.
+
+Identified 9 problems!
+
+==========================
+sgdisk --verify mmcblk0p16
+
+Creating new GPT entries.
+
+Problem: GPT claims the disk is larger than it is! (Claimed last usable sector is 18446744073709551584, but backup header is at 1 and disk size is 2 sectors.
+The 'e' option on the experts' menu will probably fix this problem
+
+Identified 1 problems!
+
+==========================
+sgdisk --verify mmcblk0p17
+
+Creating new GPT entries.
+
+Problem: GPT claims the disk is larger than it is! (Claimed last usable sector is 18446744073709551598, but backup header is at 15 and disk size is 16 sectors.
+The 'e' option on the experts' menu will probably fix this problem
+
+Identified 1 problems!
+
+==========================
+sgdisk --verify mmcblk0p22
+
+Creating new GPT entries.
+
+Problem: GPT claims the disk is larger than it is! (Claimed last usable sector is 18446744073709551614, but backup header is at 31 and disk size is 32 sectors.
+The 'e' option on the experts' menu will probably fix this problem
+
+Identified 1 problems!
+
+'parted rm' and 'fastboot erase' didn't work either. Partition was still there.
+Then I tried to flash stock recovery through TWRP. And recovery too gone.
+Now, device boots directly to bootloader (fastboot mode) and is halted there. Have to 'fastboot boot recovery.img' or 'fastboot boot boot.img' each time.
+Download Mode (QDLoader 9008) is also accessible.
+
+FLASHING FACTORY FIRMWARE:
+Now left only with fastboot and EDL, tried once again QFIL flasher, Wiko official flasher, QDownloader. Log says: "Read back verify failed at sector ...." for partitions misc, system, cache, persist, recovery, userdata (6 partitions) and 2 partition table *.bins
+Hence proved, eMMC is malfunctioning and device now can't boot on its own due to no partition table.
+Tried 'sgdisk --backup' and 'sgdisk --load-backup' options for partition table. It gives error: "Warning! Current disk size doesn't match that of backup." and "Problem: Partition 28 ends before it begins." etc.
+'fastboot flash partition *.bin' also failed with error: "remote: failed to write partition".
+'dd if=gpt_main0.bin of=/dev/block/mmcblk0' apparently succeeded but comparing octal dump ('od') files of 34 sectors at start shows no difference, means file is not written to eMMC.
+
+SOLUTION SUMMARY:
+Partition SD card according to already existing partition table on internal eMMC.
+Flash partition images from factory firmware to newly created partitions.
+Modify kernel (boot.img) and recovery to boot from sd card instead of internal memory.
+Boot kernel or recovery through fastboot.
+
+
+SECTION 1
+PARTITION SD CARD:
+Here comes Google. Following the footsteps of @lexelby at this, I created gpt (parted command) on 16GB C-10 sd card using Ubuntu virtual machine.
+Created first partition for external_sd card and 6 more of same size as original ones (size checked by parted and from rawprogram_unsparse.xml). Filesystems: system, userdata, cache & persist of ext4 while misc, recovery of linux-swap (though 'dd' will overwrite them).
+Then I unsparsed userdata, system and cache images from factory firmware (on Windows used packsparseimg.exe binary). Sparsed images can only be flashed through fastboot?
+Copied 5 prtitions images: userdata, system, cache, persist and misc using dd command to /dev/block/mmcblk1p*.
+
+MODIFYING BOOT & RECOVERY:
+Now coming to the changes in mount paths of boot and recovery (fstab and init.*.rc).
+Extracted boot.img and then ramdisk using "Image Studio for Android". 'unpackbootimg' and 'abootimg' don't extract all files on Ubuntu. 'mkbootimg' makes smaller boot.img file without boot.img-dtb. Perhaps I'm doing it wrong.
+Anyway, then did 'grep dev/block' on all extracted files. Results are attached for reference.
+Made changes in "fstab.qcom" and "init.target.rc". For details on changes made, please read on RE-MODIFYING BOOT & RECOVERY.
+Repacked boot.img
+
+Similarly extracted recovery.img, did 'grep dev/block' on all extracted files. And made changes in "recovery.fstab".
+Repacked recovery.img
+
+COPYING IMAGES TO PARTITIONS AND BOOTING:
+'fastboot flash boot boot.img' and 'dd if=recovery.img of=dev/block/mmcblk1p*' (though useless, have to boot from fastboot)
+Rebooted to recovery by 'fastboot boot recovery.img'
+userdata, persist and cache couldn't be mounted in TWRP. Tried 'mount -t ext4 -o loop *.img' on Ubuntu but there too not mounted. Googled and using commands 'file', 'fdisk', 'sfdisk', 'e2fsck' and finally 'resize2fs -f /*.img' resolved the problem "bad geometry: block count xxx exceeds size of device...".
+Also unsparsed userdata too large to handle and only a few MBs data inside, that too useless. Therefore, did 'make_ext4fs' on cache & userdata.
+
+Now booted kernel by 'fastboot boot boot.img'
+And.......... it boots. But very very slow (due to slow write speed of sd card obviously). Took almost half an hour at first boot.
+
+UNRESOLVED PROBLEMS:
+There is no sound. Because of /persist not mounted? And still no SIM, means radio firmware isn't readable from eMMC or this too due to /persist absent? After all that contains drivers. And also Wi-Fi and bluetooth not working.
+
+
+SECTION 2
+RE-PARTITION SD CARD:
+So re-created gpt on sd card (using parted and fdisk) and in a hope to utilize all necessary partitions, 100% replicated all partitions (except larger userdata) including space required at start and end of eMMC for partition table. Partition tables of both mmcblk0 and mmvblk1 are attached.
+
+RE-MODIFYING BOOT & RECOVERY:
+Made following changes in boot.img:
+DEVICE BOOTS ALSO WITHOUT MAKING ANY CHANGES TO BOOT.IMG.
+I don't know why but 'bootdevice' is automagiacally changed from 7824900.sdhci (eMMC) to 7864900.sdhci (external SD card). It seems there is some auto-detection mechanism.
+Code:
+########## ./ramdisk/fstab.qcom ##########
+
+#/dev/block/bootdevice/by-name/system         /system      ext4    ro,barrier=1,discard                                wait
+#/dev/block/bootdevice/by-name/userdata       /data        ext4    nosuid,nodev,barrier=1,noauto_da_alloc,discard      wait,check,encryptable=footer
+#CHANGED TO
+/dev/block/mmcblk1p24                          /system      ext4    ro,barrier=1,discard                                wait
+/dev/block/mmcblk1p32                          /data        ext4    nosuid,nodev,barrier=1,noauto_da_alloc,discard      wait,check,encryptable=footer
+
+#/devices/soc.0/7864900.sdhci/mmc_host        /storage/sdcard1   vfat    nosuid,nodev         wait,voldmanaged=sdcard1:auto,noemulatedsd
+#disabled
+Code:
+########## ./ramdisk/init.target.rc ##########
+
+on fs
+    mount_all fstab.qcom
+
+    #wait /dev/block/bootdevice/by-name/cache
+    #mount ext4 /dev/block/bootdevice/by-name/cache /cache nosuid nodev barrier=1
+#CHANGED TO
+	wait /dev/block/mmcblk1p26
+    mount ext4 /dev/block/mmcblk1p26 /cache nosuid nodev barrier=1
+
+    #wait /dev/block/bootdevice/by-name/persist
+    #mount ext4 /dev/block/bootdevice/by-name/persist /persist nosuid nodev barrier=1
+#CHANGED TO
+	wait /dev/block/mmcblk1p25
+    mount ext4 /dev/block/mmcblk1p25 /persist nosuid nodev barrier=1
+	
+	#wait /dev/block/bootdevice/by-name/modem
+    #mount vfat /dev/block/bootdevice/by-name/modem /firmware ro context=u:object_r:firmware_file:s0,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337
+#CHANGED TO
+	wait /dev/block/mmcblk1p1
+    mount vfat /dev/block/mmcblk1p1 /firmware ro context=u:object_r:firmware_file:s0,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337
+	
+on charger
+    #wait /dev/block/bootdevice/by-name/system
+    #mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
+#CHANGED TO
+	wait /dev/block/mmcblk1p24
+    mount ext4 /dev/block/mmcblk1p24 /system ro barrier=1
+Code:
+########## ./split_img/boot.img-cmdline ##########
+
+#console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1
+#CHANGED TO
+console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7864900.sdhci lpm_levels.sleep_disabled=1
+
+
+And following changes in recovery.img:
+Code:
+########## ./ramdisk/etc/recovery.fstab ##########
+
+#/cache           ext4    /dev/block/bootdevice/by-name/cache            flags=display=Cache
+#/system          ext4    /dev/block/bootdevice/by-name/system            flags=display=System
+#/data            ext4    /dev/block/bootdevice/by-name/userdata            flags=encryptable=footer;length=-16384
+#/persist         ext4    /dev/block/mmcblk0p25            flags=backup=1;display=Persist
+#/boot            emmc    /dev/block/bootdevice/by-name/boot           flags=display=Boot
+#/recovery        emmc    /dev/block/bootdevice/by-name/recovery            flags=backup=1;display=Recovery
+#/misc            emmc    /dev/block/bootdevice/by-name/misc         /misc 		  flags=backup=1;display=Misc
+#/firmware        vfat    /dev/block/mmcblk0p1             flags=backup=1;display=Modem
+#/splash          emmc    /dev/block/mmcblk0p18            flags=backup=1;display=Splash
+#/fsg		 emmc    /dev/block/mmcblk0p20		           flags=backup=1;subpartitionof=/oem
+#/aboot           emmc    /dev/block/mmcblk0p4             flags=backup=1;display=Aboot
+#/abootbak        emmc    /dev/block/mmcblk0p5	           flags=subpartitionof=/aboot;backup=1
+#/hyp             emmc    /dev/block/mmcblk0p10            flags=backup=1;display=Firmware-update
+#/sbl1            emmc    /dev/block/mmcblk0p2             flags=backup=1;subpartitionof=/hyp
+#/rpm             emmc    /dev/block/mmcblk0p6             flags=backup=1;subpartitionof=/hyp
+#/tz              emmc    /dev/block/mmcblk0p8             flags=backup=1;subpartitionof=/hyp
+#/hypbak          emmc    /dev/block/mmcblk0p11            flags=backup=1;subpartitionof=/hyp
+#/sbl1bak         emmc    /dev/block/mmcblk0p3             flags=backup=1;subpartitionof=/hyp
+#/rpmbak          emmc    /dev/block/mmcblk0p7             flags=backup=1;subpartitionof=/hyp
+#/tzbak           emmc    /dev/block/mmcblk0p9             flags=backup=1;subpartitionof=/hyp
+#/modemst1        emmc    /dev/block/mmcblk0p13            flags=backup=1;display=EFS
+#/modemst2        emmc    /dev/block/mmcblk0p14            flags=backup=1;subpartitionof=/modemst1
+#/oem             emmc    /dev/block/mmcblk0p30            flags=backup=1;display=OEM
+#/DDR             emmc    /dev/block/mmcblk0p20            flags=backup=1;subpartitionof=/oem
+#/fsc             emmc    /dev/block/mmcblk0p16            flags=backup=1;subpartitionof=/oem
+#/ssd             emmc    /dev/block/mmcblk0p17            flags=backup=1;subpartitionof=/oem
+#/pad             emmc    /dev/block/mmcblk0p12            flags=backup=1;subpartitionof=/oem
+
+#CHANGED TO
+
+/cache           ext4    /dev/block/mmcblk1p26            flags=display=Cache
+/system          ext4    /dev/block/mmcblk1p24            flags=display=System
+/data            ext4    /dev/block/mmcblk1p32            flags=encryptable=footer;length=-16384
+/persist         ext4    /dev/block/mmcblk1p25            flags=backup=1;display=Persist
+/boot            emmc    /dev/block/mmcblk1p23            flags=display=Boot
+/recovery        emmc    /dev/block/mmcblk1p27            flags=backup=1;display=Recovery
+/misc            emmc    /dev/block/mmcblk1p15         	  flags=backup=1;display=Misc
+/firmware        vfat    /dev/block/mmcblk1p1             flags=backup=1;display=Modem
+/splash          emmc    /dev/block/mmcblk1p18            flags=backup=1;display=Splash
+/fsg             emmc    /dev/block/mmcblk1p21		  	  flags=backup=1;subpartitionof=/oem
+/aboot           emmc    /dev/block/mmcblk1p4             flags=backup=1;display=Aboot
+/abootbak        emmc    /dev/block/mmcblk1p5	          flags=subpartitionof=/aboot;backup=1
+/hyp             emmc    /dev/block/mmcblk1p10            flags=backup=1;display=Firmware-update
+/sbl1            emmc    /dev/block/mmcblk1p2             flags=backup=1;subpartitionof=/hyp
+/rpm             emmc    /dev/block/mmcblk1p6             flags=backup=1;subpartitionof=/hyp
+/tz              emmc    /dev/block/mmcblk1p8             flags=backup=1;subpartitionof=/hyp
+/hypbak          emmc    /dev/block/mmcblk1p11            flags=backup=1;subpartitionof=/hyp
+/sbl1bak         emmc    /dev/block/mmcblk1p3             flags=backup=1;subpartitionof=/hyp
+/rpmbak          emmc    /dev/block/mmcblk1p7             flags=backup=1;subpartitionof=/hyp
+/tzbak           emmc    /dev/block/mmcblk1p9             flags=backup=1;subpartitionof=/hyp
+/modemst1        emmc    /dev/block/mmcblk1p13            flags=backup=1;display=EFS
+/modemst2        emmc    /dev/block/mmcblk1p14            flags=backup=1;subpartitionof=/modemst1
+/oem             emmc    /dev/block/mmcblk1p30            flags=backup=1;display=OEM
+/DDR             emmc    /dev/block/mmcblk1p20            flags=backup=1;subpartitionof=/oem
+/fsc             emmc    /dev/block/mmcblk1p16            flags=backup=1;subpartitionof=/oem
+/ssd             emmc    /dev/block/mmcblk1p17            flags=backup=1;subpartitionof=/oem
+/pad             emmc    /dev/block/mmcblk1p12            flags=backup=1;subpartitionof=/oem
+
+#/external_sd     auto    /dev/block/mmcblk1p1     /dev/block/mmcblk1           flags=display="MicroSD Card";storage;wipeingui;removable
+#CHANGED TO
+# None. External sd disabled.
+Code:
+########## ./ramdisk/uneventd.rc ##########
+
+#/dev/block/bootdevice/by-name/config                 0660   system     system
+#CHANGED TO
+/dev/block/mmcblk1p29                 0660   system     system
+Code:
+########## ./split_img/recovery.img-cmdline ##########
+
+#console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
+#CHANGED TO
+console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7864900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
+
+Repacked boot.img and recovery.img.
+
+RE-COPYING IMAGES TO PARTITIONS AND BOOTING:
+Copied (dd) all available (15) images to (20) partitions on sd card.
+Copied (dd) the 10 images not found in factory firmware from mmcblk0 to mmcblk1. (Not sure if successful).
+2 partitions (/data and /cache) already formatted in ext4.
+'fastboot boot recovery.img'. All partitions are mounted now. No horrible error lines. 
+'fastboot boot boot.img'
+ROM booted successfully WITH sounds, SIM, Wi-Fi and Bluetooth. All seems working well so far.
+
+
+SECTION 3
+Continued on post 3...
+
+
+
+Continued from OP...
+
+SECTION 3
+QUERIES:
+UNCERTAIN PARTITIONS
+But there are no images available for these 10 partitions in factory firmware:
+pad, modemst1, modemst2, fsc, ssd, DDR, keystore, config, oem & devinfo.
+These seem to be very essential for OS, also containing IMEI if I'm not mistaken? I'm not sure of their contents. How system working without them? All are useless?
+
+HOW TO COMPLETELY BOOT FROM SD CARD
+In boot.img, "fstab.qcom" contains mount paths for system & userdata. While "init.target.rc" contains only mount paths for cache, persist and modem. In total 5 partitions which are mounted (checked by 'mount').
+Code:
+shell@l5510:/ $ mount | grep mmcblk1
+
+/dev/block/mmcblk1p24 /system ext4 rw,seclabel,relatime,discard,data=ordered 0 0
+/dev/block/mmcblk1p32 /data ext4 rw,seclabel,nosuid,nodev,relatime,discard,noauto_da_alloc 0 0
+/dev/block/mmcblk1p26 /cache ext4 rw,seclabel,nosuid,nodev,relatime 0 0
+/dev/block/mmcblk1p25 /persist ext4 rw,seclabel,nosuid,nodev,relatime,data=ordered 0 0
+/dev/block/mmcblk1p1 /firmware vfat ro,context=u:object_r:firmware_file:s0,relatime,uid=1000,gid=1000,fmask=0337,dmask=0227,codepage=437,iocharset=iso8859-1,shortname=lower,errors=remount-ro 0 0
+shell@l5510:/ $
+
+So the primary question is:
+How to change mount source of other partitions from mmcblk0 to mmcblk1? Or how to force OS to read the essentially required partitions from mmcblk1 instead of mmcblk0?
+Need to modify any other files in ramdisk or kernel-zimage or in /system or to modify init.d scripts or create new scripts? Any help?
+Other than 10 partitions mentioned above, these "not mounted" partitions also include modem, sbl1, aboot, rpm, tz and hyp and fsg. Modem contains bootable code of MBR and following 5 are also executable binaries. I think these are all part of bootloader i.e. loading in initial booting process and not required by OS. But what about the fsg and ten others? Where are those used? Here is a partition detail.
+
+Another primary issue is:
+I think it's almost impossible to make Boot ROM (CPU embedded) hand over charge to bootloader at "mmcblk1". "mmcblk0" must be hardcoded in Boot ROM.
+So, how to make bootloader load "kernel" and "rootfs" from mmcblk1p* instead of mmcblk0p*? Like there are switches in testing devices to optionally boot from different memories. Can we modify "aboot" (the little kernel) or "emmc_appsboot.mbn" ELF binary for this purpose? It must be complicated as bootloaders are signed by vendor (Qualcomm) and involve low-level programming as discussed here. Right?
+Or in other words, how to force bootloader to read partition table from dev/mmcblk1 instead of dev/mmcblk0?
+If we can't do this, system doesn't know how to boot in the absence of eMMC. That would have to be done through fastboot everytime we need to. Because boot chain will be stuck at bootloader.
+Multi-booting solutions are also dependent on a fully working /boot partition on eMMC because they (one way or the other) re-flash/replace modified boot image every time a ROM is to be switched. EFIDroid is a secondary bootloader but that too replaces /boot and/or /recovery.
+
+I have gone through this, this, this and this. But they only address partial booting from sd card e.g. dual booting in which only /system, /data and /cache are involved. None has discussed complete boot from sd. Is it really impossible? This link gives a little hope but it points to a ready made solution (bootloader) which boots kernel from SD card. But it gives no explanation how.
+I have also come across a few threads discussing Samsung (and HTC too) booting from SD Card as a fix to QHSUSB_DLOAD mode or bricked-bootloaader state. They extracted "debrick" file from a working phone and flashed that to the start of SD Card. Debrick file seems to be a single bootloader file containing all bootloaders in it as explained here and here. So after flashing the bootloader(s) with its accompanying partitions to SD Card, when device was powered on, it automatically booted from SD Card. If it's that simple for all devices with Qualcomm SoC, the only thing I have to do is 
+Code:
+dd if=/dev/zero of=/dev/block/mmcblk0 bs=1m count=200
+Any suggestions? I believe this must be possible as they are discussing here.
+Edit: Related quote from [GUIDE][9008][EDL|QDL][QUALCOMM ONLY] Unbrick via external sdcard (no QFIL!):
+Quote:
+On eMMC devices, the boot path is /dev/block/mmcblk0. If you have a 9008 brick, the SD card is seen as /dev/block/mmcblk0 so the phone will boot from it on an eMMC device.
+
+Some secondary questions:
+HOW ARE PARTITIONS IDENTIFIED BY BOOT-ROM WITHOUT PARTITION TABLE ON eMMC
+If there is no readable partition table on a bricked eMMC, how Boot ROM (primary bootloader on SoC) switches control to secondary bootloader or bootable modem partition or other partitions used by processors? Means how SoC / Processors locate modem, sbl, rpm, tz or aboot (the little kernel's offspring) on eMMC? Also, why 'parted /dev/block/mmcblk0 p' and 'sgdisk --print /dev/block/mmcblk0'show partitions if there is no table?
+Though parted-2.2 shows warning:
+Code:
+Error: Both the primary and backup GPT tables are corrupt.  Try making a fresh
+table, and using Parted's rescue feature to recover partitions.
+Or I'm thinking in wrong direction? This link discusses the issues but I'm not clear how it works.
+Quote:
+Once the a device is powered on it starts code from a know location (ROM) and looks for the first stage bootloader in a specific block.
+
+How is this "specific block" located by cpu ROM?
+It's talking about some "low-level" and "high-level" partition tables. How they differ? How can we manipulate the former?
+
+And finally...
+HOW TO SPEED UP SD CARD
+Other than using a UHS-III or the most recent and expensive App Performance Class (A1) sd card, what changes we can make to kernel to boost read/write speed? Otherwise, it's almost useless with too slow speed, frequent ANRs, hangs and laggings.
+Default I/O scheduler being used on QMobile Z8 is cfq with default tune-able settings. I think it's one of best schedulers for higher throughput. Na? Try other? Details here:
+Code:
+root@l5510:/ # cat /sys/block/mmcblk0/queue/scheduler
+noop deadline row [cfq]
+
+root@l5510:/ # for fyle in $(find /sys/block/mmcblk0/queue/iosched/ -type f); do echo $fyle; cat $fyle; done;
+/sys/block/mmcblk0/queue/iosched/fifo_expire_async
+50
+/sys/block/mmcblk0/queue/iosched/group_idle
+0
+/sys/block/mmcblk0/queue/iosched/quantum
+20
+/sys/block/mmcblk0/queue/iosched/slice_async
+40
+/sys/block/mmcblk0/queue/iosched/slice_idle
+10
+/sys/block/mmcblk0/queue/iosched/slice_sync
+100
+/sys/block/mmcblk0/queue/iosched/low_latency
+0
+/sys/block/mmcblk0/queue/iosched/fifo_expire_sync
+50
+/sys/block/mmcblk0/queue/iosched/back_seek_max
+16384
+/sys/block/mmcblk0/queue/iosched/target_latency
+300
+/sys/block/mmcblk0/queue/iosched/back_seek_penalty
+2
+/sys/block/mmcblk0/queue/iosched/slice_async_rq
+2
+
+root@l5510:/ # cat /sys/block/mmcblk1/queue/scheduler
+noop deadline row [cfq]
+
+root@l5510:/ # for fyle in $(find /sys/block/mmcblk1/queue/iosched/ -type f); do echo $fyle; cat $fyle; done;
+/sys/block/mmcblk1/queue/iosched/fifo_expire_async
+50
+/sys/block/mmcblk1/queue/iosched/group_idle
+0
+/sys/block/mmcblk1/queue/iosched/quantum
+20
+/sys/block/mmcblk1/queue/iosched/slice_async
+40
+/sys/block/mmcblk1/queue/iosched/slice_idle
+10
+/sys/block/mmcblk1/queue/iosched/slice_sync
+100
+/sys/block/mmcblk1/queue/iosched/low_latency
+0
+/sys/block/mmcblk1/queue/iosched/fifo_expire_sync
+50
+/sys/block/mmcblk1/queue/iosched/back_seek_max
+16384
+/sys/block/mmcblk1/queue/iosched/target_latency
+300
+/sys/block/mmcblk1/queue/iosched/back_seek_penalty
+2
+/sys/block/mmcblk1/queue/iosched/slice_async_rq
+2
+root@l5510:/ #
+
+Tried different cache values (read_ahead_kb) from 64 to 4048. Makes no difference apparently.
+Also disabled jounalling using 'tune2fs -O ^has_journal' and e2fsck checks using 'tune2fs -c -1'.
+Changed mount options to for /data and /cache:
+Code:
+root@l5510:/ # mount | grep -E "/cache|/data"
+
+/dev/block/mmcblk1p32 /data ext4 rw,seclabel,noatime,discard,nobarrier,noauto_da_alloc,commit=60 0 0
+/dev/block/mmcblk1p26 /cache ext4 rw,seclabel,noatime,discard,nobarrier,noauto_da_alloc,commit=60 0 0
+
+root@l5510:/ #
+Seems useless so far. Any ideas? Or it's a hardware limitation of device?
+Is there a way to get rid of FUSE and use ext4 in true sense for whole /data (only possible if someone is willing to quit using MTP), though it doesn't matter much for Android's internal operations? But it's a real pain for I/O operations on external media.
+Edit: Speed much improved by using a more certain branded SD Card; Sandisk C-10.
+@yoAeroA00 Sir need your special attention for kernel part. You have a good history with kernel tweaking and multibooting.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Attached Thumbnails
+Click image for larger version
+
+Name:	Error1.JPG
+Views:	1898
+Size:	71.9 KB
+ID:	4346560   Click image for larger version
+
+Name:	Error2.JPG
+Views:	1716
+Size:	136.8 KB
+ID:	4346561   Click image for larger version
+
+Name:	fastboot commands.JPG
+Views:	1766
+Size:	84.2 KB
+ID:	4346562   Click image for larger version
+
+Name:	Partition Tables (both).JPG
+Views:	1568
+Size:	198.2 KB
+ID:	4346563  
+Attached Files
+File Type: txt	Boot dev_block.txt - [Click for QR Code] (2.7 KB, 2196 views)
+File Type: txt	Recovery dev_block.txt - [Click for QR Code] (3.9 KB, 1398 views)
+File Type: zip	parted_gdisk_fdisk_mkfs.ext4-AARCH64.zip - [Click for QR Code] (1.95 MB, 4486 views)
+File Type: zip	parted_gdisk_fdisk_mkfs.ext4-ARM.zip - [Click for QR Code] (1.56 MB, 6110 views)
+
+
+
+
+
+
+
+---------------------------
+https://forum.xda-developers.com/android/help/how-to-boot-sd-card-qmobile-z8-bricked-t3712171
+https://android.stackexchange.com/questions/216123/android-how-to-increase-system-partition-and-decrease-data-partition
+
+
+
+maccaddress
+
+
+db:2f:6a:9a:1b:43
+da:77:9e:48:a4:18
+78:fd:39:0b:41:6e
+52:94:89:9a:e7:3d
+53:4b:f3:44:00:12
+41:30:c1:be:f4:53
+1f:74:e5:34:b4:5e
+ae:7e:43:bd:e0:cf
+a1:98:2d:a3:b6:bb
+73:ec:ef:e4:66:55
+d9:1d:99:b4:7f:e6
+84:42:bc:e9:77:4a
+a0:59:de:b0:9e:e3
+c9:f8:a4:19:43:60
+b4:1c:9f:b9:4c:1d
+
+

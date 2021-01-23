@@ -1,0 +1,9 @@
+adb reboot recovery
+
+fastboot flash recovery "C:\Users\rnda\Desktop\WikoSunny2Plus\Recovery-Sunn2+\recovery.img"
+
+fastboot oem reboot-recovery
+a
+
+PhilZ Touch 6.59.0
+ClockworkMod v6.0.5.1

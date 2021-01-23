@@ -1,0 +1,1919 @@
+android studio in cmd
+%userprofile%\appdata\Local\Android\Sdk\platform-tools
+
+(find better software now) url:capterra.com
+====================================================
+
+
+flexible graphical software
+
+the provision of educational materials, scientific journals, reviews... are by far resourceful and informative.
+
+
+
+
+There no offline feature developed so far that could help users to save and recover from the searched materials.
+
+
+I have been able to compile enormous academic materials that helped me write my dissertation and further my research in IT, etc.
+
+
+
+https://reviews.capterra.com/new/160756
+
+======================================================
+
+
+adb sideload "C:\cygwin64\home\Kmna\kitchen\A\READY\sunny2+_V2600CN_7.0_WIK_FR_28.zip"
+
+
+
+
+"C:\Users\Mbwirande\Desktop\Sunny2Plus\wiko2+.bat"
+
+
+cd C:\your\path\to\folder\of\apks
+for %e in (*.apk) do adb install "%e"
+
+adb install "C:\Users\Mbwirande\Desktop\F\Galaxy s4 i9295\A\apks\var_apks\Root-Uninstaller-mobizsystems[dlandroid.com]\Root-Uninstaller-mobizsystems[dlandroid.com].apk"
+adb install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\com.snaptube.premium_5.10.0.5104810-5104810_minAPI16(armeabi)(nodpi)_apkmirror.com.apk"
+adb install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\TubeMate_v3.3.6_MOD_apkmody.io.apk"
+adb install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\dentex.youtube.downloader_7.0-152_minAPI21(armeabi-v7a,x86)(nodpi)_apkmirror.com.apk"
+adb install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\VidMate_v4.1288_apkmody.io.apk"
+
+adb install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\Sunny2Plus\[AvekaMod] Titanium Backup Pro v8.4.0.2\[AvekaMod] Titanium Backup v8.4.0.1 Mod\[AvekaMod] Titanium Backup v8.4.0.1 Mod.apk"
+adb install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\Sunny2Plus\titanium-backup-root-PRO-Donate[DLandroid.com].apk"
+
+adb -s "NT9DCV3ORR"  install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\com.snaptube.premium_5.10.0.5104810-5104810_minAPI16(armeabi)(nodpi)_apkmirror.com.apk"
+adb -s "NT9DCV3ORR"  install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\TubeMate_v3.3.6_MOD_apkmody.io.apk"
+adb -s "NT9DCV3ORR"  install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\dentex.youtube.downloader_7.0-152_minAPI21(armeabi-v7a,x86)(nodpi)_apkmirror.com.apk"
+adb -s "NT9DCV3ORR"  install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\VidMate_v4.1288_apkmody.io.apk"
+ -s "0PZW7IL4ES" 
+
+adb -s "0PZW7IL4ES"  install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\com.snaptube.premium_5.10.0.5104810-5104810_minAPI16(armeabi)(nodpi)_apkmirror.com.apk"
+adb -s "0PZW7IL4ES"  install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\TubeMate_v3.3.6_MOD_apkmody.io.apk"
+adb -s "0PZW7IL4ES"  install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\dentex.youtube.downloader_7.0-152_minAPI21(armeabi-v7a,x86)(nodpi)_apkmirror.com.apk"
+adb -s "0PZW7IL4ES"  install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\VidMate_v4.1288_apkmody.io.apk"
+adb -s "0PZW7IL4ES"  install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\H\microg-for-ogyt-0-2-14-204218.apk"
+
+adb -s "0PZW7IL4ES"  install -r -d -f  --force-agent  "C:\Users\Mbwirande\Desktop\F\Galaxy s4 i9295\A\apks\com-mod-google-play-services-v10-2-98_10298030.apk"
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+type "C:\Users\Mbwirande\Desktop\Sunny2Plus\wiko2+.bat" |more
+notepad "C:\Users\Mbwirande\Desktop\Sunny2Plus\wiko2+.bat"
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+=====================
++33 77 459 73 64
+
+
+powershell
+adb -s "HYBUG6ZD7LR4LJKF" shell 
+getprop | grep -e 'model' -e 'version.sdk' -e 'manufacturer' -e 'hardware' -e 'platform' -e 'revision' -e 'serialno' -e 'product.name' -e 'brand'
+
+---------------
+adb -s "HYBUG6ZD7LR4LJKF" -s 411265f0 shell getprop
+
+
+==========================================
+adb -s "HYBUG6ZD7LR4LJKF" devices -l
+
+anonytun [codes]
+
+==========================================
+
+GET http://mms.orange.fr/ HTTP/1.1[crlf]Host: mms.orange.fr/[crlf]Connection: keep-alive[crlf]Proxy-Connection: keep-alive[crlf]X-Online-Host: pass.orange.fr/[crlf]Content-Length: 999999999[crlf][crlf]
+
+==========================================
+android - How to use ADB Shell when Multiple Devices are connected
+-----------------------
+
+List of devices attached
+411265f0        device
+HYBUG6ZD7LR4LJKF        device
+
+adb -s "HYBUG6ZD7LR4LJKF" -s "HYBUG6ZD7LR4LJKF" install "C:\Users\joel.joel\Downloads\release.apk"
+adb -s "HYBUG6ZD7LR4LJKF" -s "HYBUG6ZD7LR4LJKF"
+
+
+adb -s "HYBUG6ZD7LR4LJKF" -s "411265f0"
+
+---------------------
+
+
+List of devices attached
+411265f0        device
+HYBUG6ZD7LR4LJKF        device
+
+
+===========================================
+bypassandroid_5apk
+BypassFRP-1.0.apk
+
+
+adb -s "HYBUG6ZD7LR4LJKF" kill-server
+adb -s "HYBUG6ZD7LR4LJKF" start-server
+adb -s "HYBUG6ZD7LR4LJKF" devices
+
+===========================================
+
+adb  reboot bootloader
+
+fastboot oem unlock
+
+fastboot  reboot
+
+===========================================
+adb -s "HYBUG6ZD7LR4LJKF" reboot bootloader
+
+fastboot -s "HYBUG6ZD7LR4LJKF" oem unlock
+fastboot -s "HYBUG6ZD7LR4LJKF" flashing unlock
+
+adb -s "HYBUG6ZD7LR4LJKF" reboot bootloader 
+fastboot  reboot
+
+fastboot flash recovery "C:\Users\Mbwirande\Desktop\Sunny2Plus\WikoSunny2plusResource_2\WikoSunny2plusResource\recovery.img" 
+fastboot.exe -s "HYBUG6ZD7LR4LJKF" oem reboot-recovery
+
+fastboot  reboot
+
+[ allow installation of unknow apps]
+
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Sunny-06-09-2020\Download\PModN\ADM-Pro-v8.5_build_80522-Mod_Lite.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\E\nexus asus 4\com.koushikdutta.rommanager_5.5.3.7_paid-www.apkhere.com.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\E\nexus asus 4\WhatsApp.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\quickshortcutmaker-2-4-0.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Nova_Launcher-Prime-v6.2.14_build_62014.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Sunny-06-09-2020\Download\PModN\SAI_v4.2_[Modded].apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\DEPLOY\C\Lucky Patcher_v8.9.0_apkmody.io.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Sunny-06-09-2020\Download\PModN\YouTube_Downloader_6.8.9.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko-04.09.2020\Download\ModApps\Sesame_Full_v3.6.3_build_36310_Apk4all.com.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko-04.09.2020\Download\ES-File-Explorer-File-Manager-v4.2.2.9.2-www.ReXdl.com.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko-04.09.2020\Download\File_Manager_v2.4.9_Premium_Mod_Apk4all.com.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko-04.09.2020\Download\ModApps\App2SD Pro All in One Tool ROOT_v16_apkpure.com.apk"
+
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\BusyBox_Pro_71.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko-Rainbow 4G-BK\Download\id-ch& expo\XposedInstaller_3.1.5.apk"
+
+
+
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\AdGuard_VPN-Pro-v1.0.155_mod.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Amazon-Video_v3.0.276.247_MOD_apkmody.io.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\BusyBox_Pro_71.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\com.zalivka.animation.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\ExpressVPN_v9.0.3-beta_Mod.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\ExVPN v9.0.40 (Beta)-Patched (1).apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\ExVPN v9.0.40 (Beta)-Patched.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\fotmob8299_signed.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Hotspot_Shield_VPN_Premium_v7.9.0_arm64-v8a (1).apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Hotspot_Shield_VPN_Premium_v7.9.0_arm64-v8a.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\IDM+-v11.6.4_build_142-armeabi-v7a.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\KillApps_v1.19.4_b411_Pro_Modded.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Lucky Patcher_v8.9.3_apkmody.io.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Netflix_v7.77.0 MOD_apkmody.io.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\NetGuard-Pro-v2.288_build_2020082601.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Nova_Launcher-Prime-v6.2.14_build_62014.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\NoxCleaner_2.9.0.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\PDF_Extra-Premium-v6.8.1.917_build_917-armeabi-v7aarm64-v8a.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Pixomatic-Pro-v4.8.0_build_985-Mod.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\Simply_Piano_by_JoyTunes_v5.0_Premium_apkmody.io.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\TapScanner-Premium-2_5_44.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\TextNow_v20.39.0.2 MOD_apkmody.io.apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\TikTok_v17.4.5 MOD_apkmody.io.apk"
+
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\YouTube Vanced_v15.40.37_apkmody.io (1).apk"
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "D:\Wiko Sunny 2 Plus\Download\DUSHYA\YouTube Vanced_v15.40.37_apkmody.io.apk"
+
+
+
+
+
+======================
+
+adb -s "HYBUG6ZD7LR4LJKF" install -r -d -f  --force-agent "C:\Users\Mbwirande\Desktop\F\Galaxy s4 i9295\A\apks\micromax_sunny2plus\user_apps\Xposed Installer.apk"
+
+*******************************************************
+adb -s "HYBUG6ZD7LR4LJKF" reboot bootloader 
+fastboot flash recovery "C:\Users\Mbwirande\Desktop\Sunny2Plus\WikoSunny2plusResource_2\WikoSunny2plusResource\recovery.img" 
+fastboot.exe -s "HYBUG6ZD7LR4LJKF" oem reboot-recovery
+
+----------------------------------
+
+adb -s "HYBUG6ZD7LR4LJKF" reboot recovery 
+
+# [ go to adb -s "HYBUG6ZD7LR4LJKF" sideload 😪  devmgmt.msc => change "usb ...composite]
+
+adb -s "HYBUG6ZD7LR4LJKF" sideload "D:\Sunny-06-09-2020\Download\ModApps\Files\SuperSU+PRO+v2.82SR3.zip"
+
+
+adb -s "HYBUG6ZD7LR4LJKF" reboot recovery
+
+adb -s "HYBUG6ZD7LR4LJKF" sideload "C:\Users\Mbwirande\Desktop\E\nexus asus 4\xposed-v89-sdk22-arm.zip"
+
+_______________________________________________________________________________________________________
+adb -s "HYBUG6ZD7LR4LJKF" sideload "D:\Sunny-06-09-2020\Download\ModApps\Files\UPDATE-unSU-signed.zip"
+_______________________________________________________________________________________________________
+[supersu => GRANT ]
+[set to install to an external sd-💳 ]
+
+adb -s "HYBUG6ZD7LR4LJKF" reboot recovery
+# [ go to adb -s "HYBUG6ZD7LR4LJKF" sideload 😪 ]
+
+adb -s "HYBUG6ZD7LR4LJKF" sideload "D:\xposed-v89-sdk24-arm.zip"
+
+adb -s "HYBUG6ZD7LR4LJKF" sideload "D:\Sunny-06-09-2020\Download\ModApps\Files\SuperSU+PRO+v2.82SR3.zip"
+
+
+
+------------------------
+for %f in (D:\DEPLOY\A\*.apk) do adb -s "HYBUG6ZD7LR4LJKF" install "%f"
+for %f in (D:\Wiko-04.09.2020\Download\*.apk) do adb -s "HYBUG6ZD7LR4LJKF" install "%f"
+for %f in (D:\DEPLOY\C\*.apk) do adb -s "HYBUG6ZD7LR4LJKF" install "%f"
+for %f in ("D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\"*.apk) do adb -s "HYBUG6ZD7LR4LJKF" install "%f"
+for %f in (D:\Wiko-04.09.2020\Download\*.apk) do adb -s "HYBUG6ZD7LR4LJKF" install "%f"
+for %f in ("D:\Sunny-06-09-2020\Download\"*.apk) do adb -s "HYBUG6ZD7LR4LJKF" install "%f"
+for %f in ("D:\Wiko Sunny 2 Plus\Download\DUSHYA\"*.apk) do adb -s "HYBUG6ZD7LR4LJKF" install "%f"
+
+for %f in ("C:\Users\Mbwirande\Desktop\F\Galaxy s4 i9295\A\apks\micromax_sunny2plus\"*.apk) do adb  install "%f"
+
+==================
+for %f in (D:\Sunny-06-09-2020\Download\PModN\*.apk) do adb -s "HYBUG6ZD7LR4LJKF" install "%f"
+==================
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\F\wiko sunny 2" /storage/sdcard0/Download
+
+
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\J\ibyigisho" /storage/sdcard0/Download
+
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "D:\Sunny-06-09-2020\Download"/storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "D:\Wiko Sunny 2 Plus\Download\DUSHYA" /storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\D\F-12-TKA.zip" /storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\D\Hanura-1.zip" /storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\D\Ibiseke-12.zip" /storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\D\kagame-cartoon.zip" /storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\EI\rooted" /storage/sdcard0/Download/rooted
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\EI\non-rooted" /storage/sdcard0/Download/non-rooted
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "D:\Sunny-06-09-2020\Download" /storage/emulated/0
+Birangiye
+
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "D:\Sunny-06-09-2020\Download\files" /storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "D:\Sunny-06-09-2020\Download\wallpapers" /storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  
+
+
+adb pull --sync /storage/sdcard1/BYIZA/ "C:\Users\Mbwirande\Desktop\J\BYIZA"
+
+
+-------------------------------
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\EI\rooted" /storage/sdcard0/Download/rooted
+adb -s "HYBUG6ZD7LR4LJKF" push --sync  "C:\Users\Mbwirande\Desktop\EI\non-rooted" /storage/sdcard0/Download/non-rooted
+
+********************************* videos *************************************************
+
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Sunny-06-09-2020\film\Movies\Torrents" /storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Sunny-06-09-2020\film\IDM\Torrents" /storage/sdcard0/Download
+-----------------------------------------------------------------------------------------------
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Sunny-06-09-2020\film\Movies\A" /storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Sunny-06-09-2020\film\Movies\NEW-FILMS" /storage/sdcard0/Download
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Sunny-06-09-2020\film\Movies\DEPOT" /storage/sdcard0/Download
+
+************************** apks*******************
+
+:: mkdir /sdcard/tmp
+:: mkdir -m 777 /sdcard/tmp set permission mode
+:: mkdir -p /sdcard/tmp/sub1/sub2 create parent directories as needed
+:: adb push myfolder /storage/sdcard0/Download
+
+
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\1.1.1.1_v5.1_apkmody.io.apks" /storage/sdcard0/Download/apks
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\1Password_v7.5.1_apkmody.io.apks" /storage/sdcard0/Download/apks
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\Camscanner_v5.19.0.20200508_apkmody.io.apks" /storage/sdcard0/Download/apks
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\iTranslate_Pro_v5.5.6.apks" /storage/sdcard0/Download/apks
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\Runtastic_PRO-v9.10.1_modapkdl.io.apks" /storage/sdcard0/Download/apks
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\YouTube_Vanced-v15.05.54-nonroot-legacy-black.apks" /storage/sdcard0/Download/apks
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\YouTube_Vanced-v15.05.54-root.apks" /storage/sdcard0/Download/apks
+adb -s "HYBUG6ZD7LR4LJKF" push --sync "D:\Wiko Sunny 2 Plus\Download\Paid_Mod_Apks\YouTube_Vanced-v15.05.54-root-legacy-black.apks" /storage/sdcard0/Download/apks
+**************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADB Basics
+=============================
+adb devices (lists connected devices)
+adb root (restarts adbd with root permissions)
+adb start-server (starts the adb server)
+adb kill-server (kills the adb server)
+adb reboot (reboots the device)
+adb devices -l (list of devices by product/model)
+adb shell (starts the backround terminal)
+exit (exits the background terminal)
+adb help (list all commands)
+adb -s <deviceName> <command> (redirect command to specific device)
+adb –d <command> (directs command to only attached USB device)
+adb –e <command> (directs command to only attached emulator)
+
+Package Installation
+=============================
+adb shell install <apk> (install app)
+adb shell install <path> (install app from phone path)
+adb shell install -r <path> (install app from phone path)
+adb shell uninstall <name> (remove the app)
+
+Paths
+=============================
+/data/data/<package>/databases (app databases)
+/data/data/<package>/shared_prefs/ (shared preferences)
+/data/app (apk installed by user)
+/system/app (pre-installed APK files)
+/mmt/asec (encrypted apps) (App2SD)
+/mmt/emmc (internal SD Card)
+/mmt/adcard (external/Internal SD Card)
+/mmt/adcard/external_sd (external SD Card)
+
+adb shell ls (list directory contents)
+adb shell ls -s (print size of each file)
+adb shell ls -R (list subdirectories recursively)
+
+File Operations
+=============================
+adb push <local> <remote> (copy file/dir to device)
+adb pull <remote> <local> (copy file/dir from device)
+run-as <package> cat <file> (access the private package files)
+
+Phone Info
+=============================
+adb get-stat? (print device state)
+adb get-serialno (get the serial number)
+adb shell dumpsys iphonesybinfo (get the IMEI)
+adb shell netstat (list TCP connectivity)
+adb shell pwd (print current working directory)
+adb shell dumpsys battery (battery status)
+adb shell pm list features (list phone features)
+adb shell service list (list all services)
+adb shell dumpsys activity <package>/<activity> (activity info)
+adb shell ps (print process status)
+adb shell wm size (displays the current screen resolution)
+dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp' (print current app's opened activity)
+
+Package Info
+=============================
+adb shell pm list packages (list package names)
+adb shell pm list packages -r (list package name + path to apks)
+adb shell pm list packages -3 (list third party package names)
+adb shell pm list packages -s (list only system packages)
+adb shell pm list packages -u (list package names + uninstalled)
+adb shell pm dumpsys package packages (list info on all apps)
+adb shell pm dump <name> (list info on one package)
+adb shell pm path <package> (path to the apk file)
+
+Configure Settings Commands
+=============================
+adb shell dumpsys battery set level <n> (change the level from 0 to 100)
+adb shell dumpsys battery set status<n> (change the level to unknown, charging, discharging, not charging or full)
+adb shell dumpsys battery reset (reset the battery)
+adb shell dumpsys battery set usb <n> (change the status of USB connection. ON or OFF)
+adb shell wm size WxH (sets the resolution to WxH)
+
+Device Related Commands
+=============================
+adb reboot-recovery (reboot device into recovery mode)
+adb reboot fastboot (reboot device into recovery mode)
+adb shell screencap -p "/path/to/screenshot.png" (capture screenshot)
+adb shell screenrecord "/path/to/record.mp4" (record device screen)
+adb backup -apk -all -f backup.ab (backup settings and apps)
+adb backup -apk -shared -all -f backup.ab (backup settings, apps and shared storage)
+adb backup -apk -nosystem -all -f backup.ab (backup only non-system apps)
+adb restore backup.ab (restore a previous backup)
+adb shell am start|startservice|broadcast <INTENT>[<COMPONENT>]
+-a <ACTION> e.g. android.intent.action.VIEW
+-c <CATEGORY> e.g. android.intent.category.LAUNCHER (start activity intent)
+
+adb shell am start -a android.intent.action.VIEW -d URL (open URL)
+adb shell am start -t image/* -a android.intent.action.VIEW (opens gallery)
+
+Logs
+=============================
+adb logcat [options] [filter] [filter] (view device log)
+adb bugreport (print bug reports)
+
+Permissions
+=============================
+adb shell permissions groups (list permission groups definitions)
+adb shell list permissions -g -r (list permissions details)
+
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+== Update app
+adb install -r yourApp.apk  //  -r means re-install the app and keep its data on the device.
+adb install –k <.apk file path on computer> 
+
+== Home button
+adb shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN
+
+== Activity Manager
+adb shell am start -a android.intent.action.VIEW
+adb shell am broadcast -a 'my_action'
+
+adb shell am start -a android.intent.action.CALL -d tel:+972527300294 // Make a call
+
+// Open send sms screen with phone number and the message:
+adb shell am start -a android.intent.action.SENDTO -d sms:+972527300294   --es  sms_body "Test --ez exit_on_sent false
+
+// Reset permissions
+adb shell pm reset-permissions -p your.app.package 
+adb shell pm grant [packageName] [ Permission]  // Grant a permission to an app. 
+adb shell pm revoke [packageName] [ Permission]   // Revoke a permission from an app.
+
+
+// Emulate device
+adb shell wm size 2048x1536
+adb shell wm density 288
+// And reset to default
+adb shell wm size reset
+adb shell wm density reset
+
+
+
+
+
+
+
+
+
+$ adb shell
+shell@ $ screencap /sdcard/screen.png
+shell@ $ exit
+$ adb pull /sdcard/screen.png
+
+---
+adb shell screenrecord /sdcard/NotAbleToLogin.mp4
+
+$ adb shell
+shell@ $ screenrecord --verbose /sdcard/demo.mp4
+(press Control + C to stop)
+shell@ $ exit
+$ adb pull /sdcard/demo.mp4
+
+== Key event
+adb shell input keyevent 3 // Home btn
+adb shell input keyevent 4 // Back btn
+adb shell input keyevent 5 // Call
+adb shell input keyevent 6 // End call
+adb shell input keyevent 26  // Turn Android device ON and OFF. It will toggle device to on/off status.
+adb shell input keyevent 27 // Camera
+adb shell input keyevent 64 // Open browser
+adb shell input keyevent 66 // Enter
+adb shell input keyevent 67 // Delete (backspace)
+adb shell input keyevent 207 // Contacts
+adb shell input keyevent 220 / 221 // Brightness down/up
+adb shell input keyevent 277 / 278 /279 // Cut/Copy/Paste
+// https://developer.android.com/reference/android/view/KeyEvent.html
+
+== ShPref
+# replace org.example.app with your application id
+
+# Add a value to default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key key_name --es value "hello world!"'
+
+# Remove a value to default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.REMOVE --es key key_name'
+
+# Clear all default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.CLEAR --es key key_name'
+
+# It's also possible to specify shared preferences file.
+adb shell 'am broadcast -a org.example.app.sp.PUT --es name Game --es key level --ei value 10'
+
+# Data types
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key string --es value "hello world!"'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key boolean --ez value true'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key float --ef value 3.14159'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key int --ei value 2015'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key long --el value 9223372036854775807'
+
+# Restart application process after making changes
+adb shell 'am broadcast -a org.example.app.sp.CLEAR --ez restart true'
+
+== Monkey
+adb shell monkey -p com.myAppPackage -v 10000 -s 100 // monkey tool is generating 10.000 random events on the real device
+
+
+== Other
+adb backup // Create a full backup of your phone and save to the computer.
+adb restore // Restore a backup to your phone.
+adb sideload //  Push and flash custom ROMs and zips from your computer.
+
+fastboot devices
+// Check connection and get basic information about devices connected to the computer.
+// This is essentially the same command as adb devices from earlier. 
+//However, it works in the bootloader, which ADB does not. Handy for ensuring that you have properly established a connection.
+
+
+--------------------------------------------------------------------------------
+Shared Preferences
+
+# replace org.example.app with your application id
+
+# Add a value to default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key key_name --es value "hello world!"'
+
+# Remove a value to default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.REMOVE --es key key_name'
+
+# Clear all default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.CLEAR --es key key_name'
+
+# It's also possible to specify shared preferences file.
+adb shell 'am broadcast -a org.example.app.sp.PUT --es name Game --es key level --ei value 10'
+
+# Data types
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key string --es value "hello world!"'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key boolean --ez value true'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key float --ef value 3.14159'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key int --ei value 2015'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key long --el value 9223372036854775807'
+
+# Restart application process after making changes
+adb shell 'am broadcast -a org.example.app.sp.CLEAR --ez restart true'
+--------------------------------------------------------------------------------
+
+=== Few bash snippets ===
+@Source (https://jonfhancock.com/bash-your-way-to-better-android-development-1169bc3e0424)
+
+=== Using tail -n
+//Use tail to remove the first line. Actually two lines. The first one is just a newline. The second is “List of devices attached.”
+$ adb devices | tail -n +2
+
+=== Using cut -sf
+// Cut the last word and any white space off the end of each line.
+$ adb devices | tail -n +2 | cut -sf -1
+
+=== Using xargs -I
+// Given the -I option, xargs will perform an action for each line of text that we feed into it.
+// We can give the line a variable name to use in commands that xargs can execute.
+$ adb devices | tail -n +2 | cut -sf -1 | xargs -I X echo X aw yiss
+
+=== Three options below together
+// Will print android version of all connected devices
+adb devices | tail -n +2 | cut -sf -1 | xargs -I X adb -s X shell getprop ro.build.version.release  
+
+=== Using alias
+-- Example 1 
+alias tellMeMore=echo
+tellMeMore "hi there"
+Output => hi there
+-- Example 2
+// Define alias
+alias apkinstall="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X install -r $1"
+// And you can use it later 
+apkinstall ~/Downloads/MyAppRelease.apk  // Install an apk on all devices
+-- Example 3
+alias rmapp="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X uninstall $1"
+rmapp com.example.myapp // Uninstall a package from all devices
+-- Example 4
+alias clearapp="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X shell pm clear $1"
+clearapp com.example.myapp  // Clear data on all devices (leave installed)
+-- Example 5
+alias startintent="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X shell am start $1"
+startintent https://twitter.com/JonFHancock // Launch a deep link on all devices
+
+
+Setting up your .bash_profile
+Finally, to make this all reusable even after rebooting your computer (aliases only last through the current session), we have to add these to your .bash_profile. You might or might not already have a .bash_profile, so let’s make sure we append to it rather than overwriting it. Just open a terminal, and run the following command
+
+touch .bash_profile && open .bash_profile
+
+This will create it if it doesn’t already exist, and open it in a text editor either way. Now just copy and paste all of the aliases into it, save, and close.
+
+alias startintent="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X shell am start $1"
+alias apkinstall="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X install -r $1"
+alias rmapp="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X uninstall $1"
+alias clearapp="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X shell pm clear $1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& samsung galaxy s4 active &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
+adb -s "HYBUG6ZD7LR4LJKF" sideload "C:\Users\Mbwirande\Desktop\F\Galaxy s4 i9295\A\twrp\xposed-v89-sdk21-arm.zip"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================= appendix  ====================================
+
+
+adb -s "HYBUG6ZD7LR4LJKF" sideload "D:\magisk\Magisk-uninstaller-20190204.zip"
+
+---------------------------------- samsung galaxy s4 active -----------------------------------
+
+
+C:\>adb -s "HYBUG6ZD7LR4LJKF" -s 411265f0 shell getprop
+[DEVICE_PROVISIONED]: [1]
+[af.resampler.quality]: [255]
+[audio.gapless.playback.disable]: [true]
+[audioflinger.bootsnd]: [0]
+[audit.ondenial]: [0]
+[bluetooth.a2dp.sink.enabled]: [false]
+[boot.sfbootcomplete]: [0]
+[camera2.portability.force_api]: [1]
+[config.disable_atlas]: [true]
+[dalvik.vm.dex2oat-Xms]: [64m]
+[dalvik.vm.dex2oat-Xmx]: [512m]
+[dalvik.vm.heapgrowthlimit]: [128m]
+[dalvik.vm.heapmaxfree]: [8m]
+[dalvik.vm.heapminfree]: [2m]
+[dalvik.vm.heapsize]: [512m]
+[dalvik.vm.heapstartsize]: [8m]
+[dalvik.vm.heaptargetutilization]: [0.75]
+[dalvik.vm.image-dex2oat-Xms]: [64m]
+[dalvik.vm.image-dex2oat-Xmx]: [64m]
+[dalvik.vm.isa.arm.features]: [div]
+[dalvik.vm.stack-trace-file]: [/data/anr/traces.txt]
+[debug.composition.type]: [c2d]
+[debug.egl.hw]: [1]
+[debug.enable.wl_log]: [1]
+[debug.force_rtl]: [0]
+[debug.mdpcomp.idletime]: [0]
+[debug.mdpcomp.logs]: [0]
+[debug.sf.hw]: [1]
+[dev.MDPLimitCondition]: [0]
+[dev.bootcomplete]: [1]
+[dev.kies.sommode]: [TRUE]
+[dev.kiessupport]: [TRUE]
+[dev.knoxapp.running]: [false]
+[dev.message.reserved]: [FALSE]
+[dev.ssrm.app.type]: [false]
+[dev.ssrm.emergencymode]: [false]
+[dev.ssrm.init]: [1]
+[dev.ssrm.live_thumbnail]: [1]
+[dev.ssrm.mode]: []
+[dev.ssrm.pst]: [429]
+[dhcp.wlan0.dns1]: [195.238.2.21]
+[dhcp.wlan0.dns2]: [195.238.2.22]
+[dhcp.wlan0.dns3]: [80.201.237.238]
+[dhcp.wlan0.dns4]: [80.201.237.239]
+[dhcp.wlan0.domain]: []
+[dhcp.wlan0.gateway]: [100.122.0.1]
+[dhcp.wlan0.ipaddress]: [100.122.23.236]
+[dhcp.wlan0.leasetime]: [7200]
+[dhcp.wlan0.mask]: [255.255.192.0]
+[dhcp.wlan0.mtu]: []
+[dhcp.wlan0.pid]: [1922]
+[dhcp.wlan0.reason]: [ROUTERADVERT]
+[dhcp.wlan0.result]: [ok]
+[dhcp.wlan0.roaming]: [0]
+[dhcp.wlan0.server]: [80.200.255.10]
+[dhcp.wlan0.vendorInfo]: []
+[gsm.current.phone-type]: [1]
+[gsm.network.type]: [Unknown]
+[gsm.operator.alpha]: []
+[gsm.operator.iso-country]: [be]
+[gsm.operator.ispsroaming]: [false]
+[gsm.operator.isroaming]: [false]
+[gsm.operator.numeric]: [20610]
+[gsm.sim.operator.alpha]: [Orange F]
+[gsm.sim.operator.iso-country]: [fr]
+[gsm.sim.operator.numeric]: [20801]
+[gsm.sim.state]: [READY]
+[gsm.version.baseband]: [I9295XXSDQD4]
+[gsm.version.ril-impl]: [Samsung RIL v3.0]
+[hw.cabl.version]: [1.1.20130401]
+[hw.cabl.yuv]: [0]
+[init.svc.BCS-daemon]: [running]
+[init.svc.DR-daemon]: [running]
+[init.svc.SIDESYNC_service]: [running]
+[init.svc.SMD-daemon]: [running]
+[init.svc.TvoutService_C]: [running]
+[init.svc.adb -s "HYBUG6ZD7LR4LJKF"d]: [running]
+[init.svc.at_distributor]: [running]
+[init.svc.atfwd]: [stopped]
+[init.svc.auditd]: [running]
+[init.svc.bootanim]: [stopped]
+[init.svc.config_bluetooth]: [stopped]
+[init.svc.debuggerd]: [running]
+[init.svc.dhcpcd_wlan0]: [running]
+[init.svc.drm]: [running]
+[init.svc.drsd]: [running]
+[init.svc.edmaudit]: [running]
+[init.svc.flash_recovery]: [stopped]
+[init.svc.fuse_extSdCard]: [stopped]
+[init.svc.healthd]: [running]
+[init.svc.icd]: [stopped]
+[init.svc.immvibed]: [stopped]
+[init.svc.installd]: [running]
+[init.svc.insthk]: [stopped]
+[init.svc.irsc_util]: [stopped]
+[init.svc.keystore]: [running]
+[init.svc.kickstart]: [running]
+[init.svc.lmkd]: [running]
+[init.svc.logd]: [running]
+[init.svc.macloader]: [stopped]
+[init.svc.mcStarter]: [stopped]
+[init.svc.media]: [running]
+[init.svc.mobex-daemon]: [running]
+[init.svc.modem-sh]: [stopped]
+[init.svc.mpdecision]: [running]
+[init.svc.netd]: [running]
+[init.svc.netmgrd]: [stopped]
+[init.svc.p2p_supplicant]: [running]
+[init.svc.powersnd]: [stopped]
+[init.svc.ppd]: [running]
+[init.svc.prepare_param]: [stopped]
+[init.svc.qcamerasvr]: [running]
+[init.svc.qcom-c_core-sh]: [stopped]
+[init.svc.qcom-c_main-sh]: [stopped]
+[init.svc.qcom-post-boot]: [stopped]
+[init.svc.qcom-sh]: [stopped]
+[init.svc.qcom-usb-sh]: [stopped]
+[init.svc.qmuxd]: [running]
+[init.svc.qseecomd]: [running]
+[init.svc.ril-daemon]: [running]
+[init.svc.rmt_storage]: [stopped]
+[init.svc.run-mobicore]: [running]
+[init.svc.scranton_RD]: [stopped]
+[init.svc.scs]: [stopped]
+[init.svc.sdcard]: [stopped]
+[init.svc.sec-sh]: [stopped]
+[init.svc.secure_storage]: [running]
+[init.svc.sensorhubservice]: [running]
+[init.svc.servicemanager]: [running]
+[init.svc.ssr_diag]: [restarting]
+[init.svc.surfaceflinger]: [running]
+[init.svc.swapon]: [stopped]
+[init.svc.thermal-engine]: [running]
+[init.svc.time_daemon]: [running]
+[init.svc.ueventd]: [running]
+[init.svc.usf-post-boot]: [stopped]
+[init.svc.vold]: [running]
+[init.svc.wcnss-service]: [stopped]
+[init.svc.zygote]: [running]
+[installd.sdcard_manipulate_done]: [1]
+[keyguard.no_require_sim]: [true]
+[logd.auditd]: [false]
+[lpa.decode]: [false]
+[lpa.use-stagefright]: [true]
+[media.aac_51_output_enabled]: [true]
+[media.stagefright.enable-aac]: [true]
+[media.stagefright.enable-fma2dp]: [true]
+[media.stagefright.enable-http]: [true]
+[media.stagefright.enable-player]: [true]
+[media.stagefright.enable-qcp]: [true]
+[media.stagefright.enable-scan]: [true]
+[mm.enable.qcom_parser]: [33395]
+[mmp.enable.3g2]: [true]
+[mpq.audio.decode]: [true]
+[net.bt.name]: [Android]
+[net.change]: [net.mt.init]
+[net.dns1]: [195.238.2.21]
+[net.dns2]: [195.238.2.22]
+[net.dns3]: [80.201.237.238]
+[net.dns4]: [80.201.237.239]
+[net.hostname]: [android-7a75f094e47b8d17]
+[net.knoxscep.version]: [N/A]
+[net.knoxsso.version]: [2.1.1]
+[net.knoxvpn.version]: [2.2.0]
+[net.mt.init]: [DONE]
+[net.qtaguid_enabled]: [1]
+[net.tcp.buffersize.default]: [4096,87380,110208,4096,16384,110208]
+[net.tcp.buffersize.edge]: [4093,26280,35040,4096,16384,35040]
+[net.tcp.buffersize.evdo]: [4094,87380,262144,4096,16384,262144]
+[net.tcp.buffersize.gprs]: [4092,8760,11680,4096,8760,11680]
+[net.tcp.buffersize.hsdpa]: [4092,87380,704512,4096,16384,110208]
+[net.tcp.buffersize.hspa]: [4092,87380,704512,4096,16384,262144]
+[net.tcp.buffersize.hspap]: [4092,87380,704512,4096,16384,262144]
+[net.tcp.buffersize.hsupa]: [4092,87380,704512,4096,16384,262144]
+[net.tcp.buffersize.lte]: [524288,1048576,2560000,262144,524288,1220608]
+[net.tcp.buffersize.umts]: [4094,87380,704512,4096,16384,110208]
+[net.tcp.buffersize.wifi]: [524288,1048576,2097152,262144,524288,1048576]
+[net.tcp.default_init_rwnd]: [60]
+[net.tcp.delack.default]: [1]
+[net.tcp.delack.lte]: [8]
+[net.tcp.delack.wifi]: [20]
+[net.tcp.usercfg.default]: [0]
+[net.tcp.usercfg.lte]: [1]
+[net.tcp.usercfg.wifi]: [1]
+[persist.audio.allsoundmute]: [0]
+[persist.audio.fluence.mode]: [endfire]
+[persist.audio.globaleffect]: [0]
+[persist.audio.handset.mic]: [digital]
+[persist.audio.headsetsysvolume]: [4]
+[persist.audio.hphonesysvolume]: [4]
+[persist.audio.lowlatency.rec]: [false]
+[persist.audio.mpseek]: [0]
+[persist.audio.mysound]: [1]
+[persist.audio.ringermode]: [2]
+[persist.audio.soundalivefxsec]: [0]
+[persist.audio.stereospeaker]: [0]
+[persist.audio.sysvolume]: [4]
+[persist.audio.uhqa]: [0]
+[persist.audio.vr.enable]: [false]
+[persist.bluetooth_fw_ver]: [bcm4335B0_V0343.0353.hcd]
+[persist.data.netmgrd.qos.enable]: [false]
+[persist.debug.wfd.enable]: [1]
+[persist.eons.enabled]: [true]
+[persist.fuse_sdcard]: [true]
+[persist.gps.qc_nlp_in_use]: [1]
+[persist.gps.qmienabled]: [true]
+[persist.hwc.mdpcomp.enable]: [true]
+[persist.loc.nlp_name]: [com.qualcomm.location]
+[persist.radio.add_power_save]: [1]
+[persist.radio.apm_sim_not_pwdn]: [1]
+[persist.radio.initphone-type]: [1]
+[persist.radio.no_wait_for_card]: [1]
+[persist.radio.plmnname_1]: []
+[persist.radio.plmnname_2]: []
+[persist.radio.use_se_table_only]: [1]
+[persist.rild.nitz_long_ons_0]: []
+[persist.rild.nitz_long_ons_1]: []
+[persist.rild.nitz_long_ons_2]: []
+[persist.rild.nitz_long_ons_3]: []
+[persist.rild.nitz_plmn]: []
+[persist.rild.nitz_short_ons_0]: []
+[persist.rild.nitz_short_ons_1]: []
+[persist.rild.nitz_short_ons_2]: []
+[persist.rild.nitz_short_ons_3]: []
+[persist.rmnet.mux]: [disabled]
+[persist.security.ams.enforcing]: [1]
+[persist.service.bdroid.version]: [4.1]
+[persist.sys.clssprld1]: [700]
+[persist.sys.clssprld2]: [495]
+[persist.sys.country]: [US]
+[persist.sys.dalvik.vm.lib.2]: [libart.so]
+[persist.sys.drs.date]: [Tue Apr 18 21:18:33 KST 2017]
+[persist.sys.flipfontpath]: [/data/data/com.android.settings/app_fonts/Samsungsans#Samsung Sans]
+[persist.sys.language]: [en]
+[persist.sys.localevar]: []
+[persist.sys.media.use-awesome]: [true]
+[persist.sys.profiler_ms]: [0]
+[persist.sys.sb.setting.enabled]: [false]
+[persist.sys.setupwizard]: [FINISH]
+[persist.sys.storage_preload]: [2]
+[persist.sys.timezone]: [Europe/Brussels]
+[persist.sys.usb.config]: [mtp,adb -s "HYBUG6ZD7LR4LJKF"]
+[persist.sys.webview.vmsize]: [104857600]
+[persist.sys.wfd.virtual]: [0]
+[persist.timed.enable]: [true]
+[qcom.audio.init]: [complete]
+[qcom.hw.aac.encoder]: [true]
+[ril.CompleteMsg]: [01]
+[ril.ICC_TYPE]: [2]
+[ril.RildInit]: [1]
+[ril.approved_codever]: [none]
+[ril.approved_cscver]: [none]
+[ril.approved_modemver]: [none]
+[ril.atd_status]: [1_1_0]
+[ril.cs_svc]: [1]
+[ril.deviceOffRes]: [0]
+[ril.ecclist00]: [112,911]
+[ril.ecclist0]: [911,*911,#911,112]
+[ril.hasisim]: [0]
+[ril.hw_ver]: [MP 0.600]
+[ril.ims.ecsupport]: [0]
+[ril.initPB]: [1]
+[ril.isIccChanged]: [0]
+[ril.modem.board]: [MDM9215M]
+[ril.modem.lte.powercontrol]: [on]
+[ril.official_cscver]: [I9295OJVDOE6]
+[ril.product_code]: [GT-I9295ZBAKSA]
+[ril.radiostate]: [10]
+[ril.rfcal_date]: [2013.07.31]
+[ril.sales_code]: [KSA]
+[ril.serialnumber]: [R31D717XSBF]
+[ril.servicestate]: [2]
+[ril.subscription.types]: [NV,RUIM]
+[ril.sw_ver]: [I9295XXSDQD4]
+[ril.timezoneID]: [Europe/Luxembourg]
+[rild.libargs]: [-d /dev/smd0]
+[rild.libpath]: [/system/lib/libsec-ril.so]
+[ro.adb -s "HYBUG6ZD7LR4LJKF".secure]: [1]
+[ro.allow.mock.location]: [0]
+[ro.baseband]: [mdm]
+[ro.bluetooth.hfp.ver]: [1.6]
+[ro.bluetooth.remote.autoconnect]: [true]
+[ro.bluetooth.request.master]: [true]
+[ro.bluetooth.sap]: [true]
+[ro.board.platform]: [msm8960]
+[ro.boot.baseband]: [mdm]
+[ro.boot.boot_recovery]: [0]
+[ro.boot.bootloader]: [I9295XXSDQD4]
+[ro.boot.cp_debug_level]: [0x55FF]
+[ro.boot.csb_val]: [1]
+[ro.boot.debug_level]: [0x4f4c]
+[ro.boot.emmc]: [true]
+[ro.boot.emmc_checksum]: [3]
+[ro.boot.hardware]: [qcom]
+[ro.boot.nvdata_backup]: [0]
+[ro.boot.serialno]: [411265f0]
+[ro.boot.warranty_bit]: [0]
+[ro.boot_recovery]: [0]
+[ro.bootloader]: [I9295XXSDQD4]
+[ro.bootmode]: [unknown]
+[ro.bt.bdaddr_path]: [/efs/bluetooth/bt_addr]
+[ro.build.PDA]: [I9295XXSDQD4]
+[ro.build.changelist]: [4856923]
+[ro.build.characteristics]: [default]
+[ro.build.date.utc]: [1492517913]
+[ro.build.date]: [Tue Apr 18 21:18:33 KST 2017]
+[ro.build.description]: [jactiveltexx-user 5.0.1 LRX22C I9295XXSDQD4 release-keys]
+[ro.build.display.id]: [LRX22C.I9295XXSDQD4]
+[ro.build.fingerprint]: [samsung/jactiveltexx/jactivelte:5.0.1/LRX22C/I9295XXSDQD4:user/release-keys]
+[ro.build.hidden_ver]: [I9295XXSDQD4]
+[ro.build.host]: [SWDD6303]
+[ro.build.id]: [LRX22C]
+[ro.build.official.release]: [true]
+[ro.build.product]: [jactivelte]
+[ro.build.scafe.cream]: [white]
+[ro.build.scafe.shot]: [single]
+[ro.build.scafe.size]: [short]
+[ro.build.scafe]: [americano]
+[ro.build.selinux.enforce]: [1]
+[ro.build.selinux]: [1]
+[ro.build.tags]: [release-keys]
+[ro.build.type]: [user]
+[ro.build.user]: [dpi]
+[ro.build.version.all_codenames]: [REL]
+[ro.build.version.base_os]: []
+[ro.build.version.codename]: [REL]
+[ro.build.version.incremental]: [I9295XXSDQD4]
+[ro.build.version.release]: [5.0.1]
+[ro.build.version.sdk]: [21]
+[ro.build.version.sdl]: [2101]
+[ro.build.version.security_patch]: []
+[ro.carrier]: [unknown]
+[ro.chipname]: [apq8064]
+[ro.com.android.dataroaming]: [false]
+[ro.com.android.dateformat]: [MM-dd-yyyy]
+[ro.com.google.clientidbase]: [android-samsung]
+[ro.com.google.gmsversion]: [5.0_r2]
+[ro.config.alarm_alert]: [Walk_in_the_forest.ogg]
+[ro.config.dha_cached_max]: [36]
+[ro.config.dha_cached_min]: [1]
+[ro.config.dha_empty_init]: [36]
+[ro.config.dha_empty_max]: [36]
+[ro.config.dha_empty_min]: [4]
+[ro.config.dha_ils_enable]: [true]
+[ro.config.dha_increase_th]: [12582912]
+[ro.config.dha_lmk_scale]: [0.594]
+[ro.config.dha_step]: [2]
+[ro.config.knox]: [v00]
+[ro.config.ldha_es_enable]: [true]
+[ro.config.media_sound]: [Media_preview_Touch_the_light.ogg]
+[ro.config.notification_sound]: [S_Whistle.ogg]
+[ro.config.ringtone]: [Over_the_horizon.ogg]
+[ro.config.tima]: [1]
+[ro.config.timaversion]: [2.0]
+[ro.cp_debug_level]: [0x55FF]
+[ro.crypto.state]: [unencrypted]
+[ro.csb_val]: [1]
+[ro.csc.country_code]: [KSA]
+[ro.csc.countryiso_code]: [SA]
+[ro.csc.sales_code]: [KSA]
+[ro.dalvik.vm.native.bridge]: [0]
+[ro.debug_level]: [0x4f4c]
+[ro.debuggable]: [0]
+[ro.emmc]: [true]
+[ro.emmc_checksum]: [3]
+[ro.error.receiver.default]: [com.samsung.receiver.error]
+[ro.factorytest]: [0]
+[ro.fuse_sdcard]: [true]
+[ro.gps.agps_provider]: [1]
+[ro.hardware]: [qcom]
+[ro.hdcp2.rx]: [tz]
+[ro.hdmi.enable]: [true]
+[ro.hwui.drop_shadow_cache_size]: [6]
+[ro.hwui.gradient_cache_size]: [2]
+[ro.hwui.layer_cache_size]: [34]
+[ro.hwui.path_cache_size]: [10]
+[ro.hwui.r_buffer_cache_size]: [4]
+[ro.hwui.shape_cache_size]: [4]
+[ro.hwui.text_cache_width]: [2048]
+[ro.hwui.text_large_cache_height]: [4096]
+[ro.hwui.text_large_cache_width]: [4096]
+[ro.hwui.text_small_cache_height]: [2048]
+[ro.hwui.text_small_cache_width]: [2048]
+[ro.hwui.texture_cache_size]: [50]
+[ro.kernel.qemu]: [0]
+[ro.nvdata_backup]: [0]
+[ro.opengles.version]: [196608]
+[ro.pip.gated]: [0]
+[ro.product.board]: [MSM8960]
+[ro.product.brand]: [samsung]
+[ro.product.cpu.abi2]: [armeabi]
+[ro.product.cpu.abi]: [armeabi-v7a]
+[ro.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.product.cpu.abilist64]: []
+[ro.product.cpu.abilist]: [armeabi-v7a,armeabi]
+[ro.product.device]: [jactivelte]
+[ro.product.locale.language]: [en]
+[ro.product.locale.region]: [GB]
+[ro.product.manufacturer]: [samsung]
+[ro.product.model]: [GT-I9295]
+[ro.product.name]: [jactiveltexx]
+[ro.product_ship]: [true]
+[ro.qc.sdk.audio.fluencetype]: [none]
+[ro.qc.sdk.audio.ssr]: [false]
+[ro.qc.sdk.camera.facialproc]: [true]
+[ro.qc.sdk.gestures.camera]: [false]
+[ro.qc.sdk.sensors.gestures]: [false]
+[ro.qualcomm.bluetooth.ftp]: [true]
+[ro.qualcomm.bluetooth.hfp]: [true]
+[ro.qualcomm.bluetooth.hsp]: [true]
+[ro.qualcomm.bluetooth.map]: [true]
+[ro.qualcomm.bluetooth.nap]: [true]
+[ro.qualcomm.bluetooth.opp]: [true]
+[ro.qualcomm.bluetooth.pbap]: [true]
+[ro.qualcomm.bt.hci_transport]: [smd]
+[ro.qualcomm.cabl]: [1]
+[ro.revision]: [16]
+[ro.ril.svdo]: [false]
+[ro.ril.svlte1x]: [false]
+[ro.ril.transmitpower]: [true]
+[ro.runtime.firstboot]: [1605441651606]
+[ro.sec.ecryptfs.fips.disabled]: [true]
+[ro.sec.fle.encryption]: [true]
+[ro.secure]: [1]
+[ro.securestorage.support]: [true]
+[ro.security.icd.flagmode]: [single]
+[ro.security.mdpp.release]: [4]
+[ro.security.mdpp.ver]: [1.0]
+[ro.security.vpnpp.release]: [4.1]
+[ro.security.vpnpp.ver]: [1.4]
+[ro.secwvk]: [144]
+[ro.serialno]: [411265f0]
+[ro.setupwizard.mode]: [DISABLED]
+[ro.sf.lcd_density]: [480]
+[ro.streaming.video.drs]: [true]
+[ro.telephony.call_ring.multiple]: [false]
+[ro.use_data_netmgrd]: [false]
+[ro.vendor.extension_library]: [libqti-perfd-client.so]
+[ro.warmboot.capability]: [1]
+[ro.warranty_bit]: [0]
+[ro.wifi.channels]: []
+[ro.zygote]: [zygote32]
+[sec.fle.encryption.status]: [Dec NewFile IncludeMedia]
+[secmm.player.gp.url]: [true]
+[security.ASKS.policy_version]: [161011]
+[security.mdpp.result]: [None]
+[security.mdpp]: [Ready]
+[selinux.policy_version]: [SEPF_GT-I9295_5.0.1_0011]
+[selinux.reload_policy]: [1]
+[service.bootanim.exit]: [0]
+[service.camera.running]: [0]
+[service.media.powersnd]: [1]
+[storage.mmc.size]: [15758000128]
+[storage.preload.complete]: [1]
+[supolicy.loaded]: [1]
+[sys.boot_completed]: [1]
+[sys.cameramode.blackbox]: [0]
+[sys.cameramode.vtcall]: [0]
+[sys.dockstate]: [0]
+[sys.enterprise.billing.version]: [1.0.0]
+[sys.hangouts.fps]: [-1]
+[sys.isdumpstaterunning]: [0]
+[sys.mobicore.loaded]: [true]
+[sys.mobicoredaemon.enable]: [true]
+[sys.pwrcntl.decision.change]: [0]
+[sys.qseecomd.enable]: [true]
+[sys.settings_global_version]: [3]
+[sys.settings_system_version]: [49]
+[sys.siop.level]: [0]
+[sys.ssrm.mdnie]: [-1]
+[sys.sysctl.extra_free_kbytes]: [24300]
+[sys.sysctl.tcp_def_init_rwnd]: [60]
+[sys.usb.config]: [mtp,adb -s "HYBUG6ZD7LR4LJKF"]
+[sys.usb.state]: [mtp,adb -s "HYBUG6ZD7LR4LJKF"]
+[tunnel.audiovideo.decode]: [false]
+[tunnel.decode]: [true]
+[vold.pfe]: [deactivated]
+[vold.post_fs_data_done]: [1]
+[wifi.interface]: [wlan0]
+[wlan.driver.status]: [ok]
+[wlan.wfd.status]: [disconnected]
+
+C:\>
+
+
+
+
+
+
+
+
+--------------------------------------------------- how to uninstall ------------------------------------------------------------------------
+
+adb shell
+su
+mount -o rw,remount /system
+rm -rf /system/app/FileManager.apk
+rm -rf /data/data/org.openintents.filemanager
+mount -o ro,remount /system
+exit
+exit
+
+rm /system/app/YourApp.apk
+android remount +rw /system
+
+-------------------
+pm uninstall --user 0 com.google.android.gms
+
+=====================================
+I attempted to force uninstall in ADB, but failed:
+
+$ adb shell pm uninstall -k org.openintents.filemanager
+$ adb shell pm list packages -f | grep -i manager
+package:/system/app/FileManager.apk=org.openintents.filemanager
+
+
+----------------------------
+adb shell su pm list packages | grep 'titanium'
+
+==================
+echo com.your.app | adb uninstall
+echo com.keramidas.TitaniumBackup | adb uninstall
+----------------------
+adb shell pm list packages com.keramidas.TitaniumBackup |
+cut -d ':' -f 2 |
+xargs -L1 -t adb uninstall
+
+adb shell pm list users
+&&&&&&&&&&&&&&&&&&
+The first number "0" is the user ID number then seperated by ":" next comes the "name" or username of the user ("Owner" is above example) then after another ":" the group number (13). All you need is the user number/UID "0". It is VERY rare to see more than one user. The Android OS can support > 1 user but I have yet to ever see it used. There may be a few apps you might see a response of "Failed" for but 95%+ you should see "Success".
+&&&&&&&&&&&&&&&&&&
+adb shell pm list packages -f
+adb shell pm uninstall --user 0 com.keramidas.TitaniumBackup [ this worked | byiza cyane ]
+
+pm install-existing com.google.android.youtube
+---------------------------------------------
+
+To forcefully uninstall the system user apps:
+
+Use:
+adb shell pm disable package_name
+adb shell pm uninstall --user 0 <package_name>
+
+---------------------------------------------
+
+Use this cmd to display the packages in your device (for windows users)
+
+ adb shell pm list packages
+
+then you can delete completely the package with the following cmd
+
+adb uninstall com.example.myapp
+
+---------------------------------------------
+adb shell su 0 pm list packages
+-----------------ex-------------------------
+adb uninstall com.keramidas.TitaniumBackup
+adb uninstall com.keramidas.TitaniumBackupAddon
+adb uninstall com.noname.titanium
+
+====================== list of packages ============
+com.whatsweb.happylucky.webwhatspro
+com.apkmirror.helper.prod
+com.amazon.mShop.android.shopping
+ginlemon.flowerfree
+com.whatsapp.w4b
+com.skype.raider
+com.groundhog.mcpemaster
+com.android.cts.priv.ctsshim
+com.androidbull.incognito.browser
+com.google.android.youtube
+org.simalliance.openmobileapi.uicc2terminal
+com.vsco.cam
+com.google.android.ext.services
+hu.tagsoft.ttorrent.noads
+com.android.providers.telephony
+pro.whatscan.whatsweb.app
+tepteev.ihar.louis_segond.AOUOPFHHTNFLKMQR
+com.musixmatch.android.lyrify
+com.camerasideas.instashot
+com.nova.whatsweb.whatscan
+com.google.android.googlequicksearchbox
+com.davexp.dollify
+com.android.providers.calendar
+com.facebook.mlite
+com.baloota.dumpster
+org.telegram.messenger
+com.android.providers.media
+com.ragrazila.vocapture
+io.apkmody.sai
+us.pixomatic.pixomatic
+com.artoftunnel.opentun
+com.google.android.onetimeinitializer
+com.mediatek.fwk.plugin
+imoblife.toolbox.full
+com.gomtv.gomaudio.pro
+com.noname.titanium
+com.expressvpn.vpn
+com.google.android.ext.shared
+eu.chainfire.flash
+com.infraware.office.link
+com.kvadgroup.photostudio_pro
+com.mxtech.videoplayer.ad1
+com.plexapp.android
+com.crunchyroll.crunchyroid
+com.android.wallpapercropper
+org.malwarebytes.antimalware
+com.teslacoilsw.launcher
+com.browser.leaf_browser
+com.wondershare.mobilego.connector
+air.com.adobe.pstouchphone
+com.mediatek.schpwronoff
+com.mgoogle.android.gms
+com.pixlr.express
+mobi.lockdown.weather
+com.aor.droidedit
+com.vimeo.android.videoapp
+com.utorrent.client.pro
+com.uptodown
+com.jndapp.pixel.pie.iconpack
+com.ape.phoneassit.uninstall
+video.player.videoplayer
+com.applisto.appcloneR
+com.applisto.appcloner
+com.fbreader
+com.simplescan.scanner
+com.ape.ufogames
+qrcodereader.barcodescanner.scan.qrscanner
+com.viber.voip
+com.gbinsta.android
+org.simalliance.openmobileapi.service
+com.bestnine
+com.myos.camera
+com.ape.wikolegal
+com.android.documentsui
+fm.castbox.audiobook.radio.podcast
+com.android.externalstorage
+com.tinno.customwhitelistapp
+com.mediatek.ygps
+com.paprbit.dcoder
+com.ape.apestartfunhub
+com.android.htmlviewer
+com.fivehundredpx.viewer
+com.whatsapp
+com.alphainventor.filemanager
+com.picsart.studio
+com.imoblife.shortcuts_plug_in
+as.wps.wpatester
+com.android.mms.service
+com.rhmsoft.edit
+com.flightradar24free
+com.android.providers.downloads
+com.unbrokensoftware.launchbox
+com.bkidshd.movie
+com.ume.browser.cust
+com.ape.smartleftpageoverlay
+com.appxy.tinyscanner
+com.google.android.apps.messaging
+com.mediatek.engineermode
+au.com.shiftyjelly.pocketcasts
+com.gamma.scan
+com.greentech.quran
+com.kodarkooperativet.blackplayerex
+com.wiko.packageinstaller
+all.in.one.calculator
+com.thegrizzlylabs.geniusscan
+com.one.player
+tepteev.ihar.la_bible_catholique.AOUSEEASGKJQHAYT
+com.ape.smartleftpage
+com.keramidas.TitaniumBackup
+thefreedictionary.dictionary
+com.ape.music
+uplayer.video.player
+com.cyberlink.powerdirector.DRA140225_01
+com.google.android.apps.genie.geniewidget
+com.smule.singandroid
+com.mediatek.omacp
+com.mixvibes.crossdjapp
+kjv.bible.with.apocrypha
+com.duolingo
+com.vanced.manager
+com.tafayor.killall
+com.sec.android.app.samsungapps
+com.tnmb.bootclean
+com.android.providers.applications
+com.chrome.beta
+com.medianet.gl
+com.bootup.receiveimage
+com.lbe.parallel.intl
+com.tinno.factory
+tv.peel.samsung.app
+com.ape.saletracker
+com.google.android.configupdater
+com.microsoft.office.excel
+com.appybuilder.thomleavitt.GospelOfBarnabas
+com.imoblife.quietnotification_plugin
+com.imoblife.voicesetting_plug_in
+com.android.soundrecorder
+new.international.version.appsimin
+jp.ne.hardyinfinity.bluelightfilter.free
+com.android.providers.downloadsoverlay
+com.sandisk.mz
+air.stellio.player
+com.sharon.oneclickinstaller
+com.simplescan.scanner.pro
+com.android.defcontainer
+com.andi.alquran.en
+com.anonytun.black
+com.agus.belgia.calendar
+de.robv.android.xposed.installer
+com.mi.android.globallauncher
+org.blueletterbible.blb
+com.cyberlink.photodirector
+com.darinsoft.vimo
+org.zwanoo.android.speedtest
+com.android.providers.downloads.ui
+instagram.story.art.collage
+com.android.vendinf
+com.android.vending
+com.android.pacprocessor
+com.feng.droid.tutu
+com.ape.systemupdate
+com.brakefield.painter
+com.joeykrim.rootcheck
+com.backdrops.wallpapers
+com.urbandroid.sleep.addon.port
+com.imoblife.permissioncheck_plugn_in
+com.drilens.wamr
+com.microsoft.skydrive
+com.ape.calculator2
+com.bittorrent.client.pro
+com.blackwise.reminder
+com.bambuna.podcastaddict
+com.android.certinstaller
+com.android.carrierconfig
+com.google.android.marvin.talkback
+in.co.pricealert.apps2sd
+com.adobe.spark.post
+com.facebook.lite.stub
+us.zoom.videomeetings
+com.tencent.ibg.joox
+leedroiddevelopments.volumepanel
+android
+com.hecorat.screenrecorder.free
+com.android.contacts
+com.ape.screenshot
+eu.faircode.netguard
+com.android.dialeroverlay
+com.flyersoft.moonreaderp
+com.tfd.mobile.TfdSearch
+com.indymobileapp.document.scanner
+com.opera.mini.native
+com.keyboard.coloremoji
+com.android.exchangeoverlay
+com.koushikdutta.tether
+com.sonyliv
+yo.app
+com.ape.seceretcode
+com.android.egg
+com.android.mtp
+com.android.stk
+com.imoblife.light_plug_in
+com.android.backupconfirm
+com.aed.droidvpn
+com.instagram.android
+com.melodis.midomiMusicIdentifier
+com.waze
+flipboard.app
+jasi2169.tbcrashfixer
+org.pocketworkstation.dict.de
+org.pocketworkstation.dict.en
+org.pocketworkstation.dict.fr
+com.mediatek.bluetooth.dtt
+com.rootuninstaller.pro
+com.joytunes.simplypiano
+com.catalinagroup.callrecorder
+com.microsoft.office.onenote
+com.noxgroup.app.cleaner
+ru.ZtXiNaNg.qCLfvHPgT
+com.ape.myseneschal
+com.zalivka.animation2
+org.pocketworkstation.pckeyboard
+com.android.statementservice
+in.startv.hotstar
+com.cgollner.flashify
+com.ReadTheBible.AdamawaFulfulde
+com.google.android.gm
+com.overlook.android.fing
+com.android.documentsuioverlay
+nu.tommie.inbrowser
+com.tempmail
+com.google.android.apps.tachyon
+com.tomer.alwayson
+com.mediatek.mdmlsample
+com.microsoft.bing
+com.microsoft.emmx
+com.android.wallpaper.holospiral
+dentex.youtube.downloader
+com.android.calendar
+com.mediatek.providers.drm
+org.ppsspp.ppssppgold
+com.adria.apkextractor
+de.hafas.android.sncbnmbs
+com.vanced.android.youtube
+com.ape.fmradio
+com.audiomack
+com.foxdebug.acodefree
+com.google.android.instantapps.supervisor
+com.microsoft.office.outlook
+com.aneh.gaming
+com.google.android.setupwizard
+bahamas.serietv4
+com.ruh.gameboosterpro
+com.navigation.offlinemaps.gps
+com.microsoft.launcher.zan
+com.android.providers.settings
+com.mg.android
+com.mediatek.miravision.ui
+com.whatswebscan.whats.web.scan
+com.android.sharedstoragebackup
+com.mediatek.batterywarning
+com.facebook.services
+com.macland.qrscanner
+com.android.calendaroverlay
+com.aefyr.sai
+com.google.android.music
+com.android.printspooler
+org.simalliance.openmobileapi.uicc1terminal
+radiotime.player
+com.android.stkoverlay
+com.ginnypix.kuni
+com.tdo.showbox
+com.android.dreams.basic
+com.sec.app.samsungprintservice
+com.ninegag.android.app
+cafp.coran.francais.com
+inc.trilokia.pubgfxtool
+com.mobilefootie.wc2010
+com.jpbrothers.android.pictail.sub10
+pdf.tap.scanner
+com.android.inputdevices
+com.ape.wikolauncheroverlay
+video.player.audio.player.music
+xyz.iridiumion.enlightened
+com.estrongs.android.pop
+com.android.providers.downloads.uioverlay
+com.socialnmobile.dictapps.notepad.color.note
+nextapp.inputmethod.latin
+inc.trilokia.gfxtool
+com.whatsapp.wallpaper
+com.mediatek
+com.whatsweb.app
+hd.uhd.amoled.wallpapers.best.quality
+com.adguard.android
+com.mxtech.videoplayer.ad
+com.ape.systemui70overlay
+com.wiko.services
+com.example
+com.creativetrends.simple.app.pro
+com.ironsource.appcloud.oobe.wiko
+rw.mobit.bibiliya
+com.kapp.ifont
+com.beinsports.andcontent
+xcoders.whatsdelete.bussiness
+com.rarlab.rar
+com.google.android.apps.cloudprint
+com.twitter.android
+com.android.musicfx
+com.google.android.apps.docs
+com.google.android.apps.maps
+com.google.android.apps.plus
+com.wakasoftware.rootuninstaller
+com.mobisystems.editor.office_registered
+free.vpn.unblock.proxy.turbovpn
+com.notabasement.mangarock.android.lotus
+com.pandora.android
+net.appcake
+com.microsoft.office.word
+com.tinno.customwhitelistappoverlay
+com.github.TwrpBuilderF
+com.todoist
+com.urbandroid.sleep
+com.er.mo.apps.mypasswords
+me.twrp.twrpapp
+com.google.android.webview
+com.opera.browser
+com.microsoft.office.powerpoint
+com.phfreeprojects.sockshttp
+com.android.deskclockoverlay
+com.duapps.recorder
+com.imoblife.gamebooster_plug_in
+com.android.server.telecom
+com.ape.apemusicoverlay
+com.google.android.syncadapters.contacts
+com.fvcorp.flyclient
+com.mediatek.miravision.uioverlay
+com.android.facelock
+com.prism.download.adblock.privacy.flash.player.incognito.private_browser.browser
+com.myos.apeCamera31Overlay
+com.android.keychain
+com.stardewsaveeditor
+com.enflick.android.TextNow
+io.va.exposed
+com.android.chrome
+com.microsoft.translator
+com.vimage.android
+com.rj.quickenglish
+com.andi.alquran.francais
+com.android.dialer
+net.zedge.android
+com.android.gallery3d
+com.google.android.packageinstaller
+com.google.android.street
+com.google.android.gms
+com.google.android.gsf
+com.google.android.ims
+com.google.android.tts
+com.android.calllogbackup
+com.lightricks.facetune.free
+com.google.android.partnersetup
+mobi.mangatoon.comics.aphone
+power.amp.musicplayer.pi.audioplayer
+com.google.android.videos
+com.google.android.apps.nexuslauncher
+com.sec.spp.push
+com.dsemu.drastic
+com.livescore
+kr.co.lylstudio.unicorn
+net.missingtricks.gbwhatsappdownloades
+com.light.paidappssales
+be.stib.mivb.mobile
+com.android.proxyhandler
+com.maskyn.fileeditor
+com.vicman.photolabpro
+com.instantbits.cast.webvideo
+com.ape.resetuserdata
+com.avast.android.mobilesecurity
+com.tripadvisor.tripadvisor
+org.videolan.vlc
+jp.pokemon.pokemonhome
+com.imoblife.checkadd_plug_in
+com.lulu.lulubox
+com.zhiliaoapp.musically
+com.fastemulator.gba
+com.ape.weather3
+com.eagle.web.browser.internet.privacy.browser
+com.google.android.feedback
+com.topjohnwu.magisk
+com.google.android.printservice.recommendation
+com.google.android.apps.photos
+com.android.emailoverlay
+com.google.android.syncadapters.calendar
+com.mediatek.engineermodecmas
+com.android.managedprovisioning
+com.picsart.animate
+com.sika524.android.quickshortcut
+com.spotify.music
+com.jbak.JbakKeyboard
+com.ginnypix.kujicam
+com.mediatek.calendarimporter
+com.ape.supervise
+istark.combovpn.combovpn
+com.shazam.encore.android
+com.panda.gamebooster
+com.sec.android.app.sbrowser
+net.xnano.android.changemymac.lite
+com.microsoft.office.officehubrow
+com.avg.cleaner
+com.vblast.flipaclip
+com.imoblife.senorbox_plug_in
+com.ninexgen.congancand
+com.androidrocker.taskkiller
+com.mediatek.thermalmanager
+com.rhmsoft.pulsar
+com.facebook.katana
+losts.books.bible.AOVVOECGBSPCKJOZJR
+com.simplemobiletools.gallery.pro
+com.sam.apps.magazines.widget
+com.imoblife.compass_plug_in
+com.johnemulators.johngba
+com.wiko.wikosetupwizard
+grant.standard.vob.player
+com.android.soundrecorderoverlay
+com.dv.adm
+com.android.providers.partnerbookmarks
+com.myprog.hexedit
+com.appybuilder.thomleavitt.GospelofThomas
+com.google.android.gsf.login
+com.psiphon3.subscription
+com.ape.calculator2overlay
+com.mtk.telephony
+com.cyberlink.actiondirector
+com.wiko.wikoservicesloader
+com.android.wallpaper.livepicker
+com.in.webtunnel
+org.blackmart.market
+com.facebook.lite
+com.facebook.orca
+com.domobile.applockwatcher
+wiktoria.goroch.bible_kjva.AOUSFCKLLRSGYXYC
+com.advasoft.touchretouch
+com.themausoft.wpsapppro
+com.rsupport.mvagent
+com.facebook.system
+org.mozilla.firefox
+systems.maju.darkmode
+com.tinno
+com.baidu.map.location
+com.sec.android.app.shealth
+com.lightx
+idm.internet.download.manager.plus
+com.ape.filemanager
+com.android.vending.licensing.ILicensingService
+com.google.android.apps.translate
+com.damonplay.damonps2.pro.ppsspt
+com.aynovel.vixs
+com.adobe.psmobile
+com.jmz.soft.twrpmanager
+com.google.android.backuptransport
+com.evernote
+hotspotshield.android.vpn
+photo.editor.polarr
+eu.thedarken.sdm
+com.vvek.whtswebsaver
+com.avira.android
+com.themobilecompany.delijn
+com.magicv.airbrush
+com.rarevision.vhscamcorder
+com.android.bookmarkprovider
+com.typhoon.tv
+com.android.settings
+com.ape.myseneschaloverlay
+media.tools.plus.speakerbooster.simoapp
+com.imoblife.applock_plug_in
+com.appatomic.vpnhub
+com.teslacoilsw.notifier
+com.shinycore.picsaypro
+com.emulator.fpse
+com.termux
+com.textra
+com.gbwhatsapp
+com.google.android.apps.books
+com.nexstreaming.app.kinemasterfree
+com.mobisystems.mobiscanner
+com.mediatek.lbs.em2.ui
+com.netqin.ps
+com.android.cts.ctsshim
+com.nordskog.LesserAudioSwitch
+com.panda.gamepad
+com.atistudios.mondly.languages
+free.vpn.unblock.proxy.vpnpro
+jp.snowlife01.android.appkiller2
+com.pushbullet.android
+ru.zdevs.zarchivercloud
+com.vinwap.parallaxwallpaper
+com.q4u.vewdeletedmessage
+imoblife.toolbox.full.plugin.timer
+com.wiko.launcher
+com.mdiwebma.screenshot
+com.koushikdutta.rommanager
+com.nemo.vidmate
+com.myos.videoplayeroverlay
+com.android.vpndialogs
+com.videoeditorpro.android
+com.xvideostudio.videoeditor
+com.myos.videoplayer
+com.google.android.keep
+com.google.android.talk
+com.quoord.tapatalkpro.activity
+com.android.email
+eu.chainfire.supersu
+com.piriform.ccleaner
+com.android.phone
+com.android.shell
+com.scores365
+com.ape.weather3overlay
+com.mobilesrepublic.appy
+com.android.wallpaperbackup
+com.android.providers.blockednumber
+com.duckduckgo.mobile.android
+com.anonytun.android
+com.busuu.android.enc
+wifisecurity.ufovpn.android
+com.android.providers.userdictionary
+com.android.emergency
+com.tinno.productInfo
+com.ape.cloudfilemanageroverlay
+com.whatscan.pro.whats.web.app
+com.zalivka.animation
+com.ape.apnset
+com.imo.android.imoim
+com.keesadens.SIMcardToolManager
+com.intsig.camscanner
+com.dynamixsoftware.printhand
+org.simalliance.openmobileapi.eseterminal
+com.saeedstarv.cloudflareplugin
+com.sec.chaton
+com.neuralprisma
+com.android.location.fused
+com.ape.fmradiooverlay
+com.luckyday.app
+stericson.busybox.donate
+com.android.deskclock
+com.android.systemui
+grant.standard.mkv.player
+com.moonlab.unfold
+com.android.exchange
+com.google.android.apps.youtube.music
+com.android.bluetoothmidiservice
+com.linguee.linguee
+com.app.englishidioms
+jp.smapho.smarttaskkiller
+com.facebook.appmanager
+com.cleanmaster.security
+com.superimposeapp.superimposeapp
+com.koushikdutta.cast
+com.tinno.mtbf
+com.adguard.vpn
+com.dt3264.deezloader
+com.adobe.lrmobile
+com.ourcodeworld.ourcodeeditorfree
+com.imageline.FLM
+com.keramidas.TitaniumBackupAddon
+com.evozi.injector
+com.mediatek.mtklogger
+com.kmplayerpro
+net.xnano.android.changemymac
+com.mediatek.cellbroadcastreceiver
+com.opera.browser.beta
+com.yocto.wenote
+com.cpuid.cpu_z
+com.wondershare.mobilego
+com.mediatek.sensorhub.ui
+com.battlenet.showguide
+com.google.android.play.games
+the.hexcoders.whatsdelete
+com.google.android.apps.magazines
+com.sports.live.football.tv
+com.tafayor.hibernator
+ru.sxbuIDfx.pFSOyagrF
+com.android.bluetooth
+com.neutronemulation.super_retro_16
+com.android.providers.contacts
+com.android.captiveportallogin
+com.fenixx.gameboosterplus
+com.ape.systemupdateoverlay
+com.artoftunnel.shelltun
+com.simplecity.amp_pro
+com.devwinbh.Movie.Show.Box
+com.inspiredandroid.linuxcommandbibliotheca
+com.maxmpz.audioplayer
+com.adguard.android.contentblocker
+com.jetappfactory.jetaudioplus
+cn.wps.moffice_eng
+com.android.gallery3doverlay
+com.google.android.inputmethod.latin
+ninja.sesame.app.edge
+launcher.mi.launcher
+com.android.contactsoverlay
+kinyarwanda.holy.bible.AOVGSFAOUKXFGBHZCM
+com.intsig.lic.camscanner
+com.android.settingsoverlay
+
+
+
+
+
+
+
+
+
+
+==============================wiko sunny2+ specifications=======================
+AC0284B9F6D8517FE0EA41097F24E3DD1132B6E7
+BEB7968147915FF70D39A1C9B56DCFAE1B6FEB30
+00CB3575AD0E397B4F53A2F6F4C101EB0C835186
+7CE703D3F4C4FF3FB0F5B533D3B563CEAAE3E3B1
+firmware link
+
+https://support.wikomobile.com/maj/Sunny2Plus_V24.zip
+
+==============
+# begin build properties
+# autogenerated by buildinfo.sh
+ro.build.id=NRD90M
+ro.build.display.id=alps-mp-n0.mp2-V1_tinno6580.we.n_P144
+ro.build.version.incremental=1528096233
+ro.custom.build.version=Sunny2 Plus-V01.24.OPE.20-[Nougat-7.0]-V2600CN
+ro.internal.build.version=V2600CN_7.0_WIK_FR_24
+ro.tinternal.build.version=V2600CN_7.0_WIK_FR_24
+ro.build.version.sdk=24
+ro.build.version.preview_sdk=0
+ro.build.version.codename=REL
+ro.build.version.all_codenames=REL
+ro.build.version.release=7.0
+ro.build.version.security_patch=2018-05-05
+ro.build.version.base_os=
+ro.build.date=2018年 06月 04日 星期一 15:10:13 CST
+ro.build.date.utc=1528096213
+ro.build.type=user
+ro.build.user=android
+ro.build.host=HTSVR15
+ro.build.tags=release-keys
+ro.build.flavor=full_v2600cn-user
+ro.product.board=
+# ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
+# use ro.product.cpu.abilist instead.
+ro.product.cpu.abi=armeabi-v7a
+ro.product.cpu.abi2=armeabi
+ro.product.cpu.abilist=armeabi-v7a,armeabi
+ro.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.product.cpu.abilist64=
+ro.wifi.channels=
+ro.board.platform=mt6580
+# ro.build.product is obsolete; use ro.product.device
+ro.build.product=
+# Do not try to parse description, fingerprint, or thumbprint
+ro.build.description=full_v2600cn-user 7.0 NRD90M 1528096233 release-keys
+ro.build.fingerprint=WIKO/v2600cn/v2600cn:7.0/NRD90M/1528096233:user/release-keys
+ro.build.characteristics=default
+# end build properties
+#
+# from device/tinno/v2600cn/system.prop
+#
+#
+# system.prop for generic sdk
+#
+
+rild.libpath=mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+
+
+
+
+
+
+
+
+
+
+SuperRs-Kitchen_Win-32_v3.1.6.5-v3.1.8.8.zip
+https://androidfilehost.com/?fid=1395089523397921402
+
+
+
+
+

@@ -1,0 +1,70 @@
+
+
+oem product key uninstall
+
+slmgr /upk 9DTRT-TNCY6-2T87P-KDMHK-RM32D
+
+
+===========================
+
+slmgr /dlv
+
+slmgr /upk <Activation ID>
+
+activation id:
+slmgr /upk 096ce63d-4fac-48a9-82a9-61ae9e800e5f
+slmgr /upk 4a8149bb-7d61-49f4-8822-82c7bf88d64b
+slmgr /upk 513b06ef-c15f-4df0-9097-a4768323bfb6
+slmgr /upk 7b65fea6-df35-4e65-aaa7-bdf1fef5b24f
+slmgr /upk 7e324006-b4e8-4d0d-b52a-44c59af7b03f
+slmgr /upk 8d904b5c-2cd4-43f4-846a-f0f5d60387a0
+slmgr /upk d9ec2828-d29e-4d1c-8fa7-bfe2c4786003
+slmgr /upk ec67814b-30e6-4a50-bf7b-d55daf729d1e
+slmgr /upk fd9e2767-c9dc-4ba9-a70a-e690649d7301
+slmgr /upk MHF9N-XY6XB-WVXMC-BTDCT-MKKG7
+
+slmgr /upk
+
+slmgr /upk
+slmgr.vbs /cpky
+slmgr /ckms
+slmgr.vbs /ckms
+slmgr /skms localhost
+
+Additional parameters you may find useful:
+
+The /cpky option removes the product key from the registry to prevent this key from being stolen by malicious code.
+The /rearm option resets the activation timers
+slmgr /cpky
+
+
+
+
+slmgr -ipk MHF9N-XY6XB-WVXMC-BTDCT-MKKG7
+slmgr /ipk 2MP7K-98NK8-WPVF3-Q2WDG-VMD98
+
+---------------------------
+Windows Script Host
+---------------------------
+Error: 0xC004E016 On a computer running Microsoft Windows non-core edition, run 'slui.exe 0x2a 0xC004E016' to display the error text.
+---------------------------
+OK   
+---------------------------
+
+
+
+
+789NJ-TQK6T-6XTH8-J39CJ-J8D3P
+MY4N9-TGH34-4X4VY-8FG2T-RRDPV
+============================
+slmgr.vbs /dlv
+slmgr.vbs /dlv all
+
+
+---------------------------
+Windows Script Host
+---------------------------
+Software licensing service version: 6.3.9600.19101Name: Windows(R), ProfessionalWMC editionDescription: Windows(R) Operating System, VOLUME_KMSCLIENT channelActivation ID: 096ce63d-4fac-48a9-82a9-61ae9e800e5fApplication ID: 55c92734-d682-4d71-983e-d6ec3f16059fExtended PID: 06401-02617-000-000000-03-1033-9600.0000-3412020Product Key Channel: Volume:GVLKInstallation ID: 501456361138315041425768333043779928407481254983683436963645285Partial Product Key: J8D3PLicense Status: LicensedVolume activation expiration: 62480 minute(s) (44 day(s))Remaining Windows rearm count: 999Remaining SKU rearm count: 1001Trusted time: 08-Dec-20 14:27:00Configured Activation Type: AllMost recent activation information:Key Management Service client information    Client Machine ID (CMID): 81541d31-ce91-49b0-a252-b6b39ecec930    Registered KMS machine name: 10.3.0.20:1688    KMS machine IP address: 10.3.0.20    KMS machine extended PID: 05426-00206-169-425870-03-6170-9200.0000-2422018    Activation interval: 43200 minutes    Renewal interval: 43200 minutes    KMS host caching is enabledName: Windows(R), OCUR add-on for all editionsDescription: Windows(R) Operating System, RETAIL channelActivation ID: 4a8149bb-7d61-49f4-8822-82c7bf88d64bApplication ID: 55c92734-d682-4d71-983e-d6ec3f16059fExtended PID: Product Key Channel: Installation ID: Use License URL: https://activation-v2.sls.microsoft.com/SLActivateProduct/SLActivateProduct.asmx?configextension=RetailValidation URL: https://validation-v2.sls.microsoft.com/SLWGA/slwga.asmxThis license is not in use.License Status: UnlicensedRemaining Windows rearm count: 999Remaining SKU rearm count: -1Trusted time: 08-Dec-20 14:27:00Name: Windows(R), ProfessionalWMC editionDescription: Windows(R) Operating System, RETAIL channelActivation ID: 513b06ef-c15f-4df0-9097-a4768323bfb6Application ID: 55c92734-d682-4d71-983e-d6ec3f16059fExtended PID: Product Key Channel: Installation ID: Use License URL: https://activation-v2.sls.microsoft.com/SLActivateProduct/SLActivateProduct.asmx?configextension=RetailValidation URL: https://validation-v2.sls.microsoft.com/SLWGA/slwga.asmxThis license is not in use.License Status: UnlicensedRemaining Windows rearm count: 999Remaining SKU rearm count: -1Trusted time: 08-Dec-20 14:27:00Name: Windows(R), ProfessionalWMC editionDescription: Windows(R) Operating System, RETAIL channelActivation ID: 7b65fea6-df35-4e65-aaa7-bdf1fef5b24fApplication ID: 55c92734-d682-4d71-983e-d6ec3f16059fExtended PID: Product Key Channel: Installation ID: Use License URL: https://activation-v2.sls.microsoft.com/SLActivateProduct/SLActivateProduct.asmx?configextension=RetailValidation URL: https://validation-v2.sls.microsoft.com/SLWGA/slwga.asmxThis license is not in use.License Status: UnlicensedRemaining Windows rearm count: 999Remaining SKU rearm count: -1Trusted time: 08-Dec-20 14:27:00Name: Windows(R), ProfessionalWMC editionDescription: Windows(R) Operating System, RETAIL channelActivation ID: 7e324006-b4e8-4d0d-b52a-44c59af7b03fApplication ID: 55c92734-d682-4d71-983e-d6ec3f16059fExtended PID: Product Key Channel: Installation ID: Use License URL: https://activation-v2.sls.microsoft.com/SLActivateProduct/SLActivateProduct.asmx?configextension=RetailValidation URL: https://validation-v2.sls.microsoft.com/SLWGA/slwga.asmxThis license is not in use.License Status: UnlicensedRemaining Windows rearm count: 999Remaining SKU rearm count: -1Trusted time: 08-Dec-20 14:27:00Name: Windows(R), ProfessionalWMC editionDescription: Windows(R) Operating System, RETAIL channelActivation ID: 8d904b5c-2cd4-43f4-846a-f0f5d60387a0Application ID: 55c92734-d682-4d71-983e-d6ec3f16059fExtended PID: Product Key Channel: Installation ID: Use License URL: https://activation-v2.sls.microsoft.com/SLActivateProduct/SLActivateProduct.asmx?configextension=RetailValidation URL: https://validation-v2.sls.microsoft.com/SLWGA/slwga.asmxThis license is not in use.License Status: UnlicensedRemaining Windows rearm count: 999Remaining SKU rearm count: -1Trusted time: 08-Dec-20 14:27:00Name: Windows(R), ProfessionalWMC editionDescription: Windows(R) Operating System, RETAIL channelActivation ID: d9ec2828-d29e-4d1c-8fa7-bfe2c4786003Application ID: 55c92734-d682-4d71-983e-d6ec3f16059fExtended PID: Product Key Channel: Installation ID: Use License URL: https://activation-v2.sls.microsoft.com/SLActivateProduct/SLActivateProduct.asmx?configextension=RetailValidation URL: https://validation-v2.sls.microsoft.com/SLWGA/slwga.asmxThis license is not in use.License Status: UnlicensedRemaining Windows rearm count: 999Remaining SKU rearm count: -1Trusted time: 08-Dec-20 14:27:00Name: Windows(R), APPXLOB-Client add-on for EmbeddedIndustry,EmbeddedIndustryA,EmbeddedIndustryE,EmbeddedIndustryEEval,EmbeddedIndustryEval,CoreARM,ProfessionalN,Professional,ProfessionalWMC,EnterpriseN,EnterpriseNEval,Enterprise,EnterpriseEvalDescription: Windows(R) Operating System, VOLUME_MAK channelActivation ID: ec67814b-30e6-4a50-bf7b-d55daf729d1eApplication ID: 55c92734-d682-4d71-983e-d6ec3f16059fExtended PID: Product Key Channel: Installation ID: Use License URL: https://activation-v2.sls.microsoft.com/SLActivateProduct/SLActivateProduct.asmx?configextension=RetailValidation URL: https://validation-v2.sls.microsoft.com/SLWGA/slwga.asmxThis license is not in use.License Status: UnlicensedRemaining Windows rearm count: 999Remaining SKU rearm count: -1Trusted time: 08-Dec-20 14:27:00Name: Windows(R), ProfessionalWMC editionDescription: Windows(R) Operating System, RETAIL channelActivation ID: fd9e2767-c9dc-4ba9-a70a-e690649d7301Application ID: 55c92734-d682-4d71-983e-d6ec3f16059fExtended PID: Product Key Channel: Installation ID: Use License URL: https://activation-v2.sls.microsoft.com/SLActivateProduct/SLActivateProduct.asmx?configextension=RetailValidation URL: https://validation-v2.sls.microsoft.com/SLWGA/slwga.asmxThis license is not in use.License Status: UnlicensedRemaining Windows rearm count: 999Remaining SKU rearm count: 1001Trusted time: 08-Dec-20 14:27:01
+---------------------------
+OK   
+---------------------------
